@@ -13,16 +13,21 @@ tags:
 
 > [!info] Topic
 > **Area:** Foundations · **Module:** 1 · **Priority:** must · **Est:** 2h
-> **Why this matters:** You can't learn to code without a working toolchain. This topic makes sure
-> Java, an IDE, and the basics are installed and provably working before you go further.
+> **Why this matters:** Before any coding, your toolchain must actually work. The full install guide
+> lives in **[[Tools & Setup]]** — this topic is the quick **verify** step: confirm Java and your
+> IDE run, and learn enough to fix a "command not found".
+
+> [!tip] Where to install
+> Do the installs in **[[Tools & Setup]]** (sections 1–2: JDK + IDE). Come back here to verify. Git
+> and the build tools come later in Module 6.
 
 ## Learning Objectives
-- Have JDK 21 installed and confirmed from the command line.
-- Have an IDE installed and able to run a Java file.
+- Confirm JDK 21 is installed and runs from the command line.
+- Confirm your IDE can run a Java file.
 - Know where to look when a tool "isn't found".
 
 ## Learn
-- [ ] Work through **[[Tools & Setup]]** sections 1–2 (JDK + IDE). Git and build tools come in Module 6.
+- [ ] Finish **[[Tools & Setup]]** sections 1–2 (JDK + IDE) if you haven't yet.
 - [ ] Skim what a `PATH` is (why your terminal can or can't find `java`).
 
 ## Concepts

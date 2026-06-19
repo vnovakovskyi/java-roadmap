@@ -31,13 +31,13 @@ job-ready junior Java developer. Work them roughly in order — later modules bu
 | ------ | ---- | ----- |
 | M1 | Foundations | How programming and Java work; install and run your first program |
 | M2 | Core Java | Syntax, types, control flow, methods, arrays |
-| M3 | OOP | Classes, objects, inheritance, polymorphism, interfaces |
+| M3 | OOP | Classes, objects, inheritance, polymorphism, interfaces, SOLID & clean code |
 | M4 | Java APIs | Collections, generics, exceptions, enums, Optional |
-| M5 | Modern Java | Lambdas, streams, records, date/time, files |
+| M5 | Modern Java | Lambdas, streams, records, date/time, files, concurrency basics |
 | M6 | Tooling | Git, GitHub, Maven, Gradle, the IDE |
 | M7 | Testing | JUnit 5, AssertJ, Mockito, testable code |
 | M8 | Databases | SQL, JDBC, JPA/Hibernate, migrations |
-| M9 | Spring | HTTP/REST, Spring Boot, building a REST API |
+| M9 | Spring | HTTP/REST, Spring Boot, building & securing a REST API |
 | M10 | Project | Capstone: a full CRUD app, end-to-end |
 
 ## Property vocabulary (frontmatter)
