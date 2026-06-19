@@ -4,7 +4,7 @@ A structured, hands-on path from **zero programming experience** to a **job-read
 developer** — built as an [Obsidian](https://obsidian.md) vault you can download and work through.
 
 It covers everything you actually need: the knowledge, the tools, and the books — organized into
-**10 modules** and **63 hands-on topics**, from "what is a program" all the way to building a real
+**10 modules** and **68 hands-on topics**, from "what is a program" all the way to building a real
 Spring Boot REST API.
 
 ## The path at a glance
@@ -17,11 +17,11 @@ Spring Boot REST API.
 2. **Core Java** — syntax, types, control flow, methods, arrays
 3. **Object-Oriented Programming** — classes, inheritance, polymorphism, interfaces
 4. **Essential Java APIs** — collections, generics, exceptions, enums, Optional
-5. **Modern Java** — lambdas, streams, records, date/time, files
+5. **Modern Java** — lambdas, streams, records, date/time, files, concurrency basics
 6. **Tooling & Workflow** — Git, GitHub, Maven, Gradle, the IDE
 7. **Testing** — JUnit 5, AssertJ, Mockito, writing testable code
 8. **Databases & SQL** — SQL, JDBC, JPA/Hibernate, migrations
-9. **Web Development with Spring Boot** — HTTP/REST, Spring Boot, a REST API
+9. **Web Development with Spring Boot** — HTTP/REST, Spring Boot, a secured REST API
 10. **Capstone** — tie it all together in a full CRUD application
 
 Target: roughly **6 months at ~10–12 hours/week**. Go at your own pace.
@@ -49,7 +49,7 @@ _Conventions.md                   How the vault works + frontmatter rules
 _Template - Topic.md              Skeleton for new topic notes
 Tools & Setup.md                  Environment setup
 Books & Resources.md              Recommended books and free resources
-Topics/                           All 63 learning topics (M1–M10)
+Topics/                           All 68 learning topics (M1–M10)
 Dashboard.base                    Live progress dashboard (Obsidian Bases)
 Roadmap.canvas                    Interactive visual map (Obsidian)
 assets/                           Roadmap image and other assets

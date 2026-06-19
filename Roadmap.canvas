@@ -167,7 +167,7 @@
       "x": 920,
       "y": 0,
       "width": 430,
-      "height": 836,
+      "height": 944,
       "color": "6"
     },
     {
@@ -241,13 +241,23 @@
       "color": "6"
     },
     {
+      "id": "m3c7",
+      "type": "file",
+      "file": "Topics/M3 - OOP - SOLID and Clean Code Principles.md",
+      "x": 935,
+      "y": 816,
+      "width": 400,
+      "height": 92,
+      "color": "6"
+    },
+    {
       "id": "group4",
       "type": "group",
       "label": "M4 \u2014 Essential Java APIs",
       "x": 1380,
       "y": 0,
       "width": 430,
-      "height": 836,
+      "height": 944,
       "color": "2"
     },
     {
@@ -263,7 +273,7 @@
     {
       "id": "m4c1",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Generics Basics.md",
+      "file": "Topics/M4 - Java APIs - Choosing Collections and Big-O Basics.md",
       "x": 1395,
       "y": 168,
       "width": 400,
@@ -273,7 +283,7 @@
     {
       "id": "m4c2",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Iteration and Sorting (Comparable and Comparator).md",
+      "file": "Topics/M4 - Java APIs - Generics Basics.md",
       "x": 1395,
       "y": 276,
       "width": 400,
@@ -283,7 +293,7 @@
     {
       "id": "m4c3",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Exceptions and Error Handling.md",
+      "file": "Topics/M4 - Java APIs - Iteration and Sorting (Comparable and Comparator).md",
       "x": 1395,
       "y": 384,
       "width": 400,
@@ -293,7 +303,7 @@
     {
       "id": "m4c4",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Enums.md",
+      "file": "Topics/M4 - Java APIs - Exceptions and Error Handling.md",
       "x": 1395,
       "y": 492,
       "width": 400,
@@ -303,7 +313,7 @@
     {
       "id": "m4c5",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Optional and Null-Safety.md",
+      "file": "Topics/M4 - Java APIs - Enums.md",
       "x": 1395,
       "y": 600,
       "width": 400,
@@ -313,9 +323,19 @@
     {
       "id": "m4c6",
       "type": "file",
-      "file": "Topics/M4 - Java APIs - Packages and Project Organization.md",
+      "file": "Topics/M4 - Java APIs - Optional and Null-Safety.md",
       "x": 1395,
       "y": 708,
+      "width": 400,
+      "height": 92,
+      "color": "2"
+    },
+    {
+      "id": "m4c7",
+      "type": "file",
+      "file": "Topics/M4 - Java APIs - Packages and Project Organization.md",
+      "x": 1395,
+      "y": 816,
       "width": 400,
       "height": 92,
       "color": "2"
@@ -327,7 +347,7 @@
       "x": 1840,
       "y": 0,
       "width": 430,
-      "height": 728,
+      "height": 944,
       "color": "3"
     },
     {
@@ -386,6 +406,26 @@
       "file": "Topics/M5 - Modern Java - Files and I-O Basics.md",
       "x": 1855,
       "y": 600,
+      "width": 400,
+      "height": 92,
+      "color": "3"
+    },
+    {
+      "id": "m5c6",
+      "type": "file",
+      "file": "Topics/M5 - Modern Java - Concurrency Basics (Threads and Executors).md",
+      "x": 1855,
+      "y": 708,
+      "width": 400,
+      "height": 92,
+      "color": "3"
+    },
+    {
+      "id": "m5c7",
+      "type": "file",
+      "file": "Topics/M5 - Modern Java - Virtual Threads (Java 21).md",
+      "x": 1855,
+      "y": 816,
       "width": 400,
       "height": 92,
       "color": "3"
@@ -597,7 +637,7 @@
       "x": 3680,
       "y": 0,
       "width": 430,
-      "height": 836,
+      "height": 944,
       "color": "6"
     },
     {
@@ -666,6 +706,16 @@
       "file": "Topics/M9 - Spring - Configuration and Profiles.md",
       "x": 3695,
       "y": 708,
+      "width": 400,
+      "height": 92,
+      "color": "6"
+    },
+    {
+      "id": "m9c7",
+      "type": "file",
+      "file": "Topics/M9 - Spring - Securing the API with Spring Security.md",
+      "x": 3695,
+      "y": 816,
       "width": 400,
       "height": 92,
       "color": "6"
