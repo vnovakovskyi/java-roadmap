@@ -26,7 +26,7 @@ tags:
 
 ![Java Developer Roadmap](assets/roadmap.svg)
 
-*(Added in a later step. In Obsidian you can also open the interactive [[Roadmap.canvas|Roadmap canvas]].)*
+*Open the interactive [[Roadmap.canvas|Roadmap canvas]] to jump straight to any topic.*
 
 ## Live Dashboard
 

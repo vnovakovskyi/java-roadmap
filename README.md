@@ -10,8 +10,9 @@ It covers everything you actually need: the knowledge, the tools, and the books 
 
 ## The path at a glance
 
-<!-- The visual roadmap image is added in a later step. -->
-<!-- ![Java Developer Roadmap](assets/roadmap.svg) -->
+![Java Developer Roadmap](assets/roadmap.svg)
+
+> In Obsidian you can also open the interactive **`Roadmap.canvas`** to navigate straight to any topic.
 
 1. **Foundations & Setup** — how programming and Java work; install and run your first program
 2. **Core Java** — syntax, types, control flow, methods, arrays
