@@ -4,9 +4,8 @@ A structured, hands-on path from **zero programming experience** to a **job-read
 developer** — built as an [Obsidian](https://obsidian.md) vault you can download and work through.
 
 It covers everything you actually need: the knowledge, the tools, and the books — organized into
-**10 modules**, from "what is a program" all the way to building a real Spring Boot REST API.
-
-> Status: under construction. Content is being added module by module.
+**10 modules** and **63 hands-on topics**, from "what is a program" all the way to building a real
+Spring Boot REST API.
 
 ## The path at a glance
 
@@ -50,10 +49,10 @@ _Conventions.md                   How the vault works + frontmatter rules
 _Template - Topic.md              Skeleton for new topic notes
 Tools & Setup.md                  Environment setup
 Books & Resources.md              Recommended books and free resources
-Topics/                           All the learning topics (M1–M10)
+Topics/                           All 63 learning topics (M1–M10)
+Dashboard.base                    Live progress dashboard (Obsidian Bases)
 Roadmap.canvas                    Interactive visual map (Obsidian)
 assets/                           Roadmap image and other assets
-docs/                             Project planning notes (research, plan)
 ```
 
 ## License
