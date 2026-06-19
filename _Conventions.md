@@ -7,7 +7,7 @@ tags:
 # Conventions & How To Use This Vault
 
 This note explains how the **Java Developer Roadmap** works. Read it once, then mostly forget it —
-the day-to-day flow is simple.
+the day-to-day flow is straightforward.
 
 ## The daily workflow
 
@@ -19,7 +19,6 @@ the day-to-day flow is simple.
    **Learning Objectives → Learn → Concepts → Practice → Definition of Done**.
 4. Tick the checkboxes as you go. When you start a topic, set its `status: doing`. When you can
    honestly check every **Definition of Done** item, set `status: done`.
-5. Once a week, add a short line to **[[Weekly Log]]**.
 
 That's it. Progress shows up automatically in the Dashboard.
 
