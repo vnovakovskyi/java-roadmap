@@ -69,9 +69,11 @@ tags:
 - [[M3 - OOP - Polymorphism and Overriding]]
 - [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
 - [[M3 - OOP - equals, hashCode and toString]]
+- [[M3 - OOP - SOLID and Clean Code Principles]]
 
 ### Module 4 — Essential Java APIs
 - [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
+- [[M4 - Java APIs - Choosing Collections and Big-O Basics]]
 - [[M4 - Java APIs - Generics Basics]]
 - [[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)]]
 - [[M4 - Java APIs - Exceptions and Error Handling]]
@@ -86,6 +88,8 @@ tags:
 - [[M5 - Modern Java - var, Enhanced switch and Text Blocks]]
 - [[M5 - Modern Java - Date and Time (java.time)]]
 - [[M5 - Modern Java - Files and I-O Basics]]
+- [[M5 - Modern Java - Concurrency Basics (Threads and Executors)]]
+- [[M5 - Modern Java - Virtual Threads (Java 21)]]
 
 ### Module 6 — Tooling & Workflow
 - [[M6 - Tooling - Git Fundamentals]]
@@ -118,6 +122,7 @@ tags:
 - [[M9 - Spring - Spring Data JPA and Repositories]]
 - [[M9 - Spring - Validation and Error Handling]]
 - [[M9 - Spring - Configuration and Profiles]]
+- [[M9 - Spring - Securing the API with Spring Security]]
 
 ### Module 10 — Putting It Together: Capstone
 - [[M10 - Project - Designing a Small CRUD App]]
