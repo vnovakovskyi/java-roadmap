@@ -1,0 +1,11 @@
+# Obsidian local state (keep the vault config out of version control)
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
