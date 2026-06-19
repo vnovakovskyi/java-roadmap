@@ -49,7 +49,6 @@ _Conventions.md                   How the vault works + frontmatter rules
 _Template - Topic.md              Skeleton for new topic notes
 Tools & Setup.md                  Environment setup
 Books & Resources.md              Recommended books and free resources
-Weekly Log.md                     Weekly progress log
 Topics/                           All the learning topics (M1–M10)
 Roadmap.canvas                    Interactive visual map (Obsidian)
 assets/                           Roadmap image and other assets

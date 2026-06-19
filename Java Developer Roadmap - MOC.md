@@ -18,7 +18,6 @@ tags:
 - [[_Conventions]] — how this vault works + the frontmatter rules
 - [[Tools & Setup]] — install Java, an IDE, Git, Maven and Gradle (start here on day one)
 - [[Books & Resources]] — recommended books and free learning resources
-- [[Weekly Log]] — track momentum, one line a week
 - [[Roadmap.canvas|Roadmap (visual)]] — the whole path as a map
 
 > [!tip] Bookmark this note (right-click → Bookmark) so it's one tap away on desktop and mobile.
