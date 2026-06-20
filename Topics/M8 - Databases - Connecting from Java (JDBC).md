@@ -40,17 +40,10 @@ tags:
 - [ ] Insert a row with a `PreparedStatement` using parameters.
 - [ ] Show why a concatenated query is dangerous, then fix it with parameters.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can connect, query, and read results via JDBC.
 - [ ] I always use `PreparedStatement` for parameters.
 - [ ] I close resources with try-with-resources.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - Joins and Aggregation]]
-- [[M8 - Databases - ORM Intro (JPA and Hibernate)]]
+## Next
+- Next: [[M8 - Databases - ORM Intro (JPA and Hibernate)]]

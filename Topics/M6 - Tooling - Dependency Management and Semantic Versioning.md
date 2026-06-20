@@ -41,18 +41,10 @@ tags:
 - [ ] Identify a version conflict (or force one) and resolve it.
 - [ ] Look up a popular library on Maven Central and read its version history.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can interpret semver and decide if an upgrade is risky.
 - [ ] I can read a dependency tree and resolve a conflict.
 - [ ] I understand transitive dependencies and BOMs.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]]
-- [[M6 - Tooling - Gradle (Project, Dependencies, Tasks)]]
-
+## Next
+- Next: [[M6 - Tooling - Effective IDE Use and Debugging]]

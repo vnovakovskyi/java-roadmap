@@ -42,17 +42,10 @@ tags:
 - [ ] Run `./gradlew build` and `./gradlew test`; locate the artifact in `build/libs`.
 - [ ] Note one thing you preferred vs Maven and one you didn't.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read/edit a `build.gradle` and add dependencies.
 - [ ] I can run Gradle tasks and use `gradlew`.
 - [ ] I can map Gradle concepts to their Maven equivalents.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]]
-- [[M6 - Tooling - Dependency Management and Semantic Versioning]]
+## Next
+- Next: [[M6 - Tooling - Dependency Management and Semantic Versioning]]

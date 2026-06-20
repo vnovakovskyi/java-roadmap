@@ -40,17 +40,10 @@ tags:
 - [ ] Run full CRUD through the API and confirm rows in the DB (via DBeaver/psql).
 - [ ] Restart the app and verify the data survives.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] The app persists to a real database via JPA.
 - [ ] The schema is created by migrations.
 - [ ] Data survives restarts and credentials aren't in Git.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Building the REST API End-to-End]]
-- [[M10 - Project - Testing the Application]]
+## Next
+- Next: [[M10 - Project - Testing the Application]]

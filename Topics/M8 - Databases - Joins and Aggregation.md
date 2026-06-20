@@ -38,17 +38,10 @@ tags:
 - [ ] Count orders per customer with `GROUP BY`.
 - [ ] Use `HAVING` to show only customers with more than N orders.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write inner and left joins.
 - [ ] I can aggregate with `GROUP BY` and aggregate functions.
 - [ ] I know when to use `HAVING` vs `WHERE`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - SQL CRUD and Queries]]
-- [[M8 - Databases - Connecting from Java (JDBC)]]
+## Next
+- Next: [[M8 - Databases - Connecting from Java (JDBC)]]

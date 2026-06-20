@@ -40,17 +40,10 @@ tags:
 - [ ] Create two `Book` objects and call `describe()` on each.
 - [ ] Set one reference equal to another and show they point to the same object.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can define a class and instantiate objects.
 - [ ] I can explain the difference between a class and an object.
 - [ ] I understand references, `null`, and aliasing.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Fields, Methods and Constructors]]
-- [[M3 - OOP - Encapsulation and Access Modifiers]]
+## Next
+- Next: [[M3 - OOP - Fields, Methods and Constructors]]

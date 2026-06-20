@@ -40,17 +40,10 @@ tags:
 - [ ] Add `@Override` and then deliberately mistype a method name to see the compiler catch it.
 - [ ] Write a method that accepts an `Animal` and works for any subclass.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can override methods with `@Override` and explain dynamic dispatch.
 - [ ] I can distinguish overriding from overloading.
 - [ ] I can write code against a supertype that works for any subtype.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Inheritance]]
-- [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
+## Next
+- Next: [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]

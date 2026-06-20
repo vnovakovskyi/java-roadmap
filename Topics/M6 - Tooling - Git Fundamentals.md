@@ -41,17 +41,10 @@ tags:
 - [ ] Create a branch, change code, merge it back to `main`.
 - [ ] Deliberately create a merge conflict and resolve it.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can stage, commit, branch, and merge confidently.
 - [ ] I can resolve a merge conflict.
 - [ ] I can undo changes safely with restore/revert.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[Tools & Setup]]
-- [[M6 - Tooling - GitHub and Pull Requests]]
+## Next
+- Next: [[M6 - Tooling - GitHub and Pull Requests]]

@@ -40,17 +40,10 @@ tags:
 - [ ] Use `orElseThrow` and `map` at the call site instead of null checks.
 - [ ] Reproduce an NPE from returning `null`, then fix it with `Optional`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can use `Optional` idiomatically (no `.get()` without checking).
 - [ ] I avoid returning `null` and guard inputs.
 - [ ] I can explain when *not* to use `Optional`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Exceptions and Error Handling]]
-- [[M5 - Modern Java - The Streams API]]
+## Next
+- Next: [[M4 - Java APIs - Packages and Project Organization]]

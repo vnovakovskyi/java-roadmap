@@ -44,17 +44,10 @@ tags:
 - [ ] Compare searching a `List` (`contains`, `O(n)`) vs a `HashSet` (`O(1)`) for membership.
 - [ ] Write one sentence per collection: when you'd reach for it.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read common Big-O classes and rank them.
 - [ ] I can justify a collection choice by its operation costs.
 - [ ] I know which structure to default to for lists vs lookups vs sorted data.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
-- [[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)]]
+## Next
+- Next: [[M4 - Java APIs - Generics Basics]]

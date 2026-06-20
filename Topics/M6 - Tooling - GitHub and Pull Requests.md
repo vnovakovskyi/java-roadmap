@@ -39,17 +39,10 @@ tags:
 - [ ] Make a change on a branch, push it, and open a PR against `main`.
 - [ ] Merge the PR; pull `main` locally to sync.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can push/clone and work with a remote.
 - [ ] I can open and merge a pull request.
 - [ ] I write clear commit and PR messages.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M6 - Tooling - Git Fundamentals]]
-- [[M10 - Project - Good Habits (Logging, Config, README)]]
+## Next
+- Next: [[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]]

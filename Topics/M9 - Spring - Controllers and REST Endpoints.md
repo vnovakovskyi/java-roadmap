@@ -40,17 +40,10 @@ tags:
 - [ ] Use `@PathVariable` and `@RequestBody`; return 201 on create and 404 when missing.
 - [ ] Exercise every endpoint with curl/Postman.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can build CRUD endpoints with the right methods and status codes.
 - [ ] I can bind path variables, query params, and JSON bodies.
 - [ ] I use DTOs/records for API shapes.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Services and Dependency Injection]]
-- [[M9 - Spring - Validation and Error Handling]]
+## Next
+- Next: [[M9 - Spring - Services and Dependency Injection]]

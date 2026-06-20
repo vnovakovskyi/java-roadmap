@@ -41,17 +41,10 @@ tags:
 - [ ] Identify which method and status code each CRUD operation should use.
 - [ ] Sketch the REST endpoints for a `book` resource.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain HTTP requests, responses, and status codes.
 - [ ] I can map CRUD to HTTP methods.
 - [ ] I can design RESTful endpoints for a resource.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Spring Boot Intro and Project Setup]]
-- [[M9 - Spring - Controllers and REST Endpoints]]
+## Next
+- Next: [[M9 - Spring - Spring Boot Intro and Project Setup]]

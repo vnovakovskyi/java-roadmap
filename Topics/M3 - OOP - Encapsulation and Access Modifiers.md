@@ -40,17 +40,10 @@ tags:
 - [ ] Add validation in a setter (e.g. price cannot be negative) and prove it rejects bad input.
 - [ ] Note which methods/fields truly need to be `public`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I default to `private` fields and expose only what's needed.
 - [ ] I can validate input in setters.
 - [ ] I can explain why encapsulation reduces coupling.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Fields, Methods and Constructors]]
-- [[M3 - OOP - Inheritance]]
+## Next
+- Next: [[M3 - OOP - Inheritance]]

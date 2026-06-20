@@ -40,17 +40,10 @@ tags:
 - [ ] Add a second line and a third; observe `print` vs `println`.
 - [ ] Rename the class but not the file (or vice versa) and read the resulting error, then fix it.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I wrote, compiled, and ran my own program (IDE and/or command line).
 - [ ] I can name every part of the program and what it does.
 - [ ] I understand the file-name ↔ class-name rule.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - How Java Compiles and Runs]]
-- [[M2 - Core Java - Strings and Basic Input-Output]]
+## Next
+- Next: [[M1 - Foundations - How Java Compiles and Runs]]

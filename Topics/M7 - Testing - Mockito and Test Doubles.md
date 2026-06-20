@@ -41,17 +41,10 @@ tags:
 - [ ] Mock the gateway, stub a success and a failure, and test both paths.
 - [ ] `verify` the gateway was called with the expected arguments.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can create and stub mocks and verify interactions.
 - [ ] I can explain stub vs mock vs fake.
 - [ ] I avoid over-mocking and mock at sensible boundaries.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M7 - Testing - JUnit 5 Basics]]
-- [[M9 - Spring - Services and Dependency Injection]]
+## Next
+- Next: [[M7 - Testing - Writing Testable Code (Intro to TDD)]]

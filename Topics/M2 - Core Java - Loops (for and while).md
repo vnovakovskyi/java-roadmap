@@ -39,17 +39,10 @@ tags:
 - [ ] Sum the numbers 1–100 in a loop and print the total.
 - [ ] Read numbers from the user until they type `0` (a `while` loop), then print the count.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can choose between `for`, `while`, and for-each appropriately.
 - [ ] I can use `break`/`continue` correctly.
 - [ ] I can spot and fix an off-by-one or infinite loop.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Conditionals (if and switch)]]
-- [[M2 - Core Java - Arrays]]
+## Next
+- Next: [[M2 - Core Java - Methods and Parameters]]

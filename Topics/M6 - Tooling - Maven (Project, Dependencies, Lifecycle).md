@@ -42,17 +42,10 @@ tags:
 - [ ] Add a dependency (e.g. AssertJ in `test` scope) and confirm it downloads.
 - [ ] Run `mvn compile`, `mvn test`, and `mvn package`; find the built `.jar` in `target/`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read and edit a `pom.xml` and add dependencies.
 - [ ] I can run the common lifecycle phases and explain them.
 - [ ] I can build a runnable artifact and use `mvnw`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M6 - Tooling - Gradle (Project, Dependencies, Tasks)]]
-- [[M6 - Tooling - Dependency Management and Semantic Versioning]]
+## Next
+- Next: [[M6 - Tooling - Gradle (Project, Dependencies, Tasks)]]

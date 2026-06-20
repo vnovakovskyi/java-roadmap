@@ -40,17 +40,10 @@ tags:
 - [ ] Trigger an `int` overflow (add 1 to `Integer.MAX_VALUE`) and observe the result.
 - [ ] Compare `0.1 + 0.2` printed as a `double`; note it isn't exactly `0.3`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can declare correctly typed variables and use `final` and `var` appropriately.
 - [ ] I can name the primitive types and pick the right one.
 - [ ] I can explain primitives vs reference types.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Operators and Expressions]]
-- [[M5 - Modern Java - var, Enhanced switch and Text Blocks]]
+## Next
+- Next: [[M2 - Core Java - Operators and Expressions]]

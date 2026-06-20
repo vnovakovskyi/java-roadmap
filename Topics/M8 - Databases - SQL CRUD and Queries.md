@@ -39,17 +39,10 @@ tags:
 - [ ] Query with `WHERE`, `ORDER BY`, and `LIMIT`.
 - [ ] Update one row and delete another (with a `WHERE`); verify with a `SELECT`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write all four CRUD statements.
 - [ ] I can filter, sort, and limit results.
 - [ ] I always scope `UPDATE`/`DELETE` with `WHERE`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - Relational Concepts]]
-- [[M8 - Databases - Joins and Aggregation]]
+## Next
+- Next: [[M8 - Databases - Joins and Aggregation]]

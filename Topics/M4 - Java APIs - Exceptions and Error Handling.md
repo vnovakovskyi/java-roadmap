@@ -42,17 +42,10 @@ tags:
 - [ ] Read a file with try-with-resources; handle the file-not-found case with a clear message.
 - [ ] Write a method that throws `IllegalArgumentException` on invalid input and test both paths.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can use try/catch/finally and try-with-resources correctly.
 - [ ] I can explain checked vs unchecked exceptions.
 - [ ] I avoid swallowing exceptions and throw meaningful ones.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - Reading Errors and Using the Debugger]]
-- [[M4 - Java APIs - Optional and Null-Safety]]
+## Next
+- Next: [[M4 - Java APIs - Enums]]

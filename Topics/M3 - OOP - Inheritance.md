@@ -39,17 +39,10 @@ tags:
 - [ ] Give `Animal` a constructor and call it from a subclass via `super`.
 - [ ] Rewrite one relationship using composition (a field) instead of inheritance and compare.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can create subclasses and use `super` correctly.
 - [ ] I can explain "is-a vs has-a" and when to prefer composition.
 - [ ] I understand `Object` is the root of all classes.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Polymorphism and Overriding]]
-- [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
+## Next
+- Next: [[M3 - OOP - Polymorphism and Overriding]]

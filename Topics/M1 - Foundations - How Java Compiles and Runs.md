@@ -42,18 +42,10 @@ tags:
 - [ ] Try `java Hello.java` (one-step) and compare.
 - [ ] Cause a compile error vs a runtime error and note which stage each happens in.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can run the compile + run cycle by hand and explain each command.
 - [ ] I can tell a compile-time error from a runtime error.
 - [ ] I can explain what bytecode is and what the JVM does with it.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - How Programming and Java Work]]
-- [[M1 - Foundations - Reading Errors and Using the Debugger]]
-
+## Next
+- Next: [[M1 - Foundations - Reading Errors and Using the Debugger]]

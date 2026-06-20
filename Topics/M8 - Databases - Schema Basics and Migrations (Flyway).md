@@ -40,17 +40,10 @@ tags:
 - [ ] Add `V2__add_published_year.sql` to alter the table; run and verify both applied.
 - [ ] Inspect the Flyway history table.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write and run ordered Flyway migrations.
 - [ ] I understand migrations are immutable and fixed forward.
 - [ ] I know why migrations beat auto-DDL in production.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - ORM Intro (JPA and Hibernate)]]
-- [[M9 - Spring - Spring Data JPA and Repositories]]
+## Next
+- Next: [[M9 - Spring - HTTP and REST Fundamentals]]

@@ -40,17 +40,10 @@ tags:
 - [ ] Define the REST endpoints (method + path + purpose) for each resource.
 - [ ] Sketch the package structure (by feature or by layer).
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I have a scoped domain with an entity model.
 - [ ] I have a planned set of REST endpoints.
 - [ ] I have a project structure to build into.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Building the REST API End-to-End]]
-- [[M4 - Java APIs - Packages and Project Organization]]
+## Next
+- Next: [[M10 - Project - Building the REST API End-to-End]]

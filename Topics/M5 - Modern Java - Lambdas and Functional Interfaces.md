@@ -41,17 +41,10 @@ tags:
 - [ ] Use `Predicate` to filter a list and `Consumer` with `forEach` to print it.
 - [ ] Write your own `@FunctionalInterface` and implement it with a lambda.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write lambdas and method references.
 - [ ] I can use the standard functional interfaces.
 - [ ] I can explain what a functional interface is.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)]]
-- [[M5 - Modern Java - The Streams API]]
+## Next
+- Next: [[M5 - Modern Java - The Streams API]]

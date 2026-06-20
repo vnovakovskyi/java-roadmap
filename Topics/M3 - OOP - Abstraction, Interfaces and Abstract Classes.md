@@ -43,17 +43,10 @@ tags:
 - [ ] Create a `Repository` interface and two implementations (e.g. in-memory vs fake) to feel the
       decoupling you'll use constantly in Spring.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can define and implement interfaces.
 - [ ] I can decide between interface and abstract class with reasons.
 - [ ] I can explain how interfaces enable decoupling and testing.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Polymorphism and Overriding]]
-- [[M9 - Spring - Services and Dependency Injection]]
+## Next
+- Next: [[M3 - OOP - equals, hashCode and toString]]

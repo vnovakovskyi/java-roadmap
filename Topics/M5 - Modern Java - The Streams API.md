@@ -41,17 +41,10 @@ tags:
 - [ ] Group people by city with `groupingBy`; count per group.
 - [ ] Sum ages with `mapToInt(...).sum()`; compute the average.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can build filter/map/collect pipelines.
 - [ ] I can group and summarize with `Collectors`.
 - [ ] I understand laziness and that streams don't mutate the source.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M5 - Modern Java - Lambdas and Functional Interfaces]]
-- [[M4 - Java APIs - Optional and Null-Safety]]
+## Next
+- Next: [[M5 - Modern Java - Records]]

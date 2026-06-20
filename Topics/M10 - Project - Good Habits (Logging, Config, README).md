@@ -41,17 +41,10 @@ tags:
 - [ ] Confirm no secrets are committed; document required env vars.
 - [ ] Write a README that a stranger could follow to run the app.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] The app logs usefully without leaking secrets.
 - [ ] Config is clean and secrets are out of Git.
 - [ ] The README lets someone else run the project.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Testing the Application]]
-- [[M10 - Project - Packaging and Running (Jar and Docker Basics)]]
+## Next
+- Next: [[M10 - Project - Packaging and Running (Jar and Docker Basics)]]

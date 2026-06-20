@@ -76,7 +76,7 @@ Each topic note has the same shape so studying is frictionless:
 3. **Concepts** — the key ideas to nail (and, later in the path, a "going deeper" layer).
 4. **Practice** — a concrete, hands-on task. This is where the learning sticks.
 5. **Definition of Done** — the checklist that lets you mark the topic `done`.
-   Plus a **Cheatsheet** (your own distilled notes) and **Related** links.
+   The note ends with a **Next** link to the following topic, so you can move straight on.
 
 ## File naming
 

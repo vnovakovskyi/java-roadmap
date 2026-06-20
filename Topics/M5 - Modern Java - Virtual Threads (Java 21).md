@@ -42,17 +42,10 @@ tags:
 - [ ] Use `Executors.newVirtualThreadPerTaskExecutor()` to run tasks and collect results.
 - [ ] (Optional) Flip a Spring Boot app to virtual threads via `spring.threads.virtual.enabled=true`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain virtual vs platform threads and when each helps.
 - [ ] I can create and run virtual threads.
 - [ ] I understand thread-safety rules are unchanged.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M5 - Modern Java - Concurrency Basics (Threads and Executors)]]
-- [[M9 - Spring - Spring Boot Intro and Project Setup]]
+## Next
+- Next: [[M6 - Tooling - Git Fundamentals]]

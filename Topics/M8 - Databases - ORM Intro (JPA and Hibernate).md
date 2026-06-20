@@ -42,17 +42,10 @@ tags:
 - [ ] Save and load it; enable SQL logging and read the generated statements.
 - [ ] Add a `@ManyToOne` relationship and observe the queries (watch for N+1).
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can map an entity and persist/load it.
 - [ ] I can explain JPA vs Hibernate and the persistence context.
 - [ ] I can spot the N+1 problem and know SQL still runs underneath.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - Connecting from Java (JDBC)]]
-- [[M9 - Spring - Spring Data JPA and Repositories]]
+## Next
+- Next: [[M8 - Databases - Schema Basics and Migrations (Flyway)]]

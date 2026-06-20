@@ -43,17 +43,10 @@ tags:
 - [ ] In your IDE, create a new project and run a one-line program that prints something.
 - [ ] Intentionally break it (delete a semicolon), see the error, fix it, re-run.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] `java -version` and `javac -version` both show 21.
 - [ ] I ran a program from the IDE and saw output.
 - [ ] I completed the checklist at the bottom of [[Tools & Setup]] (JDK + IDE parts).
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[Tools & Setup]]
-- [[M1 - Foundations - Your First Java Program]]
+## Next
+- Next: [[M1 - Foundations - The Command Line Basics]]

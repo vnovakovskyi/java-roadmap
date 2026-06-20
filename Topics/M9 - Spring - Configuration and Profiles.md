@@ -39,17 +39,10 @@ tags:
 - [ ] Create `dev` and `prod` profiles with different DB settings; switch with `spring.profiles.active`.
 - [ ] Override a property via an environment variable and confirm it wins.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can externalize and inject configuration.
 - [ ] I can use profiles for per-environment settings.
 - [ ] I keep secrets out of the repo.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Spring Boot Intro and Project Setup]]
-- [[M10 - Project - Good Habits (Logging, Config, README)]]
+## Next
+- Next: [[M9 - Spring - Securing the API with Spring Security]]

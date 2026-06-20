@@ -39,17 +39,10 @@ tags:
 - [ ] Add primary keys and a foreign key; mark required columns `NOT NULL`.
 - [ ] Sketch how you'd model a many-to-many (e.g. `student`–`course`) with a join table.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can model data as tables with keys and relationships.
 - [ ] I can explain one-to-many and many-to-many.
 - [ ] I understand primary/foreign keys and constraints.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - SQL CRUD and Queries]]
-- [[M8 - Databases - Joins and Aggregation]]
+## Next
+- Next: [[M8 - Databases - SQL CRUD and Queries]]
