@@ -12,7 +12,7 @@ both build tools ready — everything you need to write and run real Java.
 > [!info] What you're installing
 > 1. A **JDK** (Java 21) — the compiler + runtime. 2. An **IDE** (IntelliJ IDEA). 3. **Git** —
 > version control. 4. **Maven** and **Gradle** — build tools (often bundled with the IDE).
-> Back to home: [[Java Developer Roadmap - MOC]].
+> Back to home: [[Home]].
 
 ## 1. Install the JDK (Java 21 LTS)
 
@@ -101,7 +101,7 @@ to master them now — just have them available.
 - [ ] `mvn -version` works
 - [ ] `gradle -version` works
 
-Done? Head back to [[Java Developer Roadmap - MOC]] and start **Module 1**.
+Done? Head back to [[Home]] and start **Module 1**.
 
 ## Related
 - [[Books & Resources]]

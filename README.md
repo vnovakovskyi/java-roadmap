@@ -31,7 +31,7 @@ Target: roughly **6 months at ~10–12 hours/week**. Go at your own pace.
 1. Install [Obsidian](https://obsidian.md) (free, desktop and mobile).
 2. Download this repo: **Code → Download ZIP**, then unzip it — or `git clone` it.
 3. In Obsidian: **Open folder as vault** → choose the downloaded `java-roadmap` folder.
-4. Open **`Java Developer Roadmap - MOC.md`** — that's your home base. Bookmark it.
+4. Open **`Home.md`** — that's your home base. Bookmark it.
 5. Begin with **`Tools & Setup`**, then start Module 1 and work through the topics in order.
 
 Each topic note follows the same loop: *Learning Objectives → Learn → Concepts → Practice →
@@ -39,18 +39,17 @@ Definition of Done*. Tick the checkboxes and update each note's `status` as you 
 built-in Dashboard tracks everything for you.
 
 > The Dashboard uses Obsidian's built-in **Bases**. If it doesn't render on your device, the
-> **Module Index** inside the MOC gives you the same navigation.
+> **Module Index** inside `Home.md` gives you the same navigation.
 
 ## Repository layout
 
 ```
-Java Developer Roadmap - MOC.md   Home note (start here)
+Home.md   Home note (start here)
 _Conventions.md                   How the vault works + frontmatter rules
 _Template - Topic.md              Skeleton for new topic notes
 Tools & Setup.md                  Environment setup
 Books & Resources.md              Recommended books and free resources
 Topics/                           All 68 learning topics (M1–M10)
-Dashboard.base                    Live progress dashboard (Obsidian Bases)
 Roadmap.canvas                    Interactive visual map (Obsidian)
 assets/                           Roadmap image and other assets
 ```

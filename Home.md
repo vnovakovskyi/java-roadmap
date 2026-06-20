@@ -1,10 +1,10 @@
 ---
-title: Java Developer Roadmap - MOC
+title: Home
 tags:
   - java-roadmap/meta
 ---
 
-# Java Developer Roadmap — Map of Content
+# Java Developer Roadmap — Home
 
 > [!abstract] From zero to a job-ready junior Java developer
 > No prior programming experience needed. Work through **10 modules** — Foundations to a full
@@ -21,16 +21,97 @@ tags:
 - [[Roadmap.canvas|Roadmap (visual)]] — the whole path as a map
 
 > [!tip] Bookmark this note (right-click → Bookmark) so it's one tap away on desktop and mobile.
-
-## The visual roadmap
-
-![Java Developer Roadmap](assets/roadmap.svg)
-
-*Open the interactive [[Roadmap.canvas|Roadmap canvas]] to jump straight to any topic.*
+> Prefer a map? Open the interactive [[Roadmap.canvas|Roadmap canvas]] and click any topic.
 
 ## Live Dashboard
 
-![[Dashboard.base]]
+```base
+filters:
+  and:
+    - file.hasTag("java-roadmap")
+    - file.ext == "md"
+    - note.module >= 1
+properties:
+  note.area:
+    displayName: Area
+  note.module:
+    displayName: Module
+  note.status:
+    displayName: Status
+  note.priority:
+    displayName: Priority
+  note.effort:
+    displayName: Effort (h)
+views:
+  - type: table
+    name: By Module
+    order:
+      - file.name
+      - module
+      - area
+      - status
+      - priority
+      - effort
+    sort:
+      - property: module
+        direction: ASC
+      - property: area
+        direction: ASC
+  - type: table
+    name: By Area
+    order:
+      - file.name
+      - area
+      - module
+      - status
+      - priority
+      - effort
+    sort:
+      - property: area
+        direction: ASC
+      - property: module
+        direction: ASC
+  - type: table
+    name: In Progress
+    filters:
+      and:
+        - note.status == "doing"
+    order:
+      - file.name
+      - module
+      - area
+      - effort
+    sort:
+      - property: module
+        direction: ASC
+  - type: table
+    name: Next Up
+    filters:
+      and:
+        - note.status == "todo"
+    order:
+      - file.name
+      - module
+      - area
+      - priority
+      - effort
+    sort:
+      - property: module
+        direction: ASC
+  - type: table
+    name: Done
+    filters:
+      and:
+        - note.status == "done"
+    order:
+      - file.name
+      - module
+      - area
+      - effort
+    sort:
+      - property: module
+        direction: ASC
+```
 
 > [!note] Legend
 > **status:** `todo` → `doing` → `done` · **priority:** `must` (essential) / `good` (recommended) /

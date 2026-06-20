@@ -12,7 +12,7 @@ specific resource you need at that moment. This page is the big-picture referenc
 > [!info] How to use this
 > Pick **one** primary book to read alongside the path, lean on the free official docs for detail,
 > and use videos when a concept won't click from text. Tiers: **must** = core, **good** =
-> recommended, **optional** = when you want more. Back to home: [[Java Developer Roadmap - MOC]].
+> recommended, **optional** = when you want more. Back to home: [[Home]].
 
 ## Books
 

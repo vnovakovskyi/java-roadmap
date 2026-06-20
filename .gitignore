@@ -1,7 +1,5 @@
-# Obsidian local state (keep the vault config out of version control)
-.obsidian/workspace*
-.obsidian/cache
-.obsidian/plugins/*/data.json
+# Obsidian local config & state (personal; keep out of the shared vault)
+.obsidian/
 
 # IDE
 .idea/
