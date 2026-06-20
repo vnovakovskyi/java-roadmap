@@ -41,18 +41,10 @@ tags:
 - [ ] `Set`: count the number of *unique* words.
 - [ ] `Map`: build a word-frequency count with `merge`/`getOrDefault` and print the top entries.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can pick `List`/`Set`/`Map` appropriately and justify it.
 - [ ] I can do CRUD + iteration on each.
 - [ ] I understand why `Map`/`Set` depend on `equals`/`hashCode`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Arrays]]
-- [[M4 - Java APIs - Generics Basics]]
-- [[M3 - OOP - equals, hashCode and toString]]
+## Next
+- Next: [[M4 - Java APIs - Choosing Collections and Big-O Basics]]

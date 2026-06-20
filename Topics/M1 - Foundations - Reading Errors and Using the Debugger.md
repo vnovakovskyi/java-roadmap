@@ -41,17 +41,10 @@ tags:
 - [ ] Set a breakpoint just before it, run in debug mode, and inspect the variables.
 - [ ] Fix the bug and confirm.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read a stack trace and locate the offending line in my code.
 - [ ] I can set a breakpoint and step through code, inspecting variables.
 - [ ] I prefer the debugger over print-debugging for tricky bugs.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - How Java Compiles and Runs]]
-- [[M4 - Java APIs - Exceptions and Error Handling]]
+## Next
+- Next: [[M2 - Core Java - Variables, Primitives and Types]]

@@ -33,15 +33,9 @@ tags:
 - [ ] 
 - [ ] 
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain the key idea in my own words
 - [ ] 
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- 
+## Next
+- Next: [[ ]]

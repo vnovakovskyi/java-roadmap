@@ -40,17 +40,10 @@ tags:
 - [ ] Write a generic method `<T> T firstOf(List<T> list)`.
 - [ ] Try assigning the wrong type into a `List<String>` and read the compile error.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can use generic collections fluently.
 - [ ] I can write a basic generic class and method.
 - [ ] I can explain how generics catch errors at compile time.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
-- [[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)]]
+## Next
+- Next: [[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)]]

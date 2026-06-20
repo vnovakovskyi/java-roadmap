@@ -40,17 +40,10 @@ tags:
 - [ ] Add request/response DTOs and validation.
 - [ ] Exercise every endpoint with curl/Postman, including error cases.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] All CRUD endpoints work with correct status codes.
 - [ ] Inputs are validated and errors are consistent.
 - [ ] Logic lives in the service, not the controller.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Designing a Small CRUD App]]
-- [[M10 - Project - Persisting with a Real Database]]
+## Next
+- Next: [[M10 - Project - Persisting with a Real Database]]

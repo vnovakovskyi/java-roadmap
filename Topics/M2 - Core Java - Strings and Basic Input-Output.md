@@ -41,17 +41,10 @@ tags:
 - [ ] Take a sentence and print its length, uppercase version, and word count (`split`).
 - [ ] Show that `"a".equals("a")` is true but `==` may be unreliable for built strings.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read console input and print formatted output.
 - [ ] I use `.equals()` for string comparison and can explain why.
 - [ ] I know strings are immutable and when to use `StringBuilder`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - Your First Java Program]]
-- [[M2 - Core Java - Operators and Expressions]]
+## Next
+- Next: [[M2 - Core Java - Conditionals (if and switch)]]

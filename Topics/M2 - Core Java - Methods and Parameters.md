@@ -41,17 +41,10 @@ tags:
 - [ ] Demonstrate pass-by-value: a method that tries to reassign a parameter, proving the caller's
       variable is unchanged.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write methods with parameters and return values.
 - [ ] I can explain pass-by-value, including for objects.
 - [ ] I can refactor a long block into named methods.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Arrays]]
-- [[M3 - OOP - Fields, Methods and Constructors]]
+## Next
+- Next: [[M2 - Core Java - Arrays]]

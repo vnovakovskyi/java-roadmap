@@ -39,17 +39,10 @@ tags:
 - [ ] Add a `@ParameterizedTest` covering several input pairs.
 - [ ] Run the tests from the IDE and from the command line (`mvn test` / `./gradlew test`).
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write, name, and run JUnit 5 tests.
 - [ ] I can use lifecycle hooks and `assertThrows`.
 - [ ] I can write a parameterized test.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M7 - Testing - Assertions with AssertJ]]
-- [[M7 - Testing - Why We Test and the Test Pyramid]]
+## Next
+- Next: [[M7 - Testing - Assertions with AssertJ]]

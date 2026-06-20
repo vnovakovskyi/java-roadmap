@@ -42,17 +42,10 @@ tags:
 - [ ] Write a failing test, make it pass, then refactor — repeat for 2–3 cases.
 - [ ] Refactor a class with a `new`-ed dependency to take it via the constructor; test it with a mock.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can spot and fix common testability problems.
 - [ ] I use constructor injection to make code testable.
 - [ ] I completed at least one red-green-refactor cycle.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M7 - Testing - Mockito and Test Doubles]]
-- [[M9 - Spring - Services and Dependency Injection]]
+## Next
+- Next: [[M8 - Databases - Relational Concepts]]

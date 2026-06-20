@@ -39,17 +39,10 @@ tags:
 - [ ] Reverse an array in place.
 - [ ] Sort an array with `Arrays.sort` and print it with `Arrays.toString`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can create, fill, and iterate arrays without index errors.
 - [ ] I can use `Arrays` helpers for sort/print/copy.
 - [ ] I understand arrays have fixed length (and why collections exist).
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Loops (for and while)]]
-- [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
+## Next
+- Next: [[M3 - OOP - Classes and Objects]]

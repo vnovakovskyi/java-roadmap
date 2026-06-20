@@ -41,17 +41,10 @@ tags:
 - [ ] Add a trivial `/hello` endpoint and hit it from the browser/curl.
 - [ ] Find and skim the auto-config report (run with `--debug`).
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can generate, run, and explain a Spring Boot project.
 - [ ] I understand starters and auto-configuration.
 - [ ] I can add a basic endpoint and call it.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - HTTP and REST Fundamentals]]
-- [[M9 - Spring - Controllers and REST Endpoints]]
+## Next
+- Next: [[M9 - Spring - Controllers and REST Endpoints]]

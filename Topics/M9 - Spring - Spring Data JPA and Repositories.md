@@ -40,17 +40,10 @@ tags:
 - [ ] Add a derived query (e.g. `findByAuthor`) and use it from the service.
 - [ ] Turn on SQL logging and confirm the queries are what you expect.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can define entities and Spring Data repositories.
 - [ ] I can write derived and custom queries.
 - [ ] I wired persistence cleanly into the service layer.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M8 - Databases - ORM Intro (JPA and Hibernate)]]
-- [[M9 - Spring - Services and Dependency Injection]]
+## Next
+- Next: [[M9 - Spring - Validation and Error Handling]]

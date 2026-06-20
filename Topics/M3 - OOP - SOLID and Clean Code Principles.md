@@ -44,18 +44,10 @@ tags:
       Dependency Inversion) — reuse [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]].
 - [ ] Find one duplicated block and remove the duplication (DRY); rename two unclear names.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain all five SOLID letters with an example.
 - [ ] I applied at least two principles in a refactor.
 - [ ] I can name a few code smells and how to fix them.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
-- [[M7 - Testing - Writing Testable Code (Intro to TDD)]]
-- [[M9 - Spring - Services and Dependency Injection]]
+## Next
+- Next: [[M4 - Java APIs - Collections Overview (List, Set, Map)]]

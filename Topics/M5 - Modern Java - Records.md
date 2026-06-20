@@ -40,17 +40,10 @@ tags:
 - [ ] Add validation in the compact constructor and test it rejects bad input.
 - [ ] Put records in a `Set` and confirm value-based equality "just works".
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can define records and use generated accessors/equals/toString.
 - [ ] I can validate with a compact constructor.
 - [ ] I know when a record is the right tool.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - equals, hashCode and toString]]
-- [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
+## Next
+- Next: [[M5 - Modern Java - var, Enhanced switch and Text Blocks]]

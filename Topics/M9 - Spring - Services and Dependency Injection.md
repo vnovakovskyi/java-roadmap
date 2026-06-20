@@ -42,17 +42,10 @@ tags:
 - [ ] Inject the service into the controller via the constructor.
 - [ ] Unit-test the service with a mocked dependency ([[M7 - Testing - Mockito and Test Doubles]]).
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain IoC/DI and use constructor injection.
 - [ ] I can split an app into controller/service/repository layers.
 - [ ] My services are testable in isolation.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Controllers and REST Endpoints]]
-- [[M9 - Spring - Spring Data JPA and Repositories]]
+## Next
+- Next: [[M9 - Spring - Spring Data JPA and Repositories]]

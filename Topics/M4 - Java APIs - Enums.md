@@ -38,17 +38,10 @@ tags:
 - [ ] Add a field (e.g. `isWeekend`) with a constructor and a getter.
 - [ ] Use the enum in a `switch` expression returning a label.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can define enums with fields/methods.
 - [ ] I can use them in switch and collections.
 - [ ] I reach for an enum instead of magic strings/numbers.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Conditionals (if and switch)]]
-- [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
+## Next
+- Next: [[M4 - Java APIs - Optional and Null-Safety]]

@@ -40,17 +40,10 @@ tags:
 - [ ] Sort a `List<Person>` by age using a `Comparator`, then by age-then-name.
 - [ ] Reverse the order with `.reversed()`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can implement `Comparable` for natural ordering.
 - [ ] I can sort with a `Comparator`, including multi-key and reversed.
 - [ ] I can choose the right iteration approach.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Generics Basics]]
-- [[M5 - Modern Java - The Streams API]]
+## Next
+- Next: [[M4 - Java APIs - Exceptions and Error Handling]]

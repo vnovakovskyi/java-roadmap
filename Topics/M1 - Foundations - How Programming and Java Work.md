@@ -41,17 +41,10 @@ tags:
 - [ ] Draw a simple diagram: `your .java file → javac → .class bytecode → JVM → runs on any OS`.
 - [ ] Write 3–4 sentences explaining the diagram to an imaginary non-programmer.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain what the JVM, JRE, and JDK each do.
 - [ ] I can explain why Java runs on any operating system.
 - [ ] I understand the path from source code to a running program.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[Tools & Setup]]
-- [[M1 - Foundations - How Java Compiles and Runs]]
+## Next
+- Next: [[M1 - Foundations - Set Up and Verify Your Environment]]

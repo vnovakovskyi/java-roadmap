@@ -39,18 +39,10 @@ tags:
 - [ ] Convert an old `switch`+`break` into a switch expression.
 - [ ] Build a multi-line JSON string with a text block.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I use `var` where it improves clarity, not where it hides intent.
 - [ ] I can write switch expressions and `instanceof` pattern matching.
 - [ ] I can use text blocks for multi-line strings.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Variables, Primitives and Types]]
-- [[M2 - Core Java - Conditionals (if and switch)]]
-
+## Next
+- Next: [[M5 - Modern Java - Date and Time (java.time)]]

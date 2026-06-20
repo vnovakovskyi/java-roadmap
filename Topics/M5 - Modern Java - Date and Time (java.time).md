@@ -39,17 +39,10 @@ tags:
 - [ ] Format "now" with a custom `DateTimeFormatter`; parse it back.
 - [ ] Add 90 days to today and print the result.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can use the core `java.time` types for dates/times.
 - [ ] I can format and parse with `DateTimeFormatter`.
 - [ ] I know `Duration` vs `Period` and why to avoid legacy `Date`.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Strings and Basic Input-Output]]
-- [[M5 - Modern Java - Records]]
+## Next
+- Next: [[M5 - Modern Java - Files and I-O Basics]]

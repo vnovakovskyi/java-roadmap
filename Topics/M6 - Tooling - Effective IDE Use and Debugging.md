@@ -41,17 +41,10 @@ tags:
 - [ ] Generate `equals`/`hashCode`/`toString` for a class.
 - [ ] Set a **conditional** breakpoint (e.g. only when `i == 50`) and inspect state there.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can navigate and refactor with keyboard shortcuts.
 - [ ] I can generate boilerplate via the IDE.
 - [ ] I can use conditional breakpoints and evaluate expressions.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - Reading Errors and Using the Debugger]]
-- [[Tools & Setup]]
+## Next
+- Next: [[M7 - Testing - Why We Test and the Test Pyramid]]

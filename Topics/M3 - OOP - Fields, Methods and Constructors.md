@@ -40,17 +40,10 @@ tags:
 - [ ] Add an instance method that mutates a field (e.g. `markAsRead()`).
 - [ ] Create several books and print the static count.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write fields, methods, and constructors and use `this`.
 - [ ] I can explain instance vs static members.
 - [ ] I understand constructor chaining and the default constructor rule.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Classes and Objects]]
-- [[M3 - OOP - Encapsulation and Access Modifiers]]
+## Next
+- Next: [[M3 - OOP - Encapsulation and Access Modifiers]]

@@ -40,17 +40,10 @@ tags:
 - [ ] Assert on a `List` with `containsExactly` and `extracting`.
 - [ ] Assert an exception with `assertThatThrownBy`.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write fluent AssertJ assertions.
 - [ ] I can assert on collections and exceptions.
 - [ ] I prefer AssertJ's messages for debugging failures.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M7 - Testing - JUnit 5 Basics]]
-- [[M7 - Testing - Mockito and Test Doubles]]
+## Next
+- Next: [[M7 - Testing - Mockito and Test Doubles]]

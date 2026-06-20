@@ -39,17 +39,10 @@ tags:
 - [ ] Write a boolean expression using `&&` and `||` and test it with several inputs.
 - [ ] Demonstrate pre- vs post-increment (`i++` vs `++i`) in a print statement.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can predict integer-division and modulo results.
 - [ ] I know why `==` is wrong for String content and what to use instead.
 - [ ] I understand short-circuit evaluation.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Variables, Primitives and Types]]
-- [[M2 - Core Java - Conditionals (if and switch)]]
+## Next
+- Next: [[M2 - Core Java - Strings and Basic Input-Output]]

@@ -46,17 +46,10 @@ tags:
 - [ ] Increment a shared `int` from many threads without protection and observe the wrong total.
 - [ ] Fix it with `AtomicInteger` (or `synchronized`) and confirm the correct total.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can run tasks on an `ExecutorService` and get results from `Future`.
 - [ ] I can explain and reproduce a race condition, then fix it.
 - [ ] I know basic thread-safety tools and to shut executors down.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M5 - Modern Java - Virtual Threads (Java 21)]]
-- [[M2 - Core Java - Methods and Parameters]]
+## Next
+- Next: [[M5 - Modern Java - Virtual Threads (Java 21)]]

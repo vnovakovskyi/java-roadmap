@@ -40,17 +40,10 @@ tags:
 - [ ] Put points in a `HashSet`; add a duplicate `(1,1)` and confirm the set treats them as equal.
 - [ ] Break `hashCode` (return a constant or omit it) and observe the breakage; then fix it.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can correctly override `equals`, `hashCode`, and `toString`.
 - [ ] I can state the equals/hashCode contract and why it matters.
 - [ ] I know records/IDE can generate these for me.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M4 - Java APIs - Collections Overview (List, Set, Map)]]
-- [[M5 - Modern Java - Records]]
+## Next
+- Next: [[M3 - OOP - SOLID and Clean Code Principles]]

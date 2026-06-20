@@ -41,17 +41,10 @@ tags:
 - [ ] Identify one piece of logic that belongs in a fast unit test.
 - [ ] Note one likely source of flakiness and how you'd avoid it.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain the value of automated testing.
 - [ ] I can place a test at the right pyramid layer.
 - [ ] I can describe what makes a test good or flaky.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M7 - Testing - JUnit 5 Basics]]
-- [[M7 - Testing - Writing Testable Code (Intro to TDD)]]
+## Next
+- Next: [[M7 - Testing - JUnit 5 Basics]]

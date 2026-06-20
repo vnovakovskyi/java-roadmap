@@ -41,17 +41,10 @@ tags:
 - [ ] Recreate the `src/main/java/...` folder structure.
 - [ ] Make a class package-private and confirm it isn't visible from another package.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can create packages and import across them.
 - [ ] I know the standard source/test/resources layout.
 - [ ] I can argue for a by-feature or by-layer structure.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M3 - OOP - Encapsulation and Access Modifiers]]
-- [[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]]
+## Next
+- Next: [[M5 - Modern Java - Lambdas and Functional Interfaces]]

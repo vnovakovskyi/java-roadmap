@@ -39,17 +39,10 @@ tags:
 - [ ] Stream a larger text file with `Files.lines` and count lines containing a keyword.
 - [ ] Handle the "file does not exist" case with a clear message.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can read/write text files with `Files`/`Path`.
 - [ ] I can stream a file with try-with-resources.
 - [ ] I handle `IOException` properly.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M5 - Modern Java - The Streams API]]
-- [[M4 - Java APIs - Exceptions and Error Handling]]
+## Next
+- Next: [[M5 - Modern Java - Concurrency Basics (Threads and Executors)]]

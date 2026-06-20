@@ -45,18 +45,10 @@ tags:
 - [ ] Test: anonymous request → 401/redirect; authenticated request → 200. Write down how you'd
       swap to JWT later.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can explain authentication vs authorization.
 - [ ] I can add Spring Security and protect/expose specific endpoints.
 - [ ] I can hash passwords and explain where JWT fits.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Controllers and REST Endpoints]]
-- [[M9 - Spring - Validation and Error Handling]]
-- [[M9 - Spring - Configuration and Profiles]]
+## Next
+- Next: [[M10 - Project - Designing a Small CRUD App]]

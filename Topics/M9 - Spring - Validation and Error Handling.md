@@ -41,17 +41,10 @@ tags:
 - [ ] Add a `@ControllerAdvice` returning a consistent JSON error body.
 - [ ] Test: invalid input → 400 with field errors; missing id → 404.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can validate request bodies and return 400 on failure.
 - [ ] I handle exceptions globally with a consistent error shape.
 - [ ] I map domain errors to correct status codes and never leak stack traces.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M9 - Spring - Controllers and REST Endpoints]]
-- [[M4 - Java APIs - Exceptions and Error Handling]]
+## Next
+- Next: [[M9 - Spring - Configuration and Profiles]]

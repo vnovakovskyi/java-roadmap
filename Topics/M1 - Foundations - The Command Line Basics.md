@@ -39,17 +39,10 @@ tags:
 - [ ] Run it: `java Hello`.
 - [ ] List the directory before and after compiling and notice what changed.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can navigate folders and create files from the terminal.
 - [ ] I compiled and ran a Java program from the command line without the IDE.
 - [ ] I can read a command's error output.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M1 - Foundations - Your First Java Program]]
-- [[M1 - Foundations - How Java Compiles and Runs]]
+## Next
+- Next: [[M1 - Foundations - Your First Java Program]]

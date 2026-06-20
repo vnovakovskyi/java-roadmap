@@ -39,17 +39,10 @@ tags:
 - [ ] Rewrite it with a `switch` expression (e.g. on a category).
 - [ ] Use a ternary to print "even"/"odd" for a number.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can write correct `if/else if/else` logic.
 - [ ] I can use a modern `switch` expression that returns a value.
 - [ ] I know when a ternary improves readability vs hurts it.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M2 - Core Java - Operators and Expressions]]
-- [[M2 - Core Java - Loops (for and while)]]
+## Next
+- Next: [[M2 - Core Java - Loops (for and while)]]

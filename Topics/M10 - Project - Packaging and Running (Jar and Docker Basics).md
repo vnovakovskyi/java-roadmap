@@ -40,17 +40,10 @@ tags:
 - [ ] Write a minimal Dockerfile, build the image, and run the container.
 - [ ] Pass a config value via an environment variable to the container.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I can build and run an executable jar.
 - [ ] I can containerize and run the app with Docker.
 - [ ] I pass config via env vars, not baked-in.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Good Habits (Logging, Config, README)]]
-- [[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]]
+## Next
+- [[Home]] — you've reached the end of the roadmap. Back to the map.

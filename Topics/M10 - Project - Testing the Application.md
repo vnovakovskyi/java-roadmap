@@ -41,17 +41,10 @@ tags:
 - [ ] Add a `@WebMvcTest` for one endpoint asserting status + JSON.
 - [ ] Run the whole suite from the build tool and make it green.
 
-**Record your result:**
-- 
-
 ## Definition of Done
 - [ ] I have unit tests for service logic.
 - [ ] I have at least one web-layer test.
 - [ ] The suite runs green from the build tool.
 
-## Cheatsheet (my notes)
-- 
-
-## Related
-- [[M10 - Project - Persisting with a Real Database]]
-- [[M10 - Project - Good Habits (Logging, Config, README)]]
+## Next
+- Next: [[M10 - Project - Good Habits (Logging, Config, README)]]
