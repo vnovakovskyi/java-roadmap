@@ -44,15 +44,21 @@ built-in Dashboard tracks everything for you.
 ## Repository layout
 
 ```
-Home.md   Home note (start here)
-_Conventions.md                   How the vault works + frontmatter rules
-_Template - Topic.md              Skeleton for new topic notes
-Tools & Setup.md                  Environment setup
-Books & Resources.md              Recommended books and free resources
-Topics/                           All 68 learning topics (M1–M10)
-Roadmap.canvas                    Interactive visual map (Obsidian)
-assets/                           Roadmap image and other assets
+Home.md             Home note — start here (intro, dashboard, module index)
+Topics/             All 68 learning topics (M1–M10)
+Guides/             Tools & Setup, Books & Resources
+System/             How the vault works (_Conventions) + the topic template
+Roadmap.canvas      Interactive visual map (Obsidian) — click any topic
+assets/             Roadmap image used in this README
 ```
+
+## Contributing
+
+Contributions are very welcome — and that includes the small stuff. If you spot a typo, a broken
+link, an outdated resource, an unclear explanation, or a missing topic, please **open a pull
+request**. No fix is too small; even a one-character typo correction is appreciated. Not sure about a
+change? Open an issue and let's talk it through. Thank you for helping make this roadmap better for
+the next learner.
 
 ## License
 
