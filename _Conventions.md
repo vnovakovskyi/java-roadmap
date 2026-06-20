@@ -11,10 +11,10 @@ the day-to-day flow is straightforward.
 
 ## The daily workflow
 
-1. Open **[[Java Developer Roadmap - MOC]]** (bookmark it: right-click → Bookmark — one tap on
+1. Open **[[Home]]** (bookmark it: right-click → Bookmark — one tap on
    desktop and mobile).
 2. Look at the **Dashboard** → the `In Progress` and `Next Up` views. No dashboard? Use the
-   **Module Index** in the MOC — it always works.
+   **Module Index** in [[Home]] — it always works.
 3. Open a topic note and work the sections top-to-bottom:
    **Learning Objectives → Learn → Concepts → Practice → Definition of Done**.
 4. Tick the checkboxes as you go. When you start a topic, set its `status: doing`. When you can
