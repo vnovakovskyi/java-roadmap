@@ -4,7 +4,7 @@ area: Databases
 module: 8
 status: todo
 priority: must
-effort: 3
+effort: 4
 tags:
   - java-roadmap
 ---
@@ -12,14 +12,14 @@ tags:
 # Transactions and Indexes
 
 > [!info] Topic
-> **Area:** Databases · **Module:** 8 · **Priority:** must · **Est:** 3h
+> **Area:** Databases · **Module:** 8 · **Priority:** must · **Est:** 4h
 > **Why this matters:** Two ideas separate "it works on my laptop" from "it works under real load":
 > **transactions** keep data consistent when something fails halfway or two users act at once, and
 > **indexes** keep queries fast as tables grow. Both are standard junior interview questions.
 
 ## Learning Objectives
 - Group statements into a transaction and explain ACID.
-- Describe what isolation levels protect against, at a basic level.
+- Name the concurrency anomalies and the four isolation levels that prevent them.
 - Explain what an index is, when it helps, and what it costs.
 
 ## Learn
@@ -37,9 +37,23 @@ tags:
 - [ ] **ACID**: Atomicity (all or nothing), Consistency (constraints hold), Isolation (concurrent
       transactions don't see each other's half-done work), Durability (committed data survives
       crashes).
-- [ ] Isolation levels trade safety for concurrency; PostgreSQL's default is **Read Committed**.
-      Classic anomaly: the **lost update** — prevent it with `SELECT … FOR UPDATE` or optimistic
-      locking (a `version` column, `@Version` in JPA).
+- [ ] **Concurrency anomalies** — what can go wrong when transactions overlap: a *dirty read*
+      (seeing another transaction's uncommitted data), a *non-repeatable read* (the same row read
+      twice gives different values), a *phantom read* (the same query returns new or missing rows),
+      and the *lost update* (two writers overwrite each other).
+- [ ] The four standard **isolation levels** forbid more anomalies as you go down — at the cost of
+      concurrency:
+
+| Level | Dirty read | Non-repeatable read | Phantom read |
+| --- | --- | --- | --- |
+| Read Uncommitted | possible | possible | possible |
+| Read Committed | — | possible | possible |
+| Repeatable Read | — | — | possible (not in PostgreSQL) |
+| Serializable | — | — | — |
+
+- [ ] Defaults differ: PostgreSQL uses **Read Committed** (its Read Uncommitted behaves like Read
+      Committed); MySQL/InnoDB uses Repeatable Read. Prevent lost updates with `SELECT … FOR UPDATE`
+      or optimistic locking (a `version` column, `@Version` in JPA).
 - [ ] An **index** (usually a B-tree) is a sorted lookup structure that turns full-table scans into
       fast lookups for `WHERE`, `JOIN`, and `ORDER BY`. Costs: slower writes and extra storage —
       index what you query, not everything.
@@ -53,8 +67,10 @@ tags:
 **Steps:**
 - [ ] Transfer money between two `account` rows inside a transaction; simulate a failure halfway and
       `ROLLBACK`.
-- [ ] Open two `psql` sessions: change a row in one without committing and look at it from the
-      other.
+- [ ] Open two `psql` sessions: change a row in one without committing and look at it from the other
+      (no dirty read).
+- [ ] Reproduce a non-repeatable read at Read Committed (read, let the other session update and
+      commit, read again); repeat with `BEGIN ISOLATION LEVEL REPEATABLE READ;` and compare.
 - [ ] Generate a million rows with `generate_series`, run `EXPLAIN ANALYZE` on a filtered query, add
       an index, and compare.
 
@@ -68,6 +84,15 @@ Answer out loud or on paper first, then expand to compare.
 > Neither change. The transaction never committed, so the database rolls it back as if it never
 > happened.
 
+> [!question]- Dirty read vs non-repeatable read vs phantom read?
+> Dirty: you see data another transaction hasn't committed. Non-repeatable: re-reading the same row
+> gives a different value because someone committed a change. Phantom: re-running the same query
+> returns a different set of rows.
+
+> [!question]- What is PostgreSQL's default isolation level, and what can still happen at it?
+> Read Committed: each statement sees only committed data, but two reads within one transaction can
+> still see different values (non-repeatable reads) or different rows (phantoms).
+
 > [!question]- Why not add an index to every column?
 > Each index slows down inserts, updates, and deletes and takes space; unused indexes are pure cost.
 > Add them for the queries you actually run.
@@ -77,6 +102,7 @@ Answer out loud or on paper first, then expand to compare.
 
 ## Definition of Done
 - [ ] I can use transactions and explain ACID.
+- [ ] I can name the four anomalies and the isolation level that prevents each.
 - [ ] I can explain the lost-update problem and one way to prevent it.
 - [ ] I can show the effect of an index with `EXPLAIN ANALYZE`.
 - [ ] I can answer the Self-check questions without peeking.

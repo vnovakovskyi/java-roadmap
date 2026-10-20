@@ -7,7 +7,7 @@ A structured, hands-on path from **zero programming experience** to a **job-read
 developer** — built as an [Obsidian](https://obsidian.md) vault you can download and work through.
 
 It covers everything you actually need — the knowledge, the tools, the books, and the job search —
-organized into **11 modules** and **93 hands-on topics**, from "what is a program" all the way to a
+organized into **11 modules** and **94 hands-on topics**, from "what is a program" all the way to a
 tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25 (LTS)** and
 **Spring Boot 4**.
 
@@ -33,7 +33,7 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
 
 1. **Foundations & Setup** — how programming and Java work; install, run, debug; Git from day one
 2. **Core Java** — syntax, types, control flow, methods, recursion, arrays
-3. **Object-Oriented Programming** — classes, memory, encapsulation, inheritance, interfaces, SOLID
+3. **Object-Oriented Programming** — classes, memory, encapsulation, inheritance, interfaces, SOLID, design patterns
 4. **Essential Java APIs** — numbers, collections, generics, sorting, exceptions, enums, Optional
 5. **Modern Java** — lambdas, streams, records, pattern matching, date/time, files, concurrency
 6. **Tooling & Workflow** — Git & GitHub, Maven, Gradle, CI with GitHub Actions, Docker, AI assistants
@@ -43,7 +43,7 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
 10. **Capstone** — your own CRUD app, end-to-end: tested, documented, containerized
 11. **Getting Hired** — portfolio, CV, technical interviews, coding practice, the job search
 
-Target: roughly **7 months at ~10–12 hours/week** (~325 h; the core `must` path is ~255 h). Go at
+Target: roughly **7 months at ~10–12 hours/week** (~335 h; the core `must` path is ~260 h). Go at
 your own pace.
 
 ## How to use this as an Obsidian vault
@@ -92,17 +92,18 @@ use Obsidian's `[[wikilinks]]`, which only work inside Obsidian.)
 - [Module Project (Console Bookshelf)](Topics/M2%20-%20Core%20Java%20-%20Module%20Project%20%28Console%20Bookshelf%29.md) — must · 5 h
 
 </details>
-<details><summary><b>M3 — Object-Oriented Programming</b> · 10 topics · ~37 h</summary>
+<details><summary><b>M3 — Object-Oriented Programming</b> · 11 topics · ~42 h</summary>
 
 - [Classes and Objects](Topics/M3%20-%20OOP%20-%20Classes%20and%20Objects.md) — must · 4 h
 - [Fields, Methods and Constructors](Topics/M3%20-%20OOP%20-%20Fields%2C%20Methods%20and%20Constructors.md) — must · 4 h
-- [Memory Basics (Stack, Heap and Garbage Collection)](Topics/M3%20-%20OOP%20-%20Memory%20Basics%20%28Stack%2C%20Heap%20and%20Garbage%20Collection%29.md) — good · 2 h
+- [Memory Basics (Stack, Heap and Garbage Collection)](Topics/M3%20-%20OOP%20-%20Memory%20Basics%20%28Stack%2C%20Heap%20and%20Garbage%20Collection%29.md) — good · 3 h
 - [Encapsulation and Access Modifiers](Topics/M3%20-%20OOP%20-%20Encapsulation%20and%20Access%20Modifiers.md) — must · 3 h
 - [Inheritance](Topics/M3%20-%20OOP%20-%20Inheritance.md) — must · 4 h
 - [Polymorphism and Overriding](Topics/M3%20-%20OOP%20-%20Polymorphism%20and%20Overriding.md) — must · 4 h
 - [Abstraction, Interfaces and Abstract Classes](Topics/M3%20-%20OOP%20-%20Abstraction%2C%20Interfaces%20and%20Abstract%20Classes.md) — must · 5 h
 - [equals, hashCode and toString](Topics/M3%20-%20OOP%20-%20equals%2C%20hashCode%20and%20toString.md) — must · 3 h
 - [SOLID and Clean Code Principles](Topics/M3%20-%20OOP%20-%20SOLID%20and%20Clean%20Code%20Principles.md) — good · 3 h
+- [Design Patterns (the Essential Few)](Topics/M3%20-%20OOP%20-%20Design%20Patterns%20%28the%20Essential%20Few%29.md) — good · 4 h
 - [Module Project (Bookshelf with Classes)](Topics/M3%20-%20OOP%20-%20Module%20Project%20%28Bookshelf%20with%20Classes%29.md) — must · 5 h
 
 </details>
@@ -158,21 +159,21 @@ use Obsidian's `[[wikilinks]]`, which only work inside Obsidian.)
 - [Module Project (Testing the Bookshelf)](Topics/M7%20-%20Testing%20-%20Module%20Project%20%28Testing%20the%20Bookshelf%29.md) — must · 4 h
 
 </details>
-<details><summary><b>M8 — Databases &amp; SQL</b> · 8 topics · ~27 h</summary>
+<details><summary><b>M8 — Databases &amp; SQL</b> · 8 topics · ~29 h</summary>
 
-- [Relational Concepts](Topics/M8%20-%20Databases%20-%20Relational%20Concepts.md) — must · 3 h
+- [Relational Concepts](Topics/M8%20-%20Databases%20-%20Relational%20Concepts.md) — must · 4 h
 - [SQL CRUD and Queries](Topics/M8%20-%20Databases%20-%20SQL%20CRUD%20and%20Queries.md) — must · 4 h
 - [Joins and Aggregation](Topics/M8%20-%20Databases%20-%20Joins%20and%20Aggregation.md) — must · 4 h
-- [Transactions and Indexes](Topics/M8%20-%20Databases%20-%20Transactions%20and%20Indexes.md) — must · 3 h
+- [Transactions and Indexes](Topics/M8%20-%20Databases%20-%20Transactions%20and%20Indexes.md) — must · 4 h
 - [Connecting from Java (JDBC)](Topics/M8%20-%20Databases%20-%20Connecting%20from%20Java%20%28JDBC%29.md) — good · 3 h
 - [ORM Intro (JPA and Hibernate)](Topics/M8%20-%20Databases%20-%20ORM%20Intro%20%28JPA%20and%20Hibernate%29.md) — must · 4 h
 - [Schema Basics and Migrations (Flyway)](Topics/M8%20-%20Databases%20-%20Schema%20Basics%20and%20Migrations%20%28Flyway%29.md) — good · 2 h
 - [Module Project (Bookshelf on PostgreSQL)](Topics/M8%20-%20Databases%20-%20Module%20Project%20%28Bookshelf%20on%20PostgreSQL%29.md) — good · 4 h
 
 </details>
-<details><summary><b>M9 — Web Development with Spring Boot</b> · 10 topics · ~33 h</summary>
+<details><summary><b>M9 — Web Development with Spring Boot</b> · 10 topics · ~34 h</summary>
 
-- [HTTP and REST Fundamentals](Topics/M9%20-%20Spring%20-%20HTTP%20and%20REST%20Fundamentals.md) — must · 3 h
+- [HTTP and REST Fundamentals](Topics/M9%20-%20Spring%20-%20HTTP%20and%20REST%20Fundamentals.md) — must · 4 h
 - [Spring Boot Intro and Project Setup](Topics/M9%20-%20Spring%20-%20Spring%20Boot%20Intro%20and%20Project%20Setup.md) — must · 3 h
 - [Controllers and REST Endpoints](Topics/M9%20-%20Spring%20-%20Controllers%20and%20REST%20Endpoints.md) — must · 4 h
 - [Services and Dependency Injection](Topics/M9%20-%20Spring%20-%20Services%20and%20Dependency%20Injection.md) — must · 4 h
@@ -194,14 +195,14 @@ use Obsidian's `[[wikilinks]]`, which only work inside Obsidian.)
 - [Packaging and Running (Jar and Container Image)](Topics/M10%20-%20Project%20-%20Packaging%20and%20Running%20%28Jar%20and%20Container%20Image%29.md) — good · 3 h
 
 </details>
-<details><summary><b>M11 — Getting Hired</b> · 6 topics · ~28 h</summary>
+<details><summary><b>M11 — Getting Hired</b> · 6 topics · ~29 h</summary>
 
 - [Building Your Portfolio and GitHub Profile](Topics/M11%20-%20Career%20-%20Building%20Your%20Portfolio%20and%20GitHub%20Profile.md) — must · 4 h
 - [Writing a Developer CV](Topics/M11%20-%20Career%20-%20Writing%20a%20Developer%20CV.md) — must · 3 h
 - [Preparing for Technical Interviews](Topics/M11%20-%20Career%20-%20Preparing%20for%20Technical%20Interviews.md) — must · 6 h
 - [Coding Interview Practice (Algorithms Basics)](Topics/M11%20-%20Career%20-%20Coding%20Interview%20Practice%20%28Algorithms%20Basics%29.md) — good · 10 h
 - [The Job Search](Topics/M11%20-%20Career%20-%20The%20Job%20Search.md) — must · 3 h
-- [What's Next After the Roadmap](Topics/M11%20-%20Career%20-%20What%27s%20Next%20After%20the%20Roadmap.md) — optional · 2 h
+- [What's Next After the Roadmap](Topics/M11%20-%20Career%20-%20What%27s%20Next%20After%20the%20Roadmap.md) — optional · 3 h
 
 </details>
 
@@ -211,7 +212,7 @@ use Obsidian's `[[wikilinks]]`, which only work inside Obsidian.)
 
 ```
 Home.md             Home note — start here (intro, dashboard, module index)
-Topics/             All 93 learning topics (M1–M11)
+Topics/             All 94 learning topics (M1–M11)
 Guides/             Tools & Setup, Books & Resources
 System/             How the vault works (_Conventions) + the topic template
 Roadmap.canvas      Interactive visual map (Obsidian) — click any topic

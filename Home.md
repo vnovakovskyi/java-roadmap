@@ -9,7 +9,7 @@ tags:
 > [!abstract] From zero to a job-ready junior Java developer
 > No prior programming experience needed. Work through **11 modules** — from "what is a program" to
 > a secured Spring Boot API and your first job search — at your own pace. A realistic target is
-> **~7 months at ~10–12 h/week** (~325 h in total; the core `must` path is ~255 h).
+> **~7 months at ~10–12 h/week** (~335 h in total; the core `must` path is ~260 h).
 > **Start here every session:** check the Dashboard below → pick something from *In Progress* or
 > *Next Up* → open the topic → work it top-to-bottom → answer its Self-check → set `status: done`
 > when you meet the Definition of Done.
@@ -175,6 +175,7 @@ views:
 - [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]]
 - [[M3 - OOP - equals, hashCode and toString]]
 - [[M3 - OOP - SOLID and Clean Code Principles]]
+- [[M3 - OOP - Design Patterns (the Essential Few)]]
 - [[M3 - OOP - Module Project (Bookshelf with Classes)]]
 
 ### Module 4 — Essential Java APIs

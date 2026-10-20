@@ -4,7 +4,7 @@ area: Career
 module: 11
 status: todo
 priority: optional
-effort: 2
+effort: 3
 tags:
   - java-roadmap
 ---
@@ -12,7 +12,7 @@ tags:
 # What's Next After the Roadmap
 
 > [!info] Topic
-> **Area:** Career · **Module:** 11 · **Priority:** optional · **Est:** 2h
+> **Area:** Career · **Module:** 11 · **Priority:** optional · **Est:** 3h
 > **Why this matters:** This roadmap gets you to a strong junior level; the field keeps moving. Pick
 > your next direction deliberately instead of chasing every new framework.
 
@@ -30,6 +30,8 @@ tags:
       [microservices.io](https://microservices.io/), the
       [Kafka quickstart](https://kafka.apache.org/quickstart/),
       [Kotlin](https://kotlinlang.org/docs/getting-started.html).
+- [ ] Try: the official [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+      tutorial once Docker feels comfortable.
 
 ## Concepts
 - [ ] **Deeper Java**: *Effective Java*, concurrency (*Java Concurrency in Practice*), JVM internals
@@ -37,8 +39,15 @@ tags:
 - [ ] **Spring ecosystem**: OAuth2 / identity providers, messaging (Kafka, RabbitMQ), Spring Cloud,
       reactive programming (WebFlux) when it's really needed.
 - [ ] **Architecture**: modular monoliths vs microservices, system design, domain-driven design.
-- [ ] **Cloud & DevOps**: Kubernetes, a cloud provider (AWS, Azure, GCP), observability (metrics,
-      tracing, logs).
+      Microservice patterns to know by name: API gateway, service discovery, circuit breaker (e.g.
+      [Resilience4j](https://resilience4j.readme.io/)), saga, CQRS, event sourcing, database per
+      service, and the strangler fig for migrating a monolith.
+- [ ] **Distributed data**: replication (copies for availability and read scaling), sharding, NoSQL
+      families (key-value like Redis, document like MongoDB, wide-column like Cassandra, graph like
+      Neo4j), and the **CAP theorem**. The classic book: *Designing Data-Intensive Applications*
+      (Martin Kleppmann).
+- [ ] **Cloud & DevOps**: Kubernetes (pods, deployments, services, `kubectl`), a cloud provider
+      (AWS, Azure, GCP), observability (metrics, tracing, logs).
 - [ ] **AI-enabled apps**: calling LLMs from Java with Spring AI, retrieval-augmented generation.
 - [ ] **Staying current**: a new Java release every March and September; the next LTS is Java 29
       (September 2027). Read each release's JEP list and try new features in JShell.
@@ -59,6 +68,15 @@ Answer out loud or on paper first, then expand to compare.
 > [!question]- When is a microservice architecture *not* a good idea?
 > For a small team or a young product: a well-structured monolith is simpler to build, test, deploy,
 > and change; microservices add network, deployment, and data-consistency complexity.
+
+> [!question]- What does the CAP theorem say?
+> When the network between nodes of a distributed data store breaks (a partition), it has to choose
+> between consistency (every read sees the latest write) and availability (every request still gets
+> an answer). Without a partition you can have both.
+
+> [!question]- What problem does a circuit breaker solve?
+> When a dependency keeps failing, the breaker stops calling it for a while and fails fast, so
+> threads don't pile up waiting on timeouts and the failure doesn't cascade through the system.
 
 > [!question]- How do you keep up with new Java versions efficiently?
 > Follow official sources (dev.java, inside.java), skim each release's JEP list every six months,

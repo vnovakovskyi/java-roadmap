@@ -32,7 +32,7 @@ job-ready junior Java developer. Work them roughly in order — later modules bu
 | ------ | ---- | ----- |
 | M1 | Foundations | How programming and Java work; setup, terminal, debugger, Git basics, learning with AI |
 | M2 | Core Java | Syntax, types, control flow, methods, recursion, arrays |
-| M3 | OOP | Classes, memory, encapsulation, inheritance, polymorphism, interfaces, SOLID |
+| M3 | OOP | Classes, memory, encapsulation, inheritance, polymorphism, interfaces, SOLID, design patterns |
 | M4 | Java APIs | Wrappers & BigDecimal, collections, generics, sorting, exceptions, enums, Optional |
 | M5 | Modern Java | Lambdas, streams, records, pattern matching & sealed types, date/time, files, concurrency |
 | M6 | Tooling | Git branching, GitHub & PRs, Maven, Gradle, CI, Docker, the IDE, AI assistants |
@@ -70,7 +70,7 @@ the Dashboard views (and the vault check) will miss the note.
 
 ## The priority tiers
 
-- **`must`** — the **core path** (~255 h): what a junior Java developer is expected to know. The
+- **`must`** — the **core path** (~260 h): what a junior Java developer is expected to know. The
   Dashboard's *Core Path* view lists only these. Short on time? Do these first.
 - **`good`** — strongly recommended. Do them once the `must` items of a module are solid.
 - **`optional`** — nice to have or a taste of something more advanced. Skip without guilt; come back later.

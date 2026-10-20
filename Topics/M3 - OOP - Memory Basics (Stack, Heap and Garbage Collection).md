@@ -4,7 +4,7 @@ area: OOP
 module: 3
 status: todo
 priority: good
-effort: 2
+effort: 3
 tags:
   - java-roadmap
 ---
@@ -12,7 +12,7 @@ tags:
 # Memory Basics (Stack, Heap and Garbage Collection)
 
 > [!info] Topic
-> **Area:** OOP · **Module:** 3 · **Priority:** good · **Est:** 2h
+> **Area:** OOP · **Module:** 3 · **Priority:** good · **Est:** 3h
 > **Why this matters:** Knowing where values live explains a lot of "weird" behavior — why changing
 > an object inside a method is visible outside, why `==` on objects compares references, and why you
 > never free memory by hand. It's also a very common interview question.
@@ -30,6 +30,9 @@ tags:
 - [ ] Visualize: run a small program with objects in the
       [Java Visualizer](https://pythontutor.com/java.html) and watch stack frames and heap objects
       appear.
+- [ ] Skim:
+      [Generations](https://docs.oracle.com/en/java/javase/25/gctuning/garbage-collector-implementation.html)
+      in the Java 25 GC tuning guide — the current, official picture.
 
 ## Concepts
 - [ ] Each method call gets a **stack frame** with its parameters and local variables — primitives
@@ -39,8 +42,18 @@ tags:
       its memory automatically. You never free memory yourself.
 - [ ] A Java **memory leak** = objects you no longer need but still reference (a `static` collection
       that only grows, a cache without limits) — the GC can't collect them.
+- [ ] Each **thread** has its own stack (its size is set with `-Xss`), while the heap is shared by
+      all threads — which is why shared objects need thread-safety (Module 5).
+- [ ] The heap is split into **generations**: most objects die young, so new objects go to a small
+      *young generation* that's collected often and cheaply; survivors are promoted to the *old
+      generation*, collected less often.
+- [ ] Class metadata lives in **Metaspace** (native memory, outside the heap) since Java 8. Older
+      material calls it "PermGen" — that no longer exists.
 - [ ] `OutOfMemoryError` means the heap is full; `StackOverflowError` means the call stack is too
       deep (usually runaway recursion).
+- [ ] Besides normal (strong) references, `java.lang.ref` has `WeakReference` (cleared at the next
+      GC — used by `WeakHashMap`) and `SoftReference` (kept until memory runs low). You'll rarely
+      need them. Never rely on `finalize()` — it's deprecated; use try-with-resources.
 - [ ] The JVM picks a garbage collector for you (usually G1). Tuning it is well beyond junior scope
       — just know it exists.
 
@@ -74,10 +87,19 @@ Answer out loud or on paper first, then expand to compare.
 > `OutOfMemoryError`: the heap can't fit more objects. `StackOverflowError`: too many nested method
 > calls, typically recursion without a working base case.
 
+> [!question]- Why does the heap have a young and an old generation?
+> Most objects are short-lived. Collecting a small young area often is cheap and frees most garbage;
+> the few long-lived survivors are moved to the old generation, which is collected rarely.
+
+> [!question]- Where is class metadata stored in modern Java?
+> In Metaspace, in native memory outside the heap (since Java 8). PermGen, which older tutorials
+> describe, was removed.
+
 ## Definition of Done
 - [ ] I can draw the stack and heap for a small snippet.
 - [ ] I can explain when objects become garbage and how leaks happen anyway.
 - [ ] I can tell the two "out of space" errors apart.
+- [ ] I can explain generational garbage collection in two sentences.
 - [ ] I can answer the Self-check questions without peeking.
 
 ## Next

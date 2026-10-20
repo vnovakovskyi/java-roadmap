@@ -3,7 +3,7 @@
 		{
 			"id": "intro",
 			"type": "text",
-			"text": "# Java Developer Roadmap\nFrom zero to a job-ready junior Java developer — 11 modules, 93 topics, ~325 h.\nWork left to right, top to bottom. Click any card to open that topic. Open [[Home]] for the live dashboard.",
+			"text": "# Java Developer Roadmap\nFrom zero to a job-ready junior Java developer — 11 modules, 94 topics, ~334 h.\nWork left to right, top to bottom. Click any card to open that topic. Open [[Home]] for the live dashboard.",
 			"x": 0,
 			"y": -240,
 			"width": 1200,
@@ -207,7 +207,7 @@
 			"x": 920,
 			"y": 0,
 			"width": 430,
-			"height": 780,
+			"height": 850,
 			"color": "6"
 		},
 		{
@@ -303,9 +303,19 @@
 		{
 			"id": "m3c9",
 			"type": "text",
-			"text": "[[M3 - OOP - Module Project (Bookshelf with Classes)|Module Project (Bookshelf with Classes)]]",
+			"text": "[[M3 - OOP - Design Patterns (the Essential Few)|Design Patterns (the Essential Few)]]",
 			"x": 935,
 			"y": 690,
+			"width": 400,
+			"height": 56,
+			"color": "6"
+		},
+		{
+			"id": "m3c10",
+			"type": "text",
+			"text": "[[M3 - OOP - Module Project (Bookshelf with Classes)|Module Project (Bookshelf with Classes)]]",
+			"x": 935,
+			"y": 760,
 			"width": 400,
 			"height": 56,
 			"color": "6"

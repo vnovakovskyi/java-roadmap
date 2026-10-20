@@ -37,6 +37,9 @@ tags:
       binary search, BFS/DFS on trees and graphs, sorting, simple recursion.
 - [ ] Java toolbox: `HashMap`, `HashSet`, `ArrayDeque`, `PriorityQueue`, `Arrays.sort`,
       `StringBuilder`, `Collections`.
+- [ ] Sorting: know quicksort and merge sort by idea (both O(n log n) on average) and why insertion
+      sort (O(n²)) is still fast on nearly sorted data. Java's `Arrays.sort` uses dual-pivot
+      quicksort for primitives and stable TimSort for objects (`List.sort` too).
 - [ ] Always state complexity: e.g. "O(n) time, O(n) extra space".
 - [ ] Method: understand → examples and edge cases → brute force → optimize → code → test by hand.
 - [ ] Time-box each problem (30–45 minutes); then study a solution and solve it again yourself two
@@ -62,6 +65,10 @@ Answer out loud or on paper first, then expand to compare.
 > [!question]- When does the two-pointer technique apply?
 > On sorted arrays or strings when you compare or combine elements from both ends (or two positions
 > moving forward), e.g. pair sums, palindromes, merging.
+
+> [!question]- Quicksort vs merge sort?
+> Both average O(n log n). Merge sort guarantees O(n log n) and is stable but needs O(n) extra
+> memory; quicksort sorts in place and is usually faster, but its worst case is O(n²).
 
 > [!question]- BFS vs DFS — when would you choose BFS?
 > When you need the shortest path or the fewest steps in an unweighted graph or grid: BFS explores

@@ -29,6 +29,8 @@ tags:
       with Long Method, Large Class, Duplicate Code).
 - [ ] Reference: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) —
       naming and formatting conventions most teams follow.
+- [ ] Skim: [Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) (Wikipedia) — the idea and
+      the list of well-known names.
 - [ ] Optional: *Clean Code* (Robert C. Martin) chapters on naming and functions.
 
 ## Concepts
@@ -43,6 +45,10 @@ tags:
       need yet.
 - [ ] Clean-code basics: clear names, small methods that do one thing, few parameters, no magic
       numbers, no dead code.
+- [ ] **Anti-patterns** to recognize by name: *God object* (one class knows and does everything),
+      *spaghetti code*, *copy-paste programming*, *magic numbers*, *golden hammer* (using your
+      favorite tool for every problem), *cargo-cult programming* (copying code or patterns without
+      knowing why), *premature optimization*.
 
 ## Practice
 **Goal:** Improve real code with the principles.
@@ -72,11 +78,15 @@ Answer out loud or on paper first, then expand to compare.
 > Long method, large class, duplicated code (also: magic numbers, long parameter lists, unclear
 > names).
 
+> [!question]- What is a "God object", and how do you fix one?
+> A class that has grown to hold most of the program's data and logic. Split it by responsibility
+> (SRP) into smaller classes with clear names, moving behavior next to the data it uses.
+
 ## Definition of Done
 - [ ] I can explain all five SOLID letters with an example.
 - [ ] I applied at least two principles in a refactor.
-- [ ] I can name a few code smells and how to fix them.
+- [ ] I can name a few code smells and anti-patterns and how to fix them.
 - [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M3 - OOP - Module Project (Bookshelf with Classes)]]
+- Next: [[M3 - OOP - Design Patterns (the Essential Few)]]
