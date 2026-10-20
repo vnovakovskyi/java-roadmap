@@ -23,7 +23,9 @@ jobs:
             --no-progress
             --max-retries 3
             --accept 200..=299,403,429
+            --scheme https --scheme http
             --exclude-loopback
             --exclude '^https?://(www\.)?example\.(com|org)'
+            --exclude '^https://github\.com/vnovakovskyi/java-roadmap/actions'
             './**/*.md'
           fail: true

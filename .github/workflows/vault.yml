@@ -1,0 +1,17 @@
+name: Vault check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check notes, links between notes, and generated files
+        run: python3 .github/scripts/vault.py check
