@@ -18,35 +18,60 @@ tags:
 > IDE run, and learn enough to fix a "command not found".
 
 > [!tip] Where to install
-> Do the installs in **[[Tools & Setup]]** (sections 1–2: JDK + IDE). Come back here to verify. Git
-> and the build tools come later in Module 6.
+> Do the installs in **[[Tools & Setup]]** (sections 1–3: JDK, IDE, Git). Come back here to verify.
+> The build tools (Maven, Gradle) and Docker can wait until Module 6.
 
 ## Learning Objectives
 - Confirm JDK 25 is installed and runs from the command line.
-- Confirm your IDE can run a Java file.
+- Confirm your IDE can run a Java file with the same JDK.
 - Know where to look when a tool "isn't found".
 
 ## Learn
-- [ ] Finish **[[Tools & Setup]]** sections 1–2 (JDK + IDE) if you haven't yet.
-- [ ] Skim what a `PATH` is (why your terminal can or can't find `java`).
+- [ ] Finish **[[Tools & Setup]]** sections 1–3 (JDK, IDE, Git) if you haven't yet.
+- [ ] Read: [dev.java — Using IDEs](https://dev.java/learn/first-steps/using-ides/) — what an IDE
+      does for you.
+- [ ] Read: the `PATH` part of
+      [MIT Missing Semester — The Shell](https://missing.csail.mit.edu/2020/course-shell/) — why
+      your terminal can or can't find `java`.
 
 ## Concepts
-- [ ] The JDK provides two key commands: `javac` (compile) and `java` (run).
-- [ ] Your terminal finds commands via the `PATH` environment variable; a managed installer
-      (SDKMAN/Homebrew) wires this up for you.
+- [ ] The JDK provides the key commands: `javac` (compile), `java` (run), and `jshell` (try code
+      interactively).
+- [ ] Your terminal finds commands via the `PATH` environment variable; build tools also read
+      `JAVA_HOME`. A managed installer (SDKMAN, Homebrew, the Temurin `.msi`) sets these up for you.
+- [ ] Several JDKs can live side by side. The IDE picks a JDK **per project** (IntelliJ: File →
+      Project Structure → SDK) — it can differ from the one your terminal uses.
 - [ ] An IDE bundles an editor, the compiler, a runner, and a debugger in one place.
 
 ## Practice
 **Goal:** Prove the environment works end-to-end.
 **Steps:**
 - [ ] Run `java -version` and `javac -version`; confirm both report 25.
-- [ ] In your IDE, create a new project and run a one-line program that prints something.
+- [ ] In your IDE, create a new project with JDK 25 and run a one-line program that prints
+      something.
 - [ ] Intentionally break it (delete a semicolon), see the error, fix it, re-run.
+- [ ] Print your `PATH` (`echo $PATH` on macOS/Linux, `$env:Path` in PowerShell) and find the JDK's
+      `bin` folder in it.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Your terminal says `java: command not found`, but you installed the JDK. What's the likely cause?
+> The JDK's `bin` folder isn't on your `PATH` — or the terminal was opened before the install. Open
+> a new terminal; if it persists, fix `PATH`/`JAVA_HOME` or reinstall with a managed installer.
+
+> [!question]- `java -version` prints 25, but your IDE project compiles with 17. Is that a problem?
+> Yes — you'd get errors for newer features. The IDE has its own per-project JDK setting; set the
+> project SDK to 25 so the IDE and terminal agree.
+
+> [!question]- Why install the JDK rather than just a JRE?
+> You need the compiler (`javac`) and tools to build programs, not only to run them.
 
 ## Definition of Done
 - [ ] `java -version` and `javac -version` both show 25.
 - [ ] I ran a program from the IDE and saw output.
-- [ ] I completed the checklist at the bottom of [[Tools & Setup]] (JDK + IDE parts).
+- [ ] I completed the JDK, IDE, and Git parts of the checklist in [[Tools & Setup]].
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M1 - Foundations - The Command Line Basics]]
+- Next: [[M1 - Foundations - Your First Java Program]]

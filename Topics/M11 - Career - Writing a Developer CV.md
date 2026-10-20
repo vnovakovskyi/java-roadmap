@@ -1,0 +1,74 @@
+---
+title: Writing a Developer CV
+area: Career
+module: 11
+status: todo
+priority: must
+effort: 3
+tags:
+  - java-roadmap
+---
+
+# Writing a Developer CV
+
+> [!info] Topic
+> **Area:** Career · **Module:** 11 · **Priority:** must · **Est:** 3h
+> **Why this matters:** Your CV decides whether a human reads your GitHub at all. A focused one-page
+> CV that speaks the language of the job ad gets you past both the automated filters and the
+> six-second skim.
+
+## Learning Objectives
+- Write a one-page developer CV that highlights projects and skills.
+- Describe projects with concrete, technical impact.
+- Tailor the CV to a specific job ad.
+
+## Learn
+- [ ] Read: [Tech Interview Handbook — Resume](https://www.techinterviewhandbook.org/resume/).
+- [ ] Collect 5–10 real junior Java job ads from your region to tailor against.
+
+## Concepts
+- [ ] One page, simple layout (applicant tracking systems parse plain text best), PDF, sensible file
+      name.
+- [ ] Structure: headline + contact + GitHub/LinkedIn links; skills grouped and honest (Java 25,
+      Spring Boot 4, PostgreSQL, Docker, Git, JUnit/Mockito); projects; experience; education and
+      courses.
+- [ ] Project bullets = action + technology + result: "Built a REST API with Spring Boot and
+      PostgreSQL, 90 tests in CI, containerized with Docker".
+- [ ] Earlier non-IT work counts: show transferable skills (ownership, communication, domain
+      knowledge).
+- [ ] Tailor each application: mirror the ad's keywords where they're true for you, and reorder
+      skills and projects to match.
+- [ ] Keep LinkedIn consistent with the CV. Conventions (photo, length, language) vary by country —
+      follow the local norm.
+
+## Practice
+**Goal:** A CV you'd be proud to send.
+**Steps:**
+- [ ] Draft your CV with 2–3 projects and strong bullets.
+- [ ] Tailor it to three different job ads and note what you changed.
+- [ ] Get feedback from at least one developer; revise.
+- [ ] Update your LinkedIn profile to match.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What makes a strong project bullet?
+> A concrete action, the technologies used, and a visible result or scale — not just "worked on a
+> project".
+
+> [!question]- Why tailor the CV for each application?
+> Recruiters and filters look for the ad's specific skills; putting the matching ones first
+> (truthfully) makes the fit obvious.
+
+> [!question]- Why keep the layout simple?
+> Applicant tracking systems often parse the text automatically; columns, tables, and graphics can
+> scramble it before a human ever sees it.
+
+## Definition of Done
+- [ ] I have a one-page CV with strong project bullets.
+- [ ] I've tailored it to real job ads.
+- [ ] A developer has reviewed it, and my LinkedIn matches.
+- [ ] I can answer the Self-check questions without peeking.
+
+## Next
+- Next: [[M11 - Career - Preparing for Technical Interviews]]

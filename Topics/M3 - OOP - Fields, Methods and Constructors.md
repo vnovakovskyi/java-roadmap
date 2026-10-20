@@ -22,28 +22,52 @@ tags:
 - Distinguish instance vs `static` members.
 
 ## Learn
-- [ ] Read: [dev.java — "Defining classes / constructors"](https://dev.java/learn/classes-objects/).
-- [ ] Read about `this`, `static`, and default field values.
+- [ ] Read:
+      [dev.java — Providing Constructors for your Classes](https://dev.java/learn/language/oop/classes-objects/defining-constructors/).
+- [ ] Read:
+      [dev.java — More on Classes](https://dev.java/learn/language/oop/classes-objects/more-on-classes/)
+      (`this`, `static`, initialization).
 
 ## Concepts
-- [ ] **Fields** = instance state; **methods** = behavior that can read/modify fields.
+- [ ] **Fields** = instance state; **methods** = behavior that can read and modify fields.
 - [ ] A **constructor** has the class's name and no return type; it initializes a new object.
 - [ ] Constructor **overloading** + `this(...)` to chain constructors; a no-arg default exists only
-      if you write no constructor.
+      if you write no constructor at all.
 - [ ] `this.field = field` resolves a name clash between a field and a parameter.
-- [ ] `static` fields/methods belong to the class (shared); instance members belong to each object.
+- [ ] `static` fields and methods belong to the class (shared); instance members belong to each
+      object.
+- [ ] Fields get default values (`0`, `false`, `null`); local variables don't — they must be
+      assigned before use.
 
 ## Practice
 **Goal:** Build a properly initialized class.
 **Steps:**
-- [ ] Give `Book` a constructor that requires title and author; add a `static` counter of books created.
+- [ ] Give `Book` a constructor that requires title and author; add a `static` counter of books
+      created.
+- [ ] Add a second constructor that also takes the page count and chains to the first with
+      `this(...)`.
 - [ ] Add an instance method that mutates a field (e.g. `markAsRead()`).
 - [ ] Create several books and print the static count.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- When does Java give you a no-argument constructor for free?
+> Only when the class declares no constructor at all. As soon as you write one, the free default
+> disappears.
+
+> [!question]- What does `this.title = title;` do?
+> Assigns the constructor parameter `title` to the object's field `title`; `this.` makes clear which
+> one is the field.
+
+> [!question]- You add `static int count` and increment it in the constructor. After creating three books, what is `count`, and why?
+> `3`. A static field is shared by the whole class — there's one copy, not one per object.
 
 ## Definition of Done
 - [ ] I can write fields, methods, and constructors and use `this`.
 - [ ] I can explain instance vs static members.
 - [ ] I understand constructor chaining and the default constructor rule.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M3 - OOP - Encapsulation and Access Modifiers]]
+- Next: [[M3 - OOP - Memory Basics (Stack, Heap and Garbage Collection)]]

@@ -14,7 +14,8 @@ tags:
 > [!info] Topic
 > **Area:** Modern Java · **Module:** 5 · **Priority:** must · **Est:** 2h
 > **Why this matters:** Records (Java 16+) remove the boilerplate of data classes — no more
-> hand-written getters, `equals`, `hashCode`, `toString`. You'll use them for DTOs and value objects.
+> hand-written constructors, getters, `equals`, `hashCode`, `toString`. You'll use them for DTOs and
+> value objects all the time.
 
 ## Learning Objectives
 - Define a record and use its generated members.
@@ -22,16 +23,22 @@ tags:
 - Add validation via a compact constructor.
 
 ## Learn
-- [ ] Read: [dev.java — "Records"](https://dev.java/learn/records/).
+- [ ] Read:
+      [dev.java — Using Records to Model Immutable Data](https://dev.java/learn/language/oop/records/).
+- [ ] Reference: [Record Classes](https://docs.oracle.com/en/java/javase/25/language/records.html)
+      (Oracle language guide).
 
 ## Concepts
 - [ ] `record Point(int x, int y) {}` auto-generates a constructor, accessors (`x()`, `y()`),
       `equals`, `hashCode`, and `toString`.
-- [ ] Records are **shallowly immutable** and `final`: fields can't be reassigned, but a `List` field
-      can still be mutated — copy it with `List.copyOf` in the constructor. They can't extend classes
-      (but can implement interfaces).
-- [ ] **Compact constructor** for validation: `public Point { if (x < 0) throw ...; }`.
-- [ ] Great for DTOs, value objects, and method return groupings; not for mutable entities.
+- [ ] Records are **shallowly immutable** and `final`: fields can't be reassigned, but a `List`
+      component can still be mutated — copy it with `List.copyOf` in the constructor. They can't
+      extend classes (but can implement interfaces).
+- [ ] **Compact constructor** for validation:
+      `public Point { if (x < 0) throw new IllegalArgumentException(...); }`.
+- [ ] Records may add methods and static factories, but no extra instance fields.
+- [ ] Great for DTOs, value objects, and returning several values; not for mutable entities (JPA
+      entities stay regular classes).
 - [ ] Compare with the hand-written class from [[M3 - OOP - equals, hashCode and toString]] — same
       behavior, far less code.
 
@@ -39,13 +46,31 @@ tags:
 **Goal:** Replace a boilerplate class with a record.
 **Steps:**
 - [ ] Convert a small data class (e.g. `Money(amount, currency)`) to a record.
-- [ ] Add validation in the compact constructor and test it rejects bad input.
+- [ ] Add validation in the compact constructor and confirm it rejects bad input.
+- [ ] Give a record a `List` component, show it can be mutated from outside, then fix it with
+      `List.copyOf`.
 - [ ] Put records in a `Set` and confirm value-based equality "just works".
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What does a record generate for you?
+> A canonical constructor, private final fields, accessor methods named like the components, and
+> `equals`, `hashCode`, and `toString` based on all components.
+
+> [!question]- Are records fully immutable?
+> Only shallowly: the references can't change, but a mutable object they point to (like an
+> `ArrayList`) can. Defensive copies make them truly immutable.
+
+> [!question]- When is a record the wrong choice?
+> When the object must change state over time or needs inheritance — for example a JPA entity, which
+> needs a no-arg constructor and mutable fields.
 
 ## Definition of Done
 - [ ] I can define records and use generated accessors/equals/toString.
 - [ ] I can validate with a compact constructor.
 - [ ] I know when a record is the right tool.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M5 - Modern Java - var, Enhanced switch and Text Blocks]]

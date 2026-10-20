@@ -13,38 +13,85 @@ tags:
 
 > [!info] Topic
 > **Area:** Foundations · **Module:** 1 · **Priority:** must · **Est:** 3h
-> **Why this matters:** Writing, compiling, and running your own "Hello, World" is the moment Java
-> stops being abstract. You'll also meet the anatomy of every Java program here.
+> **Why this matters:** Writing and running your own "Hello, World" is the moment Java stops being
+> abstract. You'll meet both the beginner-friendly compact form (Java 25) and the classic class +
+> `main` form that every real project uses.
 
 ## Learning Objectives
 - Write a minimal Java program from scratch.
-- Identify the parts: class, `main` method, statements, `System.out.println`.
+- Identify the parts: class, `main` method, statements, printing.
+- Read and write both the compact and the classic form.
 - Explain why the file name must match the public class name.
 
 ## Learn
-- [ ] Read: [dev.java — "Getting Started with Java"](https://dev.java/learn/first-steps/first-java-code/getting-started/) walkthrough.
-- [ ] Read about the `main` method signature: `public static void main(String[] args)`.
+- [ ] Read:
+      [dev.java — Getting Started with Java](https://dev.java/learn/first-steps/first-java-code/getting-started/)
+      walkthrough.
+- [ ] Read:
+      [Compact Source Files and Instance Main Methods](https://docs.oracle.com/en/java/javase/25/language/compact-source-files-instance-main-methods.html)
+      (Oracle language guide) — the Java 25 way to start small.
 
 ## Concepts
-- [ ] Every Java program lives in a **class**; execution starts in the **`main`** method.
-- [ ] A `.java` file's name must match its `public` class (`Hello.java` ↔ `class Hello`).
-- [ ] Statements end with `;`. Blocks are wrapped in `{ }`.
-- [ ] `System.out.println(...)` prints a line to the console.
-- [ ] *(Java 25+)* A **compact source file** needs no class and no `static`:
-      `void main() { IO.println("Hello"); }` — perfect for first experiments. Real projects still use
-      the classic `public static void main(String[] args)` inside a class, so learn to read both.
+- [ ] *(Java 25+)* A **compact source file** can be just a method:
+      `void main() { IO.println("Hello"); }` — no class, no `static`, no `String[] args`. The
+      compiler wraps it in a class for you.
+- [ ] `IO.println(...)` prints a line; `IO.print(...)` prints without a line break. The classic
+      equivalent is `System.out.println(...)` — you'll see it everywhere.
+- [ ] The **classic form**: code lives in a class, and execution starts in
+      `public static void main(String[] args)`. Real projects and frameworks like Spring use this
+      form — learn to read both.
+- [ ] Statements end with `;`. Blocks are wrapped in `{ }`. Java is case-sensitive (`Main` ≠
+      `main`).
+- [ ] In the classic form, a `public class Hello` must live in a file named `Hello.java`.
+
+```java
+// Hello.java — compact source file (Java 25+)
+void main() {
+    IO.println("Hello, World!");
+}
+```
+
+```java
+// Hello.java — classic form (works in every Java version)
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
 
 ## Practice
-**Goal:** Build a tiny interactive program.
+**Goal:** Write, run, and modify your own program in both forms.
 **Steps:**
-- [ ] Write `Hello` that prints your name and today's goal.
-- [ ] Add a second line and a third; observe `print` vs `println`.
+- [ ] In the IDE, write a compact `Hello` that prints your name and today's goal; run it.
+- [ ] Add a second and third line; observe `IO.print` vs `IO.println`.
+- [ ] Rewrite it in the classic form (class + `public static void main`) and run it again.
 - [ ] Rename the class but not the file (or vice versa) and read the resulting error, then fix it.
 
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What's the smallest Java 25 program that prints "Hi"?
+> `void main() { IO.println("Hi"); }` in a `.java` file — a compact source file.
+
+> [!question]- Name each part of `public static void main(String[] args)`.
+> `public` — callable from anywhere; `static` — belongs to the class, no object needed; `void` —
+> returns nothing; `main` — the name the launcher looks for; `String[] args` — the command-line
+> arguments.
+
+> [!question]- Why must `public class Hello` live in `Hello.java`?
+> It's a compiler rule: a public top-level class must be in a file with the same name, so the
+> compiler and tools can find classes by file name.
+
+> [!question]- What's the difference between `print` and `println`?
+> `println` ends the output with a line break; `print` doesn't, so the next output continues on the
+> same line.
+
 ## Definition of Done
-- [ ] I wrote, compiled, and ran my own program (IDE and/or command line).
-- [ ] I can name every part of the program and what it does.
+- [ ] I wrote, compiled, and ran my own program in both the compact and the classic form.
+- [ ] I can name every part of the classic `main` method and what it does.
 - [ ] I understand the file-name ↔ class-name rule.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M1 - Foundations - How Java Compiles and Runs]]
+- Next: [[M1 - Foundations - The Command Line Basics]]

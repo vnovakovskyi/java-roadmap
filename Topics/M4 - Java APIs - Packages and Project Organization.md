@@ -22,17 +22,22 @@ tags:
 - Apply basic structuring conventions (by feature vs by layer).
 
 ## Learn
-- [ ] Read: [dev.java — "Packages"](https://dev.java/learn/).
-- [ ] Skim the standard `src/main/java` project layout (preview of Module 6).
+- [ ] Read: [dev.java — Packages](https://dev.java/learn/language/oop/packages/).
+- [ ] Skim the standard `src/main/java` project layout (preview of Module 6):
+      [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html),
+      "Creating a Project".
 
 ## Concepts
 - [ ] A **package** is a namespace: `package com.example.app;` maps to folders `com/example/app/`.
-- [ ] `import` brings in classes from other packages; same-package classes need no import.
+- [ ] `import` brings in classes from other packages; same-package classes need no import;
+      `java.lang` is always imported.
 - [ ] Reverse-domain naming (`com.yourname.project`) avoids clashes.
 - [ ] Standard layout: source in `src/main/java`, tests in `src/test/java`, resources in
       `src/main/resources`.
-- [ ] Organize **by feature** (e.g. `orders`, `users`) or **by layer** (`controller`, `service`,
+- [ ] Organize **by feature** (`orders`, `users`) or **by layer** (`controller`, `service`,
       `repository`); be consistent.
+- [ ] *(Java 25+)* `import module java.base;` imports a whole module at once — handy in small
+      programs; regular projects keep normal imports.
 
 ## Practice
 **Goal:** Split a one-file program into packages.
@@ -41,10 +46,25 @@ tags:
 - [ ] Recreate the `src/main/java/...` folder structure.
 - [ ] Make a class package-private and confirm it isn't visible from another package.
 
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- How does `package com.acme.shop;` relate to folders?
+> The source file must live in `com/acme/shop/` under the source root (e.g.
+> `src/main/java/com/acme/shop/`).
+
+> [!question]- What does package-private mean?
+> No access modifier: visible to classes in the same package only.
+
+> [!question]- By feature vs by layer — what's the trade-off?
+> By layer (`controller`, `service`) is familiar and simple for small apps; by feature (`orders`,
+> `users`) keeps related code together and scales better as the app grows.
+
 ## Definition of Done
 - [ ] I can create packages and import across them.
 - [ ] I know the standard source/test/resources layout.
 - [ ] I can argue for a by-feature or by-layer structure.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M5 - Modern Java - Lambdas and Functional Interfaces]]
+- Next: [[M4 - Java APIs - Module Project (Bookshelf with Collections)]]

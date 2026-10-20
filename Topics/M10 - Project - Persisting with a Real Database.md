@@ -14,36 +14,59 @@ tags:
 > [!info] Topic
 > **Area:** Project · **Module:** 10 · **Priority:** must · **Est:** 4h
 > **Why this matters:** A real app stores data that survives restarts. Swapping the in-memory store
-> for a real database with Spring Data JPA and migrations is what makes the capstone production-shaped.
+> for PostgreSQL with Spring Data JPA, migrations, and Docker Compose is what makes the capstone
+> production-shaped.
 
 ## Learning Objectives
 - Back the app with a real database via Spring Data JPA.
 - Manage the schema with migrations.
-- Verify data persists across restarts.
+- Run the database locally with one command.
 
 ## Learn
 - [ ] Revisit [[M9 - Spring - Spring Data JPA and Repositories]] and
       [[M8 - Databases - Schema Basics and Migrations (Flyway)]].
+- [ ] Read:
+      [Spring Boot — Docker Compose support](https://docs.spring.io/spring-boot/reference/features/dev-services.html).
 
 ## Concepts
-- [ ] Replace the in-memory list with a `JpaRepository` and a real DB (PostgreSQL; H2 for quick local).
-- [ ] Define the schema with Flyway migrations rather than auto-DDL (add `spring-boot-starter-flyway`).
-- [ ] Configure the datasource via profiles ([[M9 - Spring - Configuration and Profiles]]); keep
-      credentials out of Git.
-- [ ] Watch the generated SQL; check for the N+1 problem on relationships.
-- [ ] Restart the app and confirm data is still there.
+- [ ] Add `compose.yaml` with PostgreSQL and the `spring-boot-docker-compose` dependency: running
+      the app now starts the database and configures the connection automatically.
+- [ ] Define the schema with Flyway migrations (`spring-boot-starter-flyway` +
+      `flyway-database-postgresql`) and set `spring.jpa.hibernate.ddl-auto=validate`.
+- [ ] Configure production settings through environment variables or a profile
+      ([[M9 - Spring - Configuration and Profiles]]); keep credentials out of Git.
+- [ ] Watch the generated SQL; check relationships for N+1; set `spring.jpa.open-in-view=false`.
+- [ ] Add pagination to list endpoints.
 
 ## Practice
 **Goal:** Durable persistence.
 **Steps:**
-- [ ] Point the app at a real database; add Flyway migrations for your tables.
-- [ ] Run full CRUD through the API and confirm rows in the DB (via DBeaver/psql).
+- [ ] Add Docker Compose support, PostgreSQL, Spring Data JPA, and Flyway; write the first
+      migrations.
+- [ ] Replace the in-memory storage with JPA repositories.
+- [ ] Run full CRUD through the API and confirm the rows in the database (DBeaver or `psql`).
 - [ ] Restart the app and verify the data survives.
 
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What does `spring-boot-docker-compose` do when the app starts?
+> It runs `docker compose up` for your `compose.yaml` and creates the connection details (URL, user,
+> password) from the running containers — no datasource properties needed for local development.
+
+> [!question]- Why `ddl-auto=validate` instead of `update`?
+> Flyway owns the schema; Hibernate only checks that the entities match it and fails fast if they
+> don't, instead of silently altering tables.
+
+> [!question]- Where do the production database credentials come from?
+> Environment variables (or a secrets manager), read through Spring's externalized configuration —
+> never from a committed file.
+
 ## Definition of Done
-- [ ] The app persists to a real database via JPA.
+- [ ] The app persists to PostgreSQL via JPA.
 - [ ] The schema is created by migrations.
-- [ ] Data survives restarts and credentials aren't in Git.
+- [ ] The database starts with the app via Docker Compose, and credentials aren't in Git.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M10 - Project - Testing the Application]]

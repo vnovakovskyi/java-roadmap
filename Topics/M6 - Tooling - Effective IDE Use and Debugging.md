@@ -13,8 +13,8 @@ tags:
 
 > [!info] Topic
 > **Area:** Tooling · **Module:** 6 · **Priority:** good · **Est:** 3h
-> **Why this matters:** Your IDE can write boilerplate, navigate huge codebases, refactor safely, and
-> debug deeply. Fluency here multiplies your speed for the rest of your career.
+> **Why this matters:** Your IDE can write boilerplate, navigate huge codebases, refactor safely,
+> and debug deeply. Fluency here multiplies your speed for the rest of your career.
 
 ## Learning Objectives
 - Navigate code fast (search, go-to-definition, usages).
@@ -22,29 +22,52 @@ tags:
 - Use the debugger productively (conditional breakpoints, watches, evaluate).
 
 ## Learn
-- [ ] Read your IDE's productivity/keymap guide (IntelliJ: "Top productivity tips").
-- [ ] Revisit [[M1 - Foundations - Reading Errors and Using the Debugger]] and go deeper.
+- [ ] Read:
+      [IntelliJ IDEA — Mastering keyboard shortcuts](https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html)
+      and [Refactoring code](https://www.jetbrains.com/help/idea/refactoring-source-code.html).
+- [ ] Read:
+      [IntelliJ IDEA — Debug tool window](https://www.jetbrains.com/help/idea/debug-tool-window.html),
+      then revisit [[M1 - Foundations - Reading Errors and Using the Debugger]] and go deeper.
 
 ## Concepts
-- [ ] Navigation: search everywhere, go-to-class/symbol, find usages, recent files.
-- [ ] **Refactorings** are AST-aware — rename updates all references; extract method/variable, inline,
-      change signature.
-- [ ] Code generation: constructors, getters/setters, `equals`/`hashCode`, `toString`, overrides.
-- [ ] Debugger power tools: **conditional breakpoints**, watches, "evaluate expression", step
-      filters, drop-frame.
-- [ ] Live templates/snippets and inspections/quick-fixes cut repetitive work.
+- [ ] Navigation: search everywhere, go to class/symbol/file, find usages, recent files, go back.
+- [ ] **Refactorings** understand the code — rename updates every real reference; extract
+      method/variable, inline, change signature, move.
+- [ ] Code generation: constructors, getters, `equals`/`hashCode`, `toString`, overrides, tests.
+- [ ] Debugger power tools: **conditional breakpoints**, exception breakpoints, watches, "evaluate
+      expression", drop frame.
+- [ ] Inspections and quick-fixes (`Alt+Enter` / `⌥⏎`) catch bugs and modernize code; live templates
+      (`sout`, `psvm`, `fori`) save typing.
 
 ## Practice
 **Goal:** Solve a task using IDE tools, not manual editing.
 **Steps:**
 - [ ] Use "extract method" and "rename" to refactor a messy class; confirm nothing breaks.
 - [ ] Generate `equals`/`hashCode`/`toString` for a class.
-- [ ] Set a **conditional** breakpoint (e.g. only when `i == 50`) and inspect state there.
+- [ ] Set a **conditional** breakpoint (e.g. only when `i == 50`) and an exception breakpoint for
+      `NullPointerException`; inspect state there.
+- [ ] Apply three IDE inspection suggestions to old code and decide whether each is an improvement.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Why use the IDE's "rename" instead of find-and-replace?
+> It renames only the real references to that symbol — across files — and leaves unrelated text with
+> the same name alone.
+
+> [!question]- When is a conditional breakpoint useful?
+> When a bug happens only in one iteration of a loop or for one input — the debugger stops exactly
+> there instead of hundreds of times.
+
+> [!question]- What does "evaluate expression" let you do?
+> Run any expression in the paused context — call methods, inspect nested values, test a fix —
+> without changing the code.
 
 ## Definition of Done
 - [ ] I can navigate and refactor with keyboard shortcuts.
 - [ ] I can generate boilerplate via the IDE.
-- [ ] I can use conditional breakpoints and evaluate expressions.
+- [ ] I can use conditional and exception breakpoints and evaluate expressions.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M7 - Testing - Why We Test and the Test Pyramid]]
+- Next: [[M6 - Tooling - AI Coding Assistants in Your Workflow]]

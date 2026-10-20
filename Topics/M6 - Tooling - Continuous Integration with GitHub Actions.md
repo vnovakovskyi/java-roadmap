@@ -1,0 +1,97 @@
+---
+title: Continuous Integration with GitHub Actions
+area: Tooling
+module: 6
+status: todo
+priority: must
+effort: 3
+tags:
+  - java-roadmap
+---
+
+# Continuous Integration with GitHub Actions
+
+> [!info] Topic
+> **Area:** Tooling · **Module:** 6 · **Priority:** must · **Est:** 3h
+> **Why this matters:** Continuous Integration builds and tests every push automatically, so "works
+> on my machine" problems are caught before they're merged. A green build on every repository is a
+> small signal reviewers notice — and setting it up takes half an hour.
+
+## Learning Objectives
+- Explain what CI is and why teams require it.
+- Write a GitHub Actions workflow that builds and tests a Java project.
+- Read a failing build log and fix the cause.
+
+## Learn
+- [ ] Do: [GitHub Actions — Quickstart](https://docs.github.com/en/actions/get-started/quickstart).
+- [ ] Read:
+      [Building and testing Java with Maven](https://docs.github.com/en/actions/tutorials/build-and-test-code/java-with-maven)
+      (a Gradle version is linked from the same page).
+- [ ] Reference: the [`actions/setup-java` README](https://github.com/actions/setup-java).
+
+## Concepts
+- [ ] A **workflow** is a YAML file in `.github/workflows/`. It's triggered by events (`push`,
+      `pull_request`), and each **job** runs its **steps** on a fresh virtual machine.
+- [ ] A Java build: check out the code → install a JDK (Temurin 25, with dependency caching) →
+      `./mvnw -B verify` (or `./gradlew build`).
+- [ ] The result shows up as a **status check** on every pull request; branch protection can require
+      it to pass before merging.
+- [ ] Commit the wrapper scripts, and make sure they're executable
+      (`git update-index --chmod=+x mvnw`).
+- [ ] Secrets (API keys, passwords) live in the repository's **Actions secrets**, referenced as
+      `${{ secrets.NAME }}` — never written in the YAML.
+
+```yaml
+# .github/workflows/build.yml
+name: build
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 25
+          cache: maven
+      - run: ./mvnw -B verify
+```
+
+## Practice
+**Goal:** Every push to your project is built and tested automatically.
+**Steps:**
+- [ ] Add the workflow above to a Maven (or Gradle) project and push it; watch the run in the
+      Actions tab.
+- [ ] Open a PR that breaks compilation or a test and see the failing check; fix it on the same
+      branch.
+- [ ] Add a build-status badge to the README.
+- [ ] Turn on branch protection for `main` requiring the check to pass.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What is Continuous Integration?
+> Automatically building and testing every change as soon as it's pushed, so problems are found
+> within minutes instead of at release time.
+
+> [!question]- The build passes locally but fails in CI. Name common causes.
+> Files you forgot to commit, a different Java version, tests that depend on your machine (local
+> files, time zone, test order), case-sensitive paths on Linux, or a non-executable wrapper script.
+
+> [!question]- Where do secrets for a workflow go?
+> In the repository's Actions secrets, read in the workflow as `${{ secrets.NAME }}` — never in the
+> YAML file or the code.
+
+## Definition of Done
+- [ ] My project builds and tests on every push and pull request.
+- [ ] I can read a failing CI log and fix the cause.
+- [ ] The README shows the build status.
+- [ ] I can answer the Self-check questions without peeking.
+
+## Next
+- Next: [[M6 - Tooling - Docker Basics for Developers]]

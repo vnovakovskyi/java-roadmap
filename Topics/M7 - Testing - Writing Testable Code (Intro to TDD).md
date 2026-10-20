@@ -18,34 +18,56 @@ tags:
 
 ## Learning Objectives
 - Identify what makes code hard vs easy to test.
-- Apply dependency injection to enable testing.
-- Practice the TDD red-green-refactor cycle once.
+- Apply dependency injection (including for time) to enable testing.
+- Practice the TDD red-green-refactor cycle.
 
 ## Learn
-- [ ] Read a short intro to TDD (red → green → refactor).
-- [ ] Read about dependency injection as a testability enabler.
+- [ ] Read:
+      [Martin Fowler — Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
+      (short).
+- [ ] Read: [Kent Beck — Canon TDD](https://newsletter.kentbeck.com/p/canon-tdd) — the inventor's
+      own summary.
 
 ## Concepts
-- [ ] Hard to test: hidden dependencies (`new` inside methods), static/global state, doing too much,
-      side effects mixed with logic.
-- [ ] Easy to test: small pure functions, dependencies passed in (DI), clear inputs/outputs.
-- [ ] **DI**: pass collaborators via the constructor so tests can inject fakes/mocks (ties to Module 9's
-      Spring DI).
-- [ ] **TDD loop**: write a failing test (red) → minimal code to pass (green) → clean up (refactor),
-      tests still green.
-- [ ] Separate pure logic from I/O so the logic is trivially unit-testable.
+- [ ] Hard to test: hidden dependencies (`new` inside methods), static/global state,
+      `LocalDate.now()` buried in logic, doing too much, side effects mixed with logic.
+- [ ] Easy to test: small pure functions, dependencies passed in, clear inputs and outputs.
+- [ ] **DI**: pass collaborators via the constructor so tests can inject fakes or mocks (Module 9's
+      Spring DI does this at scale).
+- [ ] Time is a dependency too: inject a `java.time.Clock` and use `Clock.fixed(...)` in tests.
+- [ ] **TDD loop**: write a failing test (red) → the minimal code to pass (green) → clean up
+      (refactor), tests still green.
 
 ## Practice
 **Goal:** Build one feature test-first.
 **Steps:**
 - [ ] Pick a small function (e.g. a price-with-discount calculator).
-- [ ] Write a failing test, make it pass, then refactor — repeat for 2–3 cases.
-- [ ] Refactor a class with a `new`-ed dependency to take it via the constructor; test it with a mock.
+- [ ] Write a failing test, make it pass, then refactor — repeat for 3–4 cases including edge cases.
+- [ ] Refactor a class with a `new`-ed dependency to take it via the constructor; test it with a
+      mock.
+- [ ] Make a time-dependent method ("is this subscription expired?") testable with an injected
+      `Clock`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Why is `LocalDate.now()` inside business logic hard to test?
+> The result changes with the real date, so tests can't control it — they become flaky or
+> impossible. Inject a `Clock` and pass a fixed one in tests.
+
+> [!question]- Describe the TDD cycle.
+> Red: write a small failing test. Green: write just enough code to pass it. Refactor: improve the
+> code while keeping all tests green. Repeat.
+
+> [!question]- How does constructor injection make code testable?
+> The class receives its collaborators instead of creating them, so a test can hand in mocks or
+> fakes and control every input.
 
 ## Definition of Done
 - [ ] I can spot and fix common testability problems.
-- [ ] I use constructor injection to make code testable.
-- [ ] I completed at least one red-green-refactor cycle.
+- [ ] I use constructor injection (and an injected `Clock`) to make code testable.
+- [ ] I completed several red-green-refactor cycles.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M8 - Databases - Relational Concepts]]
+- Next: [[M7 - Testing - Module Project (Testing the Bookshelf)]]

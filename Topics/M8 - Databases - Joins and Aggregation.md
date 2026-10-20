@@ -22,26 +22,49 @@ tags:
 - Filter groups with `HAVING`.
 
 ## Learn
-- [ ] Read about `INNER`/`LEFT` joins and `GROUP BY` (SQLBolt lessons 6–10).
+- [ ] Do: [SQLBolt](https://sqlbolt.com/) lessons 6–12.
+- [ ] Read: [Joins Between Tables](https://www.postgresql.org/docs/current/tutorial-join.html) and
+      [Aggregate Functions](https://www.postgresql.org/docs/current/tutorial-agg.html) (PostgreSQL
+      tutorial).
 
 ## Concepts
-- [ ] `INNER JOIN` returns matching rows; `LEFT JOIN` keeps all left rows (NULLs where no match).
+- [ ] `INNER JOIN` returns matching rows; `LEFT JOIN` keeps all left rows (with `NULL`s where
+      nothing matches).
 - [ ] Join on keys: `FROM orders o JOIN customers c ON o.customer_id = c.id`.
-- [ ] Aggregates: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` collapse rows.
-- [ ] `GROUP BY` buckets rows before aggregating; `HAVING` filters those groups (vs `WHERE` on rows).
-- [ ] Order of evaluation: `FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY`.
+- [ ] Aggregates: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` collapse rows; `COUNT(*)` counts rows,
+      `COUNT(col)` skips `NULL`s.
+- [ ] `GROUP BY` buckets rows before aggregating; `HAVING` filters those groups (vs `WHERE`, which
+      filters rows first).
+- [ ] Logical order of evaluation: `FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT`.
 
 ## Practice
 **Goal:** Answer cross-table questions.
 **Steps:**
 - [ ] Join `orders` to `customers` and list each order with the customer name.
-- [ ] Count orders per customer with `GROUP BY`.
+- [ ] Count orders per customer with `GROUP BY` — including customers with zero orders
+      (`LEFT JOIN`).
 - [ ] Use `HAVING` to show only customers with more than N orders.
+- [ ] Find each customer's total spend and sort by it.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- `INNER JOIN` vs `LEFT JOIN`?
+> `INNER JOIN` keeps only rows that match on both sides. `LEFT JOIN` keeps every row from the left
+> table and fills the right side with `NULL`s when there's no match.
+
+> [!question]- `WHERE` vs `HAVING`?
+> `WHERE` filters individual rows before grouping; `HAVING` filters groups after aggregation (e.g.
+> `HAVING COUNT(*) > 5`).
+
+> [!question]- `COUNT(*)` vs `COUNT(email)`?
+> `COUNT(*)` counts all rows; `COUNT(email)` counts only rows where `email` is not `NULL`.
 
 ## Definition of Done
 - [ ] I can write inner and left joins.
 - [ ] I can aggregate with `GROUP BY` and aggregate functions.
 - [ ] I know when to use `HAVING` vs `WHERE`.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M8 - Databases - Connecting from Java (JDBC)]]
+- Next: [[M8 - Databases - Transactions and Indexes]]

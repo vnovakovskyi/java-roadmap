@@ -14,36 +14,62 @@ tags:
 > [!info] Topic
 > **Area:** Databases · **Module:** 8 · **Priority:** good · **Est:** 3h
 > **Why this matters:** JDBC is the low-level API every Java database tool sits on — including JPA.
-> Doing it once by hand demystifies what frameworks do for you and teaches the critical safety habits.
+> Doing it once by hand demystifies what frameworks do for you and teaches the critical safety
+> habits.
 
 ## Learning Objectives
 - Connect to a database and run queries from Java.
 - Use `PreparedStatement` to avoid SQL injection.
-- Manage resources and read results safely.
+- Manage resources and transactions safely.
 
 ## Learn
-- [ ] Read a JDBC quick-start (e.g. the dev.java / Baeldung JDBC intro).
-- [ ] Add your database's JDBC driver as a dependency.
+- [ ] Read: [JDBC Basics](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html) (Java
+      Tutorials — older site, the API is unchanged).
+- [ ] Read: [Using the PostgreSQL JDBC driver](https://jdbc.postgresql.org/documentation/use/).
+- [ ] Read:
+      [OWASP — SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
+      (the "Defense Option 1" part).
 
 ## Concepts
-- [ ] `DriverManager.getConnection(url, user, pass)` opens a `Connection`.
-- [ ] **Always** use `PreparedStatement` with `?` parameters — string-concatenated SQL invites
-      **SQL injection**.
-- [ ] `ResultSet` iterates query rows; read columns by name/index.
-- [ ] Close everything — use try-with-resources ([[M4 - Java APIs - Exceptions and Error Handling]]).
-- [ ] In real apps a connection pool (e.g. HikariCP) manages connections; frameworks set this up.
+- [ ] Add the driver (`org.postgresql:postgresql`);
+      `DriverManager.getConnection(url, user, password)` opens a `Connection`.
+- [ ] **Always** use `PreparedStatement` with `?` parameters — string-concatenated SQL invites **SQL
+      injection**.
+- [ ] `ResultSet` iterates query rows; read columns by name. Generated ids come back via
+      `RETURNING id` or `getGeneratedKeys()`.
+- [ ] Close everything — use try-with-resources
+      ([[M4 - Java APIs - Exceptions and Error Handling]]).
+- [ ] Transactions in JDBC: `connection.setAutoCommit(false)`, then `commit()` or `rollback()`.
+- [ ] In real apps a **connection pool** (HikariCP) hands out connections; frameworks set this up.
 
 ## Practice
 **Goal:** Talk to a database without a framework.
 **Steps:**
-- [ ] Connect and `SELECT` rows into Java objects, printing them.
-- [ ] Insert a row with a `PreparedStatement` using parameters.
-- [ ] Show why a concatenated query is dangerous, then fix it with parameters.
+- [ ] Connect and `SELECT` rows into Java records, printing them.
+- [ ] Insert a row with a `PreparedStatement` and read back its generated id.
+- [ ] Show why a concatenated query is dangerous (log in as `' OR '1'='1`), then fix it with
+      parameters.
+- [ ] Run two updates in one JDBC transaction and roll back on failure.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Why is `"SELECT * FROM users WHERE name = '" + name + "'"` dangerous?
+> The input becomes part of the SQL: a crafted value like `' OR '1'='1` changes the query's meaning
+> (SQL injection). Parameters are sent separately and never executed as SQL.
+
+> [!question]- How do you make two JDBC statements atomic?
+> Turn off autocommit, run both, then `commit()`; on any exception, `rollback()`.
+
+> [!question]- Why do real applications use a connection pool?
+> Opening a database connection is slow; a pool keeps a set of open connections and lends them out,
+> which is much faster and caps the load on the database.
 
 ## Definition of Done
 - [ ] I can connect, query, and read results via JDBC.
 - [ ] I always use `PreparedStatement` for parameters.
-- [ ] I close resources with try-with-resources.
+- [ ] I close resources with try-with-resources and can use a JDBC transaction.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M8 - Databases - ORM Intro (JPA and Hibernate)]]

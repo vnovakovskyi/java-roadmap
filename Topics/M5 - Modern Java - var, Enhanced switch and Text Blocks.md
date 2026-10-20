@@ -18,31 +18,58 @@ tags:
 
 ## Learning Objectives
 - Use `var` for local type inference appropriately.
-- Use switch expressions and basic pattern matching.
+- Use switch expressions confidently.
 - Use text blocks for multi-line strings.
 
 ## Learn
-- [ ] Read about local-variable type inference (`var`), switch expressions, and text blocks on dev.java.
-- [ ] Skim pattern matching for `instanceof` and `switch` (Java 21).
+- [ ] Read:
+      [Local Variable Type Inference](https://docs.oracle.com/en/java/javase/25/language/local-variable-type-inference.html)
+      (Oracle language guide — includes style guidelines).
+- [ ] Read:
+      [Switch Expressions and Statements](https://docs.oracle.com/en/java/javase/25/language/switch-expressions-statements.html)
+      and [Text Blocks](https://docs.oracle.com/en/java/javase/25/language/text-blocks.html).
 
 ## Concepts
-- [ ] `var x = new ArrayList<String>();` — type inferred; still static, only for locals with a clear
-      initializer. Don't overuse where it hurts readability.
-- [ ] **Switch expressions**: `var label = switch (day) { case SAT, SUN -> "weekend"; default -> "weekday"; };`
-- [ ] **Pattern matching** `instanceof`: `if (o instanceof String s) { use s; }` — no explicit cast.
-- [ ] **Text blocks**: `"""..."""` for multi-line strings (JSON, SQL, HTML) without escaping.
+- [ ] `var list = new ArrayList<String>();` — type inferred; still static, only for local variables
+      with a clear initializer. Not for fields, parameters, or return types. Don't use it where it
+      hides the type (`var x = service.process();`).
+- [ ] **Switch expressions**:
+      `var label = switch (day) { case SAT, SUN -> "weekend"; default -> "weekday"; };` — they
+      return a value, never fall through, and must be exhaustive. Use `yield` to return from a
+      block.
+- [ ] **Text blocks**: `"""…"""` for multi-line strings (JSON, SQL, HTML) without escaping; common
+      indentation is stripped based on the closing `"""`. Combine with `.formatted(...)` for
+      templates.
+- [ ] Pattern matching in `switch` builds on this — next topic.
 
 ## Practice
 **Goal:** Modernize older-style code.
 **Steps:**
-- [ ] Rewrite a verbose local declaration using `var` (and a case where `var` would hurt clarity).
-- [ ] Convert an old `switch`+`break` into a switch expression.
-- [ ] Build a multi-line JSON string with a text block.
+- [ ] Rewrite a verbose local declaration using `var` — and find a case where `var` would hurt
+      clarity.
+- [ ] Convert an old `switch` + `break` into a switch expression.
+- [ ] Build a multi-line JSON string with a text block and fill in values with `.formatted(...)`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Where can't you use `var`?
+> For fields, method parameters, and return types; without an initializer (`var x;`); or with `null`
+> (`var x = null;`) — the compiler needs a type to infer.
+
+> [!question]- What does a switch expression give you over an old switch statement?
+> It produces a value, has no fall-through, supports several labels per case, and the compiler
+> checks it's exhaustive.
+
+> [!question]- How does a text block decide how much indentation to strip?
+> It removes the indentation common to all lines, including the line with the closing `"""` — move
+> the closing delimiter left to keep more indentation.
 
 ## Definition of Done
 - [ ] I use `var` where it improves clarity, not where it hides intent.
-- [ ] I can write switch expressions and `instanceof` pattern matching.
+- [ ] I can write switch expressions, including with `yield`.
 - [ ] I can use text blocks for multi-line strings.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M5 - Modern Java - Date and Time (java.time)]]
+- Next: [[M5 - Modern Java - Pattern Matching and Sealed Types]]
