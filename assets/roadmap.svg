@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 2872" font-family="Segoe UI, Helvetica, Arial, sans-serif">
-<rect x="2" y="2" width="1236" height="2868" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 3634" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="2" y="2" width="1236" height="3630" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
 <text x="620.0" y="54" text-anchor="middle" font-size="30" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Java Developer Roadmap</text>
-<text x="620.0" y="84" text-anchor="middle" font-size="14" fill="#475569" font-family="Segoe UI, Helvetica, Arial, sans-serif">From zero programming experience to a job-ready junior Java developer  ·  10 modules  ·  ~6 months @ ~10-12 h/week</text>
+<text x="620.0" y="84" text-anchor="middle" font-size="14" fill="#475569" font-family="Segoe UI, Helvetica, Arial, sans-serif">From zero programming experience to a job-ready junior Java developer  ·  11 modules  ·  93 topics  ·  ~325 h (core path ~256 h)</text>
 <text x="40" y="126" font-size="13" font-weight="700" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">Legend:</text>
+<text x="1200" y="126" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">numbers = estimated hours</text>
 <rect x="110" y="112" width="22" height="18" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
 <text x="140" y="126" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">Must know</text>
 <rect x="255" y="112" width="22" height="18" rx="5" fill="#ffedd5" stroke="#fb923c" stroke-width="1.5"/>
@@ -13,243 +14,413 @@
 <text x="56" y="180.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M1  —  Foundations &amp; Setup</text>
 <rect x="64" y="202" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
 <text x="80" y="216.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">How Programming and Java Work</text>
+<text x="1186" y="216.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
 <rect x="50" y="205" width="6" height="16" rx="2" fill="#0f766e"/>
 <rect x="64" y="228" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
 <text x="80" y="242.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Set Up and Verify Your Environment</text>
+<text x="1186" y="242.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
 <rect x="50" y="231" width="6" height="16" rx="2" fill="#0f766e"/>
 <rect x="64" y="254" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="268.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">The Command Line Basics</text>
+<text x="80" y="268.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Your First Java Program</text>
+<text x="1186" y="268.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
 <rect x="50" y="257" width="6" height="16" rx="2" fill="#0f766e"/>
 <rect x="64" y="280" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="294.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Your First Java Program</text>
+<text x="80" y="294.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">The Command Line Basics</text>
+<text x="1186" y="294.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
 <rect x="50" y="283" width="6" height="16" rx="2" fill="#0f766e"/>
 <rect x="64" y="306" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
 <text x="80" y="320.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">How Java Compiles and Runs</text>
+<text x="1186" y="320.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
 <rect x="50" y="309" width="6" height="16" rx="2" fill="#0f766e"/>
 <rect x="64" y="332" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
 <text x="80" y="346.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Reading Errors and Using the Debugger</text>
+<text x="1186" y="346.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
 <rect x="50" y="335" width="6" height="16" rx="2" fill="#0f766e"/>
-<rect x="40" y="380" width="1160" height="38" rx="8" fill="#1d4ed8"/>
-<text x="56" y="404.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M2  —  Core Java: Syntax &amp; Control Flow</text>
-<rect x="64" y="426" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="440.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Variables, Primitives and Types</text>
-<rect x="50" y="429" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="452" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="466.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Operators and Expressions</text>
-<rect x="50" y="455" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="478" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="492.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Strings and Basic Input-Output</text>
-<rect x="50" y="481" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="504" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="518.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Conditionals (if and switch)</text>
-<rect x="50" y="507" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="530" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="544.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Loops (for and while)</text>
-<rect x="50" y="533" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="556" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="570.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Methods and Parameters</text>
-<rect x="50" y="559" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="64" y="582" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="596.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Arrays</text>
-<rect x="50" y="585" width="6" height="16" rx="2" fill="#1d4ed8"/>
-<rect x="40" y="630" width="1160" height="38" rx="8" fill="#6d28d9"/>
-<text x="56" y="654.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M3  —  Object-Oriented Programming</text>
-<rect x="64" y="676" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="690.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Classes and Objects</text>
-<rect x="50" y="679" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="702" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="716.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Fields, Methods and Constructors</text>
-<rect x="50" y="705" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="728" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="742.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Encapsulation and Access Modifiers</text>
-<rect x="50" y="731" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="754" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="768.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Inheritance</text>
-<rect x="50" y="757" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="780" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="794.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Polymorphism and Overriding</text>
-<rect x="50" y="783" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="806" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="820.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Abstraction, Interfaces and Abstract Classes</text>
-<rect x="50" y="809" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="832" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="846.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">equals, hashCode and toString</text>
-<rect x="50" y="835" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="64" y="858" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="872.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">SOLID and Clean Code Principles</text>
-<rect x="50" y="861" width="6" height="16" rx="2" fill="#6d28d9"/>
-<rect x="40" y="906" width="1160" height="38" rx="8" fill="#be123c"/>
-<text x="56" y="930.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M4  —  Essential Java APIs</text>
-<rect x="64" y="952" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="966.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Collections Overview (List, Set, Map)</text>
-<rect x="50" y="955" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="978" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="992.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Choosing Collections and Big-O Basics</text>
-<rect x="50" y="981" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1004" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1018.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Generics Basics</text>
-<rect x="50" y="1007" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1030" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1044.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Iteration and Sorting (Comparable and Comparator)</text>
-<rect x="50" y="1033" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1056" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1070.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Exceptions and Error Handling</text>
-<rect x="50" y="1059" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1082" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1096.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Enums</text>
-<rect x="50" y="1085" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1108" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1122.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Optional and Null-Safety</text>
-<rect x="50" y="1111" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="64" y="1134" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1148.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Packages and Project Organization</text>
-<rect x="50" y="1137" width="6" height="16" rx="2" fill="#be123c"/>
-<rect x="40" y="1182" width="1160" height="38" rx="8" fill="#b45309"/>
-<text x="56" y="1206.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M5  —  Modern Java</text>
-<rect x="64" y="1228" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1242.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Lambdas and Functional Interfaces</text>
-<rect x="50" y="1231" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1254" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1268.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">The Streams API</text>
-<rect x="50" y="1257" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1280" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1294.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Records</text>
-<rect x="50" y="1283" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1306" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1320.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">var, Enhanced switch and Text Blocks</text>
-<rect x="50" y="1309" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1332" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1346.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Date and Time (java.time)</text>
-<rect x="50" y="1335" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1358" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1372.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Files and I-O Basics</text>
-<rect x="50" y="1361" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1384" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1398.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Concurrency Basics (Threads and Executors)</text>
-<rect x="50" y="1387" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="64" y="1410" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1424.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Virtual Threads (Java 21)</text>
-<rect x="50" y="1413" width="6" height="16" rx="2" fill="#b45309"/>
-<rect x="40" y="1458" width="1160" height="38" rx="8" fill="#0e7490"/>
-<text x="56" y="1482.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M6  —  Tooling &amp; Workflow</text>
+<rect x="64" y="358" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="372.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Getting Unstuck and Learning with AI</text>
+<text x="1186" y="372.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="361" width="6" height="16" rx="2" fill="#0f766e"/>
+<rect x="64" y="384" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="398.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Saving Your Work with Git</text>
+<text x="1186" y="398.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="387" width="6" height="16" rx="2" fill="#0f766e"/>
+<rect x="40" y="436" width="1160" height="38" rx="8" fill="#1d4ed8"/>
+<text x="56" y="460.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M2  —  Core Java: Syntax &amp; Control Flow</text>
+<rect x="64" y="482" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="496.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Variables, Primitives and Types</text>
+<text x="1186" y="496.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="485" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="508" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="522.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Operators and Expressions</text>
+<text x="1186" y="522.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="511" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="534" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="548.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Strings and Basic Input-Output</text>
+<text x="1186" y="548.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="537" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="560" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="574.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Conditionals (if and switch)</text>
+<text x="1186" y="574.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="563" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="586" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="600.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Loops (for and while)</text>
+<text x="1186" y="600.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="589" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="612" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="626.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Methods and Parameters</text>
+<text x="1186" y="626.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="615" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="638" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="652.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Recursion</text>
+<text x="1186" y="652.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="641" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="664" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="678.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Arrays</text>
+<text x="1186" y="678.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="667" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="64" y="690" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="704.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Console Bookshelf)</text>
+<text x="1186" y="704.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="693" width="6" height="16" rx="2" fill="#1d4ed8"/>
+<rect x="40" y="742" width="1160" height="38" rx="8" fill="#6d28d9"/>
+<text x="56" y="766.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M3  —  Object-Oriented Programming</text>
+<rect x="64" y="788" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="802.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Classes and Objects</text>
+<text x="1186" y="802.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="791" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="814" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="828.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Fields, Methods and Constructors</text>
+<text x="1186" y="828.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="817" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="840" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="854.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Memory Basics (Stack, Heap and Garbage Collection)</text>
+<text x="1186" y="854.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="843" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="866" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="880.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Encapsulation and Access Modifiers</text>
+<text x="1186" y="880.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="869" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="892" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="906.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Inheritance</text>
+<text x="1186" y="906.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="895" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="918" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="932.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Polymorphism and Overriding</text>
+<text x="1186" y="932.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="921" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="944" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="958.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Abstraction, Interfaces and Abstract Classes</text>
+<text x="1186" y="958.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="947" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="970" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="984.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">equals, hashCode and toString</text>
+<text x="1186" y="984.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="973" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="996" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1010.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">SOLID and Clean Code Principles</text>
+<text x="1186" y="1010.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="999" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="64" y="1022" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1036.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Bookshelf with Classes)</text>
+<text x="1186" y="1036.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1025" width="6" height="16" rx="2" fill="#6d28d9"/>
+<rect x="40" y="1074" width="1160" height="38" rx="8" fill="#be123c"/>
+<text x="56" y="1098.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M4  —  Essential Java APIs</text>
+<rect x="64" y="1120" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1134.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Wrapper Types, Autoboxing and BigDecimal</text>
+<text x="1186" y="1134.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1123" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1146" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1160.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Collections Overview (List, Set, Map)</text>
+<text x="1186" y="1160.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1149" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1172" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1186.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Choosing Collections and Big-O Basics</text>
+<text x="1186" y="1186.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1175" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1198" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1212.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Generics Basics</text>
+<text x="1186" y="1212.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1201" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1224" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1238.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Iteration and Sorting (Comparable and Comparator)</text>
+<text x="1186" y="1238.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1227" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1250" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1264.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Exceptions and Error Handling</text>
+<text x="1186" y="1264.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1253" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1276" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1290.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Enums</text>
+<text x="1186" y="1290.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1279" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1302" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1316.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Optional and Null-Safety</text>
+<text x="1186" y="1316.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1305" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1328" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1342.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Packages and Project Organization</text>
+<text x="1186" y="1342.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1331" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="64" y="1354" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1368.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Bookshelf with Collections)</text>
+<text x="1186" y="1368.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1357" width="6" height="16" rx="2" fill="#be123c"/>
+<rect x="40" y="1406" width="1160" height="38" rx="8" fill="#b45309"/>
+<text x="56" y="1430.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M5  —  Modern Java</text>
+<rect x="64" y="1452" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1466.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Lambdas and Functional Interfaces</text>
+<text x="1186" y="1466.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1455" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1478" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1492.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">The Streams API</text>
+<text x="1186" y="1492.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1481" width="6" height="16" rx="2" fill="#b45309"/>
 <rect x="64" y="1504" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1518.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Git Fundamentals</text>
-<rect x="50" y="1507" width="6" height="16" rx="2" fill="#0e7490"/>
-<rect x="64" y="1530" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1544.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">GitHub and Pull Requests</text>
-<rect x="50" y="1533" width="6" height="16" rx="2" fill="#0e7490"/>
+<text x="80" y="1518.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Records</text>
+<text x="1186" y="1518.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1507" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1530" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1544.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">var, Enhanced switch and Text Blocks</text>
+<text x="1186" y="1544.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1533" width="6" height="16" rx="2" fill="#b45309"/>
 <rect x="64" y="1556" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1570.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Maven (Project, Dependencies, Lifecycle)</text>
-<rect x="50" y="1559" width="6" height="16" rx="2" fill="#0e7490"/>
-<rect x="64" y="1582" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1596.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Gradle (Project, Dependencies, Tasks)</text>
-<rect x="50" y="1585" width="6" height="16" rx="2" fill="#0e7490"/>
+<text x="80" y="1570.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Pattern Matching and Sealed Types</text>
+<text x="1186" y="1570.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1559" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1582" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1596.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Date and Time (java.time)</text>
+<text x="1186" y="1596.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1585" width="6" height="16" rx="2" fill="#b45309"/>
 <rect x="64" y="1608" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1622.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Dependency Management and Semantic Versioning</text>
-<rect x="50" y="1611" width="6" height="16" rx="2" fill="#0e7490"/>
-<rect x="64" y="1634" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1648.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Effective IDE Use and Debugging</text>
-<rect x="50" y="1637" width="6" height="16" rx="2" fill="#0e7490"/>
-<rect x="40" y="1682" width="1160" height="38" rx="8" fill="#15803d"/>
-<text x="56" y="1706.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M7  —  Testing</text>
-<rect x="64" y="1728" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1742.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Why We Test and the Test Pyramid</text>
-<rect x="50" y="1731" width="6" height="16" rx="2" fill="#15803d"/>
-<rect x="64" y="1754" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1768.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">JUnit 5 Basics</text>
-<rect x="50" y="1757" width="6" height="16" rx="2" fill="#15803d"/>
-<rect x="64" y="1780" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1794.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Assertions with AssertJ</text>
-<rect x="50" y="1783" width="6" height="16" rx="2" fill="#15803d"/>
-<rect x="64" y="1806" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1820.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Mockito and Test Doubles</text>
-<rect x="50" y="1809" width="6" height="16" rx="2" fill="#15803d"/>
-<rect x="64" y="1832" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="1846.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Writing Testable Code (Intro to TDD)</text>
-<rect x="50" y="1835" width="6" height="16" rx="2" fill="#15803d"/>
-<rect x="40" y="1880" width="1160" height="38" rx="8" fill="#9333ea"/>
-<text x="56" y="1904.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M8  —  Databases &amp; SQL</text>
-<rect x="64" y="1926" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1940.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Relational Concepts</text>
-<rect x="50" y="1929" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="64" y="1952" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1966.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">SQL CRUD and Queries</text>
-<rect x="50" y="1955" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="64" y="1978" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="1992.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Joins and Aggregation</text>
-<rect x="50" y="1981" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="64" y="2004" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="2018.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Connecting from Java (JDBC)</text>
-<rect x="50" y="2007" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="64" y="2030" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2044.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">ORM Intro (JPA and Hibernate)</text>
-<rect x="50" y="2033" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="64" y="2056" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="2070.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Schema Basics and Migrations (Flyway)</text>
-<rect x="50" y="2059" width="6" height="16" rx="2" fill="#9333ea"/>
-<rect x="40" y="2104" width="1160" height="38" rx="8" fill="#c2410c"/>
-<text x="56" y="2128.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M9  —  Web Development with Spring Boot</text>
-<rect x="64" y="2150" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2164.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">HTTP and REST Fundamentals</text>
-<rect x="50" y="2153" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2176" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2190.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Spring Boot Intro and Project Setup</text>
-<rect x="50" y="2179" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2202" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2216.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Controllers and REST Endpoints</text>
-<rect x="50" y="2205" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2228" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2242.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Services and Dependency Injection</text>
-<rect x="50" y="2231" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2254" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2268.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Spring Data JPA and Repositories</text>
-<rect x="50" y="2257" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2280" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2294.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Validation and Error Handling</text>
-<rect x="50" y="2283" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2306" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="2320.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Configuration and Profiles</text>
-<rect x="50" y="2309" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="64" y="2332" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="2346.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Securing the API with Spring Security</text>
-<rect x="50" y="2335" width="6" height="16" rx="2" fill="#c2410c"/>
-<rect x="40" y="2380" width="1160" height="38" rx="8" fill="#334155"/>
-<text x="56" y="2404.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M10  —  Putting It Together: Capstone</text>
-<rect x="64" y="2426" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2440.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Designing a Small CRUD App</text>
-<rect x="50" y="2429" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="64" y="2452" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2466.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Building the REST API End-to-End</text>
-<rect x="50" y="2455" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="64" y="2478" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2492.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Persisting with a Real Database</text>
-<rect x="50" y="2481" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="64" y="2504" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
-<text x="80" y="2518.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Testing the Application</text>
-<rect x="50" y="2507" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="64" y="2530" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
-<text x="80" y="2544.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Good Habits (Logging, Config, README)</text>
-<rect x="50" y="2533" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="64" y="2556" width="1136" height="22" rx="6" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1.2"/>
-<text x="80" y="2570.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Packaging and Running (Jar and Docker Basics)</text>
-<rect x="50" y="2559" width="6" height="16" rx="2" fill="#334155"/>
-<rect x="40" y="2608" width="570" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="56" y="2632" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Tools you&#x27;ll set up &amp; use</text>
-<text x="56" y="2654" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JDK 25 LTS (Temurin)</text>
-<text x="56" y="2676" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  IntelliJ IDEA</text>
-<text x="56" y="2698" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Git &amp; GitHub</text>
-<text x="56" y="2720" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Maven</text>
-<text x="56" y="2742" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Gradle</text>
-<text x="56" y="2764" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JUnit 6 · AssertJ · Mockito</text>
-<text x="56" y="2786" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  PostgreSQL · DBeaver</text>
-<text x="56" y="2808" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Boot 4</text>
-<text x="56" y="2830" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Docker (basics)</text>
-<rect x="630" y="2608" width="570" height="174" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="646" y="2632" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Recommended books &amp; free resources</text>
-<text x="646" y="2654" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Head First Java (beginner)</text>
-<text x="646" y="2676" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Effective Java (level-up)</text>
-<text x="646" y="2698" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Modern Java in Action (streams)</text>
-<text x="646" y="2720" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Start Here / Spring in Action</text>
-<text x="646" y="2742" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Pro Git (free)</text>
-<text x="646" y="2764" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  dev.java · Helsinki MOOC (free)</text>
+<text x="80" y="1622.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Files and I/O Basics</text>
+<text x="1186" y="1622.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1611" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1634" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1648.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Concurrency Basics (Threads and Executors)</text>
+<text x="1186" y="1648.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1637" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1660" width="1136" height="22" rx="6" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="80" y="1674.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Virtual Threads (Java 21)</text>
+<text x="1186" y="1674.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1663" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="64" y="1686" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1700.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Bookshelf Stats and Saving)</text>
+<text x="1186" y="1700.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="1689" width="6" height="16" rx="2" fill="#b45309"/>
+<rect x="40" y="1738" width="1160" height="38" rx="8" fill="#0e7490"/>
+<text x="56" y="1762.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M6  —  Tooling &amp; Workflow</text>
+<rect x="64" y="1784" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1798.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Git Branching, Merging and Undo</text>
+<text x="1186" y="1798.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1787" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1810" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1824.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">GitHub and Pull Requests</text>
+<text x="1186" y="1824.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1813" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1836" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1850.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Maven (Project, Dependencies, Lifecycle)</text>
+<text x="1186" y="1850.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1839" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1862" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1876.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Gradle (Project, Dependencies, Tasks)</text>
+<text x="1186" y="1876.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1865" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1888" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1902.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Dependency Management and Semantic Versioning</text>
+<text x="1186" y="1902.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1891" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1914" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1928.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Effective IDE Use and Debugging</text>
+<text x="1186" y="1928.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1917" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1940" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="1954.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">AI Coding Assistants in Your Workflow</text>
+<text x="1186" y="1954.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="1943" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1966" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="1980.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Continuous Integration with GitHub Actions</text>
+<text x="1186" y="1980.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="1969" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="1992" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2006.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Docker Basics for Developers</text>
+<text x="1186" y="2006.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="1995" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="64" y="2018" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2032.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Bookshelf as a Real Project)</text>
+<text x="1186" y="2032.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2021" width="6" height="16" rx="2" fill="#0e7490"/>
+<rect x="40" y="2070" width="1160" height="38" rx="8" fill="#15803d"/>
+<text x="56" y="2094.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M7  —  Testing</text>
+<rect x="64" y="2116" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2130.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Why We Test and the Test Pyramid</text>
+<text x="1186" y="2130.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="2119" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="64" y="2142" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2156.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">JUnit Basics</text>
+<text x="1186" y="2156.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2145" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="64" y="2168" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2182.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Assertions with AssertJ</text>
+<text x="1186" y="2182.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="2171" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="64" y="2194" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2208.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Mockito and Test Doubles</text>
+<text x="1186" y="2208.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2197" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="64" y="2220" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2234.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Writing Testable Code (Intro to TDD)</text>
+<text x="1186" y="2234.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2223" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="64" y="2246" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2260.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Testing the Bookshelf)</text>
+<text x="1186" y="2260.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2249" width="6" height="16" rx="2" fill="#15803d"/>
+<rect x="40" y="2298" width="1160" height="38" rx="8" fill="#9333ea"/>
+<text x="56" y="2322.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M8  —  Databases &amp; SQL</text>
+<rect x="64" y="2344" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2358.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Relational Concepts</text>
+<text x="1186" y="2358.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2347" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2370" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2384.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">SQL CRUD and Queries</text>
+<text x="1186" y="2384.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2373" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2396" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2410.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Joins and Aggregation</text>
+<text x="1186" y="2410.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2399" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2422" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2436.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Transactions and Indexes</text>
+<text x="1186" y="2436.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2425" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2448" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2462.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Connecting from Java (JDBC)</text>
+<text x="1186" y="2462.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2451" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2474" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2488.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">ORM Intro (JPA and Hibernate)</text>
+<text x="1186" y="2488.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2477" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2500" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2514.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Schema Basics and Migrations (Flyway)</text>
+<text x="1186" y="2514.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="2503" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="64" y="2526" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2540.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Module Project (Bookshelf on PostgreSQL)</text>
+<text x="1186" y="2540.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2529" width="6" height="16" rx="2" fill="#9333ea"/>
+<rect x="40" y="2578" width="1160" height="38" rx="8" fill="#c2410c"/>
+<text x="56" y="2602.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M9  —  Web Development with Spring Boot</text>
+<rect x="64" y="2624" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2638.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">HTTP and REST Fundamentals</text>
+<text x="1186" y="2638.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2627" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2650" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2664.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Spring Boot Intro and Project Setup</text>
+<text x="1186" y="2664.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2653" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2676" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2690.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Controllers and REST Endpoints</text>
+<text x="1186" y="2690.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2679" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2702" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2716.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Services and Dependency Injection</text>
+<text x="1186" y="2716.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2705" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2728" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2742.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Spring Data JPA and Repositories</text>
+<text x="1186" y="2742.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="2731" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2754" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2768.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Validation and Error Handling</text>
+<text x="1186" y="2768.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2757" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2780" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2794.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Configuration and Profiles</text>
+<text x="1186" y="2794.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="2783" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2806" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2820.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Calling Other APIs with RestClient</text>
+<text x="1186" y="2820.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2809" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2832" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="2846.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">API Docs and Monitoring (OpenAPI and Actuator)</text>
+<text x="1186" y="2846.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="2835" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="64" y="2858" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2872.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Securing the API with Spring Security</text>
+<text x="1186" y="2872.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="2861" width="6" height="16" rx="2" fill="#c2410c"/>
+<rect x="40" y="2910" width="1160" height="38" rx="8" fill="#334155"/>
+<text x="56" y="2934.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M10  —  Putting It Together: Capstone</text>
+<rect x="64" y="2956" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2970.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Designing a Small CRUD App</text>
+<text x="1186" y="2970.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="2959" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="64" y="2982" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="2996.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Building the REST API End-to-End</text>
+<text x="1186" y="2996.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">6h</text>
+<rect x="50" y="2985" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="64" y="3008" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3022.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Persisting with a Real Database</text>
+<text x="1186" y="3022.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="3011" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="64" y="3034" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3048.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Testing the Application</text>
+<text x="1186" y="3048.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">5h</text>
+<rect x="50" y="3037" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="64" y="3060" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3074.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Good Habits (Logging, Config, README)</text>
+<text x="1186" y="3074.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="3063" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="64" y="3086" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="3100.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Packaging and Running (Jar and Container Image)</text>
+<text x="1186" y="3100.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="3089" width="6" height="16" rx="2" fill="#334155"/>
+<rect x="40" y="3138" width="1160" height="38" rx="8" fill="#4d7c0f"/>
+<text x="56" y="3162.0" font-size="16" font-weight="700" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif">M11  —  Getting Hired</text>
+<rect x="64" y="3184" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3198.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Building Your Portfolio and GitHub Profile</text>
+<text x="1186" y="3198.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">4h</text>
+<rect x="50" y="3187" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="64" y="3210" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3224.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Writing a Developer CV</text>
+<text x="1186" y="3224.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="3213" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="64" y="3236" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3250.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Preparing for Technical Interviews</text>
+<text x="1186" y="3250.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">6h</text>
+<rect x="50" y="3239" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="64" y="3262" width="1136" height="22" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="1.2"/>
+<text x="80" y="3276.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">Coding Interview Practice (Algorithms Basics)</text>
+<text x="1186" y="3276.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">10h</text>
+<rect x="50" y="3265" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="64" y="3288" width="1136" height="22" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="80" y="3302.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">The Job Search</text>
+<text x="1186" y="3302.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">3h</text>
+<rect x="50" y="3291" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="64" y="3314" width="1136" height="22" rx="6" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1.2"/>
+<text x="80" y="3328.0" font-size="13.5" fill="#1f2937" font-family="Segoe UI, Helvetica, Arial, sans-serif">What&#x27;s Next After the Roadmap</text>
+<text x="1186" y="3328.0" text-anchor="end" font-size="12" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif">2h</text>
+<rect x="50" y="3317" width="6" height="16" rx="2" fill="#4d7c0f"/>
+<rect x="40" y="3370" width="570" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="56" y="3394" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Tools you&#x27;ll set up &amp; use</text>
+<text x="56" y="3416" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JDK 25 LTS (Temurin)</text>
+<text x="56" y="3438" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  IntelliJ IDEA</text>
+<text x="56" y="3460" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Git, GitHub &amp; GitHub Actions</text>
+<text x="56" y="3482" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Maven · Gradle</text>
+<text x="56" y="3504" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Docker &amp; Docker Compose</text>
+<text x="56" y="3526" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JUnit 6 · AssertJ · Mockito · Testcontainers</text>
+<text x="56" y="3548" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  PostgreSQL · Flyway</text>
+<text x="56" y="3570" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Boot 4</text>
+<text x="56" y="3592" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  An AI assistant — used wisely</text>
+<rect x="630" y="3370" width="570" height="174" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="646" y="3394" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Recommended books &amp; free resources</text>
+<text x="646" y="3416" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Head First Java (beginner)</text>
+<text x="646" y="3438" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Effective Java (level-up)</text>
+<text x="646" y="3460" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Modern Java in Action (streams)</text>
+<text x="646" y="3482" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Start Here, 2nd ed. (Spring)</text>
+<text x="646" y="3504" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Pro Git (free)</text>
+<text x="646" y="3526" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  dev.java · Helsinki Java MOOC (free)</text>
 </svg>
