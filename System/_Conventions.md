@@ -85,8 +85,10 @@ Each topic note has the same shape so studying is frictionless:
 
 ## Stack assumptions
 
-Content targets **Java 21 (LTS)**. The web module uses **Spring Boot 3.x**. Build-tool topics cover
-both **Maven** and **Gradle**. Version-sensitive items are flagged inline.
+Content targets **Java 25 (LTS)**. The web module uses **Spring Boot 4.x** (4.1 at the last review;
+Spring Boot 3.x left open-source support in June 2026). Testing uses **JUnit 6** (the Jupiter API
+you'll see called "JUnit 5" in older tutorials). Build-tool topics cover both **Maven** and
+**Gradle**. Version-sensitive items are flagged inline, e.g. *(Java 25+)* or *(Spring Boot 4)*.
 
 ## Adding a new topic
 

@@ -1,0 +1,29 @@
+name: Check links
+
+on:
+  pull_request:
+    paths: ["**.md"]
+  schedule:
+    - cron: "0 6 1 * *" # monthly: resources move, docs get reorganized
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check external links in all notes
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # 403/429: sites like Baeldung, Stack Overflow and Reddit block CI bots but work in a browser.
+          args: >-
+            --no-progress
+            --max-retries 3
+            --accept 200..=299,403,429
+            --exclude-loopback
+            --exclude '^https?://(www\.)?example\.(com|org)'
+            './**/*.md'
+          fail: true

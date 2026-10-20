@@ -27,7 +27,9 @@ tags:
 ## Concepts
 - [ ] `record Point(int x, int y) {}` auto-generates a constructor, accessors (`x()`, `y()`),
       `equals`, `hashCode`, and `toString`.
-- [ ] Records are **immutable** and `final`; they can't extend classes (but can implement interfaces).
+- [ ] Records are **shallowly immutable** and `final`: fields can't be reassigned, but a `List` field
+      can still be mutated — copy it with `List.copyOf` in the constructor. They can't extend classes
+      (but can implement interfaces).
 - [ ] **Compact constructor** for validation: `public Point { if (x < 0) throw ...; }`.
 - [ ] Great for DTOs, value objects, and method return groupings; not for mutable entities.
 - [ ] Compare with the hand-written class from [[M3 - OOP - equals, hashCode and toString]] — same

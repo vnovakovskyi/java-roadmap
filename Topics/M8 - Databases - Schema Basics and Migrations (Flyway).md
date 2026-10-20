@@ -22,8 +22,9 @@ tags:
 - Understand versioned, ordered, immutable migration files.
 
 ## Learn
-- [ ] Read the [Flyway "Getting Started"](https://flywaydb.org/documentation/) guide.
-- [ ] Read how Spring Boot auto-runs Flyway on startup (preview of Module 9).
+- [ ] Read ["Quickstart — How Flyway Works"](https://documentation.red-gate.com/fd/quickstart-how-flyway-works-184127223.html).
+- [ ] Read how Spring Boot auto-runs Flyway on startup (preview of Module 9). *(Spring Boot 4)* This
+      needs the `spring-boot-starter-flyway` starter — `flyway-core` alone no longer triggers it.
 
 ## Concepts
 - [ ] Letting an ORM auto-create tables is fine for demos but not production — use migrations.

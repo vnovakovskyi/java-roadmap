@@ -30,7 +30,8 @@ tags:
       `@Valid` on the `@RequestBody`.
 - [ ] Invalid input → `MethodArgumentNotValidException`; map it to a clean **400** response.
 - [ ] **Global handling**: `@ControllerAdvice` + `@ExceptionHandler` centralizes error mapping.
-- [ ] Return a consistent error shape (e.g. RFC 7807 `ProblemDetail`); never leak stack traces.
+- [ ] Return a consistent error shape (e.g. `ProblemDetail`, the RFC 9457 "problem details"
+      format — it replaced RFC 7807); never leak stack traces.
 - [ ] Map domain failures to the right status (404 not found, 409 conflict) — reuse
       [[M4 - Java APIs - Exceptions and Error Handling]] habits.
 

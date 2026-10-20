@@ -22,12 +22,13 @@ tags:
 - Compare Gradle with Maven.
 
 ## Learn
-- [ ] Read the [Gradle "Building Java Applications" guide](https://docs.gradle.org/current/samples/sample_building_java_applications.html).
+- [ ] Do the [Gradle tutorial, part 1: "Initializing the Project"](https://docs.gradle.org/current/userguide/part1_gradle_init.html).
 - [ ] Read about the dependency configurations and the wrapper.
 
 ## Concepts
-- [ ] `build.gradle` (Groovy or Kotlin DSL) declares plugins, `repositories`, `dependencies`, and Java
-      toolchain.
+- [ ] `build.gradle.kts` (Kotlin DSL — the default for new projects) or `build.gradle` (Groovy) declares
+      plugins, `repositories`, `dependencies`, and the Java toolchain; `gradle init` also creates a
+      version catalog (`gradle/libs.versions.toml`) that keeps library versions in one place.
 - [ ] Dependency configurations: `implementation`, `api`, `testImplementation` (vs Maven scopes).
 - [ ] **Tasks** are the unit of work (`build`, `test`, `run`, `jar`); Gradle caches and runs them
       incrementally — usually faster than Maven.
@@ -43,7 +44,7 @@ tags:
 - [ ] Note one thing you preferred vs Maven and one you didn't.
 
 ## Definition of Done
-- [ ] I can read/edit a `build.gradle` and add dependencies.
+- [ ] I can read/edit a `build.gradle.kts` and add dependencies.
 - [ ] I can run Gradle tasks and use `gradlew`.
 - [ ] I can map Gradle concepts to their Maven equivalents.
 

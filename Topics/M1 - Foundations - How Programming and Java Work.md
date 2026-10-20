@@ -22,7 +22,7 @@ tags:
 - Explain in one sentence why Java is "write once, run anywhere".
 
 ## Learn
-- [ ] Read: [dev.java — "Getting Started"](https://dev.java/learn/getting-started/) intro.
+- [ ] Read: [dev.java — "Getting Started with Java"](https://dev.java/learn/first-steps/first-java-code/getting-started/) intro.
 - [ ] Watch a short "what is the JVM" explainer (any reputable 10-min video).
 - [ ] Read the JVM/JRE/JDK distinction (e.g. the callout in [[Tools & Setup]]).
 

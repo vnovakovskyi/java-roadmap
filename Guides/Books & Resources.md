@@ -31,13 +31,15 @@ specific resource you need at that moment. This page is the big-picture referenc
 ### Reference / later
 - **Java Concurrency in Practice** — Goetz et al. *(optional)* The classic on threads; beyond junior
   scope, but the reference when you get there.
-- **Spring in Action, 6th ed.** — Craig Walls. *(good)* A thorough Spring Boot companion for Module 9.
-- **Spring Start Here** — Laurențiu Spilcă. *(good)* Gentler Spring intro if Spring in Action feels heavy.
+- **Spring Start Here, 2nd ed.** — Laurențiu Spilcă. *(good)* The gentlest Spring intro, updated for
+  Spring Boot 4 / Spring Framework 7 (in Manning early access; the 1st ed. targets Spring Boot 2).
+- **Spring in Action, 6th ed.** — Craig Walls. *(optional)* Thorough, but written for Spring Boot 2 —
+  the concepts hold, many code details have changed.
 
 ## Free official documentation (your default detail source)
 - **[Dev.java](https://dev.java/learn/)** — Oracle's official, modern Java tutorials. *(must)*
 - **[The Java Tutorials](https://docs.oracle.com/javase/tutorial/)** — older but comprehensive. *(good)*
-- **[Java 21 API docs (Javadoc)](https://docs.oracle.com/en/java/javase/21/docs/api/)** — look up any
+- **[Java 25 API docs (Javadoc)](https://docs.oracle.com/en/java/javase/25/docs/api/)** — look up any
   class/method. *(must — learn to read these early)*
 - **[Spring Boot reference + Guides](https://spring.io/guides)** — short, official how-tos. *(must for M9)*
 - **[Baeldung](https://www.baeldung.com)** — huge library of practical Java/Spring articles. *(good)*
