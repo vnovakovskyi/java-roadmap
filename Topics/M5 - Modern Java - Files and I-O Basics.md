@@ -13,8 +13,8 @@ tags:
 
 > [!info] Topic
 > **Area:** Modern Java · **Module:** 5 · **Priority:** good · **Est:** 3h
-> **Why this matters:** Reading and writing files is a constant need — configs, data, logs. The
-> modern `java.nio.file` API makes the common cases simple and safe.
+> **Why this matters:** Reading and writing files is a constant need — configs, data, exports, logs.
+> The modern `java.nio.file` API makes the common cases simple and safe.
 
 ## Learning Objectives
 - Read and write text files with `Files`/`Path`.
@@ -22,14 +22,23 @@ tags:
 - Handle I/O exceptions with try-with-resources.
 
 ## Learn
-- [ ] Read about `java.nio.file.Files` and `Path` (Javadoc / dev.java).
+- [ ] Read: [dev.java — Common I/O Tasks in Modern Java](https://dev.java/learn/api/io/modernio/).
+- [ ] Read:
+      [dev.java — File Operations Basics](https://dev.java/learn/api/io/java-io/reading-writing/).
+- [ ] Reference: the
+      [`Files` Javadoc](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html).
 
 ## Concepts
-- [ ] `Path p = Path.of("data.txt");` represents a file path.
-- [ ] Small files: `Files.readString(p)` / `Files.writeString(p, text)`;
-      lines: `Files.readAllLines` / `Files.write`.
-- [ ] Large files: `try (var lines = Files.lines(p)) { ... }` to stream line by line (closeable).
-- [ ] I/O throws **checked** `IOException` — handle it (link: [[M4 - Java APIs - Exceptions and Error Handling]]).
+- [ ] `Path p = Path.of("data.txt");` represents a file path — relative paths resolve against the
+      directory the program was started from.
+- [ ] Small files: `Files.readString(p)` / `Files.writeString(p, text)`; lines: `Files.readAllLines`
+      / `Files.write`.
+- [ ] Large files: `try (var lines = Files.lines(p)) { ... }` streams line by line — it must be
+      closed.
+- [ ] I/O throws **checked** `IOException` — handle it
+      ([[M4 - Java APIs - Exceptions and Error Handling]]).
+- [ ] *(Java 18+)* UTF-8 is the default charset everywhere, so text files behave the same on every
+      OS.
 - [ ] Combine with the Streams API to process file contents functionally.
 
 ## Practice
@@ -37,12 +46,28 @@ tags:
 **Steps:**
 - [ ] Write a few lines to a file, then read them back and print them.
 - [ ] Stream a larger text file with `Files.lines` and count lines containing a keyword.
+- [ ] Write a list of records to a simple CSV file and read it back into objects.
 - [ ] Handle the "file does not exist" case with a clear message.
 
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- When would you use `Files.lines` instead of `Files.readAllLines`?
+> For large files: `lines` streams them lazily line by line, while `readAllLines` loads everything
+> into memory at once.
+
+> [!question]- Why must the stream from `Files.lines` be closed?
+> It holds an open file handle. Use try-with-resources so it's released even if processing fails.
+
+> [!question]- `Path.of("data.txt")` — where does Java look for the file?
+> Relative to the current working directory — the directory the program was started from (in an IDE,
+> usually the project root).
+
 ## Definition of Done
-- [ ] I can read/write text files with `Files`/`Path`.
+- [ ] I can read and write text files with `Files`/`Path`.
 - [ ] I can stream a file with try-with-resources.
 - [ ] I handle `IOException` properly.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M5 - Modern Java - Concurrency Basics (Threads and Executors)]]

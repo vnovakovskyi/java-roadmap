@@ -1,0 +1,77 @@
+---
+title: Module Project (Bookshelf Stats and Saving)
+area: Modern Java
+module: 5
+status: todo
+priority: must
+effort: 5
+tags:
+  - java-roadmap
+---
+
+# Module Project (Bookshelf Stats and Saving)
+
+> [!info] Topic
+> **Area:** Modern Java · **Module:** 5 · **Priority:** must · **Est:** 5h
+> **Why this matters:** Version 4 of Bookshelf goes modern: records for data, a sealed command model
+> handled with pattern matching, statistics with streams, dates with `java.time`, and saving to a
+> file so your books survive a restart.
+
+## Learning Objectives
+- Refactor a working app to modern Java idioms.
+- Answer questions about data with stream pipelines.
+- Persist data to a file and load it back robustly.
+
+## Learn
+- [ ] Revisit [[M5 - Modern Java - The Streams API]],
+      [[M5 - Modern Java - Pattern Matching and Sealed Types]], and
+      [[M5 - Modern Java - Files and I-O Basics]].
+
+## Concepts
+- [ ] `Book` becomes a record:
+      `record Book(long id, String title, String author, Genre genre, ReadingStatus status, LocalDate finishedOn)`.
+      Changing a status creates a new `Book` (e.g. a `withStatus(...)` method) that replaces the old
+      one in storage.
+- [ ] Commands as a sealed hierarchy —
+      `sealed interface Command permits Add, ListAll, Search, Finish, Stats, Quit` — parsed from
+      input and executed with a pattern-matching `switch`.
+- [ ] Stats with streams: books per genre (`groupingBy` + `counting`), top 3 authors, books finished
+      this year.
+- [ ] Sorting with `Comparator.comparing(Book::title)`; filtering with lambdas.
+- [ ] Persistence: save to `books.csv` on exit and load on start (`Files.readAllLines` /
+      `Files.write`); a missing file means "first run", a malformed line is reported and skipped —
+      never a crash.
+
+## Practice
+**Goal:** Bookshelf v4 — modern Java, statistics, and a file that survives restarts.
+**Steps:**
+- [ ] Convert `Book` to a record and update the code that changed books in place.
+- [ ] Model commands as a sealed interface of records; replace the menu's `if/else` chain with a
+      `switch`.
+- [ ] Add a "Stats" command built from stream pipelines.
+- [ ] Save on exit, load on start, and handle a missing or corrupted file gracefully.
+- [ ] Commit, push, and tag `v4`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Why did turning `Book` into a record change how "mark as finished" works?
+> Records are immutable, so you can't flip a field — you create a new `Book` with the new status and
+> date and replace the old one in storage.
+
+> [!question]- What does the compiler do for you when you add a new `Command` type?
+> It reports every `switch` over `Command` that doesn't handle the new type, so you can't forget to
+> implement it.
+
+> [!question]- How does your app react to a corrupted line in `books.csv`?
+> It reports the line number, skips it, and keeps loading the rest — one bad line never prevents the
+> app from starting.
+
+## Definition of Done
+- [ ] Bookshelf v4 uses records, a sealed command model, and streams for stats.
+- [ ] Data is saved to and loaded from a file, with missing and corrupted files handled.
+- [ ] The code is on GitHub, tagged `v4`.
+- [ ] I can answer the Self-check questions without peeking.
+
+## Next
+- Next: [[M6 - Tooling - Git Branching, Merging and Undo]]

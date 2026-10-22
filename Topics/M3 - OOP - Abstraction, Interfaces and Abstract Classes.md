@@ -22,31 +22,52 @@ tags:
 - Use interfaces to decouple code (program to an interface).
 
 ## Learn
-- [ ] Read: [dev.java — "Interfaces"](https://dev.java/learn/interfaces/).
-- [ ] Read about abstract classes and `default` methods on interfaces.
+- [ ] Read:
+      [dev.java — Interfaces](https://dev.java/learn/language/oop/interfaces/defining-interfaces/)
+      and
+      [Using an Interface as a Type](https://dev.java/learn/language/oop/interfaces/interfaces-as-a-type/).
+- [ ] Read:
+      [dev.java — Abstract Methods and Classes](https://dev.java/learn/language/oop/inheritance/abstract-classes/).
 
 ## Concepts
-- [ ] An **interface** is a contract: method signatures a class promises to provide via `implements`.
-      A class can implement many interfaces.
+- [ ] An **interface** is a contract: method signatures a class promises to provide via
+      `implements`. A class can implement many interfaces.
 - [ ] An **abstract class** can't be instantiated and may mix abstract + concrete methods + state; a
       class extends only one.
 - [ ] Rule of thumb: interface = capability/contract (can have many); abstract class = shared base
       with state.
-- [ ] Interfaces can have `default` and `static` methods.
-- [ ] "Program to an interface" → swap implementations (e.g. for tests) without touching callers.
+- [ ] Interfaces can also have `default`, `static`, and `private` methods.
+- [ ] "Program to an interface" → swap implementations (e.g. a fake for tests) without touching
+      callers. This is exactly what Spring does for you in Module 9.
 
 ## Practice
 **Goal:** Decouple with an interface.
 **Steps:**
 - [ ] Define `Shape` with `double area()`; implement `Circle` and `Rectangle`.
-- [ ] Write a method that totals the area of a `List<Shape>` — works for any shape.
-- [ ] Create a `Repository` interface and two implementations (e.g. in-memory vs fake) to feel the
-      decoupling you'll use constantly in Spring.
+- [ ] Write a method that totals the area of a `Shape[]` — it works for any shape.
+- [ ] Create a `Notifier` interface with two implementations (`ConsoleNotifier`, `FakeNotifier` that
+      just records messages) and switch between them without changing the calling code.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- When would you choose an interface, and when an abstract class?
+> Interface for a capability or contract that unrelated classes can share (a class can implement
+> many). Abstract class for a common base that shares state and code (a class can extend only one).
+
+> [!question]- Can an interface contain method bodies?
+> Yes: `default` methods (inherited implementations), `static` helpers, and `private` helper
+> methods. Abstract methods are still the core of the contract.
+
+> [!question]- What does "program to an interface" mean, and why is it useful?
+> Declare variables and parameters by interface type (`Notifier n`) rather than concrete class. You
+> can then swap implementations — real, fake, or new — without changing the code that uses them.
 
 ## Definition of Done
 - [ ] I can define and implement interfaces.
 - [ ] I can decide between interface and abstract class with reasons.
 - [ ] I can explain how interfaces enable decoupling and testing.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M3 - OOP - equals, hashCode and toString]]

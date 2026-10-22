@@ -22,15 +22,24 @@ tags:
 - Use operator precedence and parentheses for clarity.
 
 ## Learn
-- [ ] Read: [dev.java — "Operators"](https://dev.java/learn/language-basics/).
-- [ ] Read about integer division and the modulo (`%`) operator.
+- [ ] Read:
+      [dev.java — Using Operators in Your Programs](https://dev.java/learn/language/constructs/basics/using-operators/).
+- [ ] Read:
+      [dev.java — Expressions, Statements and Blocks](https://dev.java/learn/language/constructs/basics/expressions-statements-blocks/).
+- [ ] Reference:
+      [dev.java — Summary of Operators](https://dev.java/learn/language/constructs/basics/all-operators/).
 
 ## Concepts
-- [ ] Arithmetic: `+ - * / %`. **Integer division truncates** (`7 / 2 == 3`); use `%` for remainder.
-- [ ] Comparison: `== != < > <= >=` return `boolean`. **Never use `==` to compare `String` contents.**
-- [ ] Logical: `&&` `||` `!` — `&&`/`||` **short-circuit** (stop early), which matters with side effects.
+- [ ] Arithmetic: `+ - * / %`. **Integer division truncates** (`7 / 2 == 3`); use `%` for the
+      remainder.
+- [ ] Comparison: `== != < > <= >=` return `boolean`. **Never use `==` to compare `String`
+      contents.**
+- [ ] Logical: `&&` `||` `!` — `&&`/`||` **short-circuit** (stop early), which matters with side
+      effects and null checks.
 - [ ] Assignment shortcuts: `+= -= *= /=`; increment/decrement `++ --` (pre vs post).
 - [ ] Precedence: `*` before `+`; when in doubt, add parentheses for readability.
+- [ ] The `Math` class covers the rest: `Math.max`, `Math.abs`, `Math.pow`, `Math.round`,
+      `Math.sqrt`.
 
 ## Practice
 **Goal:** Build intuition for the gotchas.
@@ -38,11 +47,30 @@ tags:
 - [ ] Compute and print `7 / 2`, `7 % 2`, `7.0 / 2` — explain the differences.
 - [ ] Write a boolean expression using `&&` and `||` and test it with several inputs.
 - [ ] Demonstrate pre- vs post-increment (`i++` vs `++i`) in a print statement.
+- [ ] Use `%` to check whether a number is even, and `Math.round` to round `2.5` and `-2.5`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What are `7 / 2`, `7 % 2`, and `7.0 / 2`?
+> `3`, `1`, and `3.5`. With two `int`s the division truncates; one `double` operand makes it
+> floating-point division.
+
+> [!question]- Why doesn't `name != null && name.length() > 3` throw when `name` is null?
+> `&&` short-circuits: if the left side is false, the right side is never evaluated.
+
+> [!question]- `int i = 5; int a = i++; int b = ++i;` — what are `a`, `b`, and `i`?
+> `a = 5` (post-increment returns the old value), then `i` becomes 6; `++i` makes it 7 and returns
+> 7, so `b = 7` and `i = 7`.
+
+> [!question]- Why is `s1 == s2` wrong for comparing strings?
+> `==` compares references (are they the same object?), not contents. Use `s1.equals(s2)`.
 
 ## Definition of Done
 - [ ] I can predict integer-division and modulo results.
 - [ ] I know why `==` is wrong for String content and what to use instead.
 - [ ] I understand short-circuit evaluation.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M2 - Core Java - Strings and Basic Input-Output]]

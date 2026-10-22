@@ -1,0 +1,81 @@
+---
+title: Wrapper Types, Autoboxing and BigDecimal
+area: Java APIs
+module: 4
+status: todo
+priority: must
+effort: 3
+tags:
+  - java-roadmap
+---
+
+# Wrapper Types, Autoboxing and BigDecimal
+
+> [!info] Topic
+> **Area:** Java APIs · **Module:** 4 · **Priority:** must · **Est:** 3h
+> **Why this matters:** Collections can only hold objects, so every `int` you put in a `List`
+> becomes an `Integer`. Autoboxing makes that invisible — until it causes a `NullPointerException`
+> or a wrong `==` comparison. And for money you need `BigDecimal`, not `double`.
+
+## Learning Objectives
+- Explain wrapper classes and autoboxing.
+- Avoid the `==` and null-unboxing traps.
+- Parse numbers from text and do exact decimal math with `BigDecimal`.
+
+## Learn
+- [ ] Read:
+      [dev.java — Numbers](https://dev.java/learn/language/constructs/numbers-strings/numbers/) and
+      [Autoboxing and Unboxing](https://dev.java/learn/language/constructs/numbers-strings/autoboxing/).
+- [ ] Reference: the
+      [`BigDecimal` Javadoc](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html)
+      (class description + `setScale`, `compareTo`).
+
+## Concepts
+- [ ] Each primitive has a wrapper class: `int` → `Integer`, `long` → `Long`, `double` → `Double`,
+      `boolean` → `Boolean`, `char` → `Character`.
+- [ ] **Autoboxing**: the compiler converts automatically — `Integer x = 5;` boxes, `int y = x;`
+      unboxes.
+- [ ] Trap 1: `==` on wrappers compares references. `Integer` caches -128…127, so `a == b` is true
+      for `100` and false for `1000`. Always use `.equals()`.
+- [ ] Trap 2: unboxing `null` throws `NullPointerException` — e.g.
+      `int count = map.get("missing");`.
+- [ ] Parsing: `Integer.parseInt("42")`, `Double.parseDouble("3.5")`, `Long.valueOf(...)`; useful
+      constants like `Integer.MAX_VALUE`.
+- [ ] `BigDecimal` for money: create from **strings** (`new BigDecimal("0.10")`), calculate with
+      methods (`add`, `multiply`), round with `setScale(2, RoundingMode.HALF_UP)`, compare with
+      `compareTo`.
+
+## Practice
+**Goal:** Meet the traps on purpose.
+**Steps:**
+- [ ] Compare `Integer a = 100, b = 100;` and `Integer c = 1000, d = 1000;` with `==` and with
+      `equals`; explain the output.
+- [ ] Unbox a `null` `Integer` into an `int` and read the exception.
+- [ ] Add ten prices of `0.10` using `double` and using `BigDecimal`; compare the totals.
+- [ ] Compute 20% VAT on `19.99` with `BigDecimal`, rounded to cents.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- `Integer a = 1000, b = 1000;` — why is `a == b` false?
+> `==` compares references, and values outside the -128…127 cache are separate objects. Use
+> `a.equals(b)`.
+
+> [!question]- Why can `int total = map.get(key);` throw a `NullPointerException`?
+> If the key is missing, `get` returns `null`, and unboxing `null` into an `int` throws.
+
+> [!question]- Why `new BigDecimal("0.1")` rather than `new BigDecimal(0.1)`?
+> The `double` 0.1 is already inexact (0.1000000000000000055…); the String constructor gives exactly
+> 0.1.
+
+> [!question]- Is `new BigDecimal("2.0").equals(new BigDecimal("2.00"))` true?
+> No — `equals` also compares the scale. Use `compareTo(...) == 0` to compare values.
+
+## Definition of Done
+- [ ] I can explain boxing and unboxing and avoid both traps.
+- [ ] I can parse numbers from strings.
+- [ ] I use `BigDecimal` (created from strings) for money.
+- [ ] I can answer the Self-check questions without peeking.
+
+## Next
+- Next: [[M4 - Java APIs - Collections Overview (List, Set, Map)]]

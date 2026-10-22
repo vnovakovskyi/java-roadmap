@@ -16,43 +16,52 @@ the day-to-day flow is straightforward.
 2. Look at the **Dashboard** → the `In Progress` and `Next Up` views. No dashboard? Use the
    **Module Index** in [[Home]] — it always works.
 3. Open a topic note and work the sections top-to-bottom:
-   **Learning Objectives → Learn → Concepts → Practice → Definition of Done**.
+   **Learning Objectives → Learn → Concepts → Practice → Self-check → Definition of Done**.
 4. Tick the checkboxes as you go. When you start a topic, set its `status: doing`. When you can
    honestly check every **Definition of Done** item, set `status: done`.
+5. Commit your practice code to Git (from the end of Module 1 on).
 
 That's it. Progress shows up automatically in the Dashboard.
 
 ## How the path is organized
 
-The roadmap is split into **10 modules** (M1–M10), each a stage on the way from zero to a
+The roadmap is split into **11 modules** (M1–M11), each a stage on the way from zero to a
 job-ready junior Java developer. Work them roughly in order — later modules build on earlier ones.
 
 | Module | Area | Focus |
 | ------ | ---- | ----- |
-| M1 | Foundations | How programming and Java work; install and run your first program |
-| M2 | Core Java | Syntax, types, control flow, methods, arrays |
-| M3 | OOP | Classes, objects, inheritance, polymorphism, interfaces, SOLID & clean code |
-| M4 | Java APIs | Collections, generics, exceptions, enums, Optional |
-| M5 | Modern Java | Lambdas, streams, records, date/time, files, concurrency basics |
-| M6 | Tooling | Git, GitHub, Maven, Gradle, the IDE |
-| M7 | Testing | JUnit 5, AssertJ, Mockito, testable code |
-| M8 | Databases | SQL, JDBC, JPA/Hibernate, migrations |
-| M9 | Spring | HTTP/REST, Spring Boot, building & securing a REST API |
-| M10 | Project | Capstone: a full CRUD app, end-to-end |
+| M1 | Foundations | How programming and Java work; setup, terminal, debugger, Git basics, learning with AI |
+| M2 | Core Java | Syntax, types, control flow, methods, recursion, arrays |
+| M3 | OOP | Classes, memory, encapsulation, inheritance, polymorphism, interfaces, SOLID, design patterns |
+| M4 | Java APIs | Wrappers & BigDecimal, collections, generics, sorting, exceptions, enums, Optional |
+| M5 | Modern Java | Lambdas, streams, records, pattern matching & sealed types, date/time, files, concurrency |
+| M6 | Tooling | Git branching, GitHub & PRs, Maven, Gradle, CI, Docker, the IDE, AI assistants |
+| M7 | Testing | Test pyramid, JUnit, AssertJ, Mockito, testable code |
+| M8 | Databases | SQL, joins, transactions & indexes, JDBC, JPA/Hibernate, Flyway |
+| M9 | Spring | HTTP/REST, Spring Boot, data, validation, config, REST clients, docs, security |
+| M10 | Project | Capstone: your own CRUD app, end-to-end, tested and containerized |
+| M11 | Career | Portfolio, CV, interviews, coding practice, the job search, what's next |
+
+### The Bookshelf project
+
+Modules 2–8 each end with a **Module Project** that grows the same app, **Bookshelf**, by one
+version — from a console program with arrays (v1) to a tested, CI-checked app on PostgreSQL (v7).
+Keep it in its own GitHub repository and tag every version (`v1`, `v2`, …). Module 9 teaches Spring
+using the same book domain; the Module 10 capstone is then an app of your own design.
 
 ## Property vocabulary (frontmatter)
 
 Every topic note carries these properties. **Values are controlled** — stick to the lists below or
-the Dashboard views will miss the note.
+the Dashboard views (and the vault check) will miss the note.
 
 | Property   | Type   | Allowed values | Meaning |
 | ---------- | ------ | -------------- | ------- |
-| `title`    | text   | free | Display title |
-| `area`     | text   | `Foundations`, `Core Java`, `OOP`, `Java APIs`, `Modern Java`, `Tooling`, `Testing`, `Databases`, `Spring`, `Project` | Knowledge area |
-| `module`   | number | `1`–`10` | Which module of the path |
+| `title`    | text   | free | Display title (must equal the note's `#` heading) |
+| `area`     | text   | `Foundations`, `Core Java`, `OOP`, `Java APIs`, `Modern Java`, `Tooling`, `Testing`, `Databases`, `Spring`, `Project`, `Career` | Knowledge area — one per module, see the table above |
+| `module`   | number | `1`–`11` | Which module of the path |
 | `status`   | text   | `todo`, `doing`, `done` | Progress state (drives the Dashboard) |
-| `priority` | text   | `must`, `good`, `optional` | `must` = essential · `good` = good to know · `optional` = nice extra / for later |
-| `effort`   | number | hours | Rough estimate (~2–6h typical) |
+| `priority` | text   | `must`, `good`, `optional` | `must` = core path · `good` = recommended · `optional` = nice extra / for later |
+| `effort`   | number | hours | Rough estimate for a beginner (~2–6h typical) |
 | `tags`     | list   | must include `java-roadmap` | Used by the Dashboard filter |
 
 > [!important] The two rules that keep the Dashboard working
@@ -61,10 +70,9 @@ the Dashboard views will miss the note.
 
 ## The priority tiers
 
-You do not have to do everything. Tiers tell you what matters:
-
-- **`must`** — core path. Do these; a junior developer is expected to know them.
-- **`good`** — strongly recommended. Do them once the `must` items in a module are solid.
+- **`must`** — the **core path** (~260 h): what a junior Java developer is expected to know. The
+  Dashboard's *Core Path* view lists only these. Short on time? Do these first.
+- **`good`** — strongly recommended. Do them once the `must` items of a module are solid.
 - **`optional`** — nice to have or a taste of something more advanced. Skip without guilt; come back later.
 
 ## The topic-note loop
@@ -72,11 +80,19 @@ You do not have to do everything. Tiers tell you what matters:
 Each topic note has the same shape so studying is frictionless:
 
 1. **Learning Objectives** — what you'll be able to do afterward.
-2. **Learn** — curated, mostly-free resources: what to read or watch.
-3. **Concepts** — the key ideas to nail (and, later in the path, a "going deeper" layer).
+2. **Learn** — curated, free resources with direct links: what to read, watch, or do.
+3. **Concepts** — the key ideas to nail.
 4. **Practice** — a concrete, hands-on task. This is where the learning sticks.
-5. **Definition of Done** — the checklist that lets you mark the topic `done`.
+5. **Self-check** — 3–5 questions with collapsible answers. Answer first, then expand to compare.
+   Together they're also your interview question bank (see Module 11).
+6. **Definition of Done** — the checklist that lets you mark the topic `done`.
    The note ends with a **Next** link to the following topic, so you can move straight on.
+
+## Learning with AI
+
+Use AI assistants as a tutor — to explain, hint, quiz, and review code *you* wrote — not to solve
+the Practice tasks for you. The rules are in [[M1 - Foundations - Getting Unstuck and Learning with AI]];
+using AI on the job is covered in [[M6 - Tooling - AI Coding Assistants in Your Workflow]].
 
 ## File naming
 
@@ -85,12 +101,27 @@ Each topic note has the same shape so studying is frictionless:
 
 ## Stack assumptions
 
-Content targets **Java 25 (LTS)**. The web module uses **Spring Boot 4.x** (4.1 at the last review;
-Spring Boot 3.x left open-source support in June 2026). Testing uses **JUnit 6** (the Jupiter API
-you'll see called "JUnit 5" in older tutorials). Build-tool topics cover both **Maven** and
-**Gradle**. Version-sensitive items are flagged inline, e.g. *(Java 25+)* or *(Spring Boot 4)*.
+*Last reviewed: October 2026.*
 
-## Adding a new topic
+| Piece | Version used in this vault | Notes |
+| ----- | -------------------------- | ----- |
+| Java | **25 (LTS)**, Eclipse Temurin | Newer releases (26, 27) are short-term; the next LTS is 29 (Sept 2027) |
+| Spring Boot | **4.x** (4.1 at review time) | Spring Framework 7, Spring Security 7, Jackson 3, Hibernate 7. Spring Boot 3.x left open-source support in June 2026 |
+| Testing | **JUnit 6** (Jupiter), AssertJ, Mockito 5, Testcontainers 2 | "JUnit 5" tutorials still apply — same Jupiter API |
+| Build | **Maven 3.9** (Maven 4 is a release candidate), **Gradle 9** (Kotlin DSL) | Always via the wrapper (`./mvnw`, `./gradlew`) |
+| Database | **PostgreSQL 18** in Docker, Flyway | |
+| IDE | **IntelliJ IDEA** (free tier) | VS Code or Eclipse work too |
 
-Copy **[[_Template - Topic]]**, drop the copy in `Topics/`, and fill in the frontmatter. It appears
-in the Dashboard automatically.
+Version-sensitive items are flagged inline, e.g. *(Java 25+)* or *(Spring Boot 4)*. When reading
+older tutorials, expect differences — the main ones are listed in
+[[M9 - Spring - Spring Boot Intro and Project Setup]].
+
+## Adding or changing a topic
+
+1. Copy **[[_Template - Topic]]** into `Topics/` and fill in the frontmatter and every section.
+2. Add it to the **Module Index** in [[Home]] at the right position — that list defines the order.
+3. Update the **Next** link of the previous topic (and point the new one to the following topic).
+4. Run `python3 .github/scripts/vault.py build` to regenerate the visual map, the canvas, and the
+   README index, then `python3 .github/scripts/vault.py check` — CI runs the same check on every PR.
+
+It appears in the Dashboard automatically.

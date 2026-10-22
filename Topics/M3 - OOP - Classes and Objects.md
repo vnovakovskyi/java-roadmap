@@ -22,8 +22,12 @@ tags:
 - Understand references, `null`, and object identity.
 
 ## Learn
-- [ ] Read: [dev.java — "Classes and Objects"](https://dev.java/learn/classes-objects/).
-- [ ] Read about the `new` keyword and object references.
+- [ ] Read:
+      [dev.java — Creating Classes](https://dev.java/learn/language/oop/classes-objects/creating-classes/)
+      and
+      [Creating and Using Objects](https://dev.java/learn/language/oop/classes-objects/creating-objects/).
+- [ ] Alternative: [Java Programming MOOC — Part 4](https://java-programming.mooc.fi/part-4/)
+      (University of Helsinki), the introduction to object-oriented programming, with exercises.
 
 ## Concepts
 - [ ] A **class** describes state (fields) and behavior (methods); an **object** is a concrete
@@ -38,12 +42,29 @@ tags:
 **Steps:**
 - [ ] Write a `Book` class with fields (title, author, pages) and a method `describe()`.
 - [ ] Create two `Book` objects and call `describe()` on each.
-- [ ] Set one reference equal to another and show they point to the same object.
+- [ ] Set one reference equal to another, change a field through one, and show the change through
+      the other.
+- [ ] Call a method on a `null` reference and read the exception message.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What's the difference between a class and an object?
+> A class is the blueprint (which fields and methods exist); an object is one concrete instance
+> created from it with `new`, with its own field values.
+
+> [!question]- `Book a = new Book(); Book b = a; b.title = "X";` — what is `a.title` now?
+> `"X"`. `a` and `b` are two references to the same object, so a change through one is visible
+> through the other.
+
+> [!question]- What does `null` mean, and what happens if you call a method on it?
+> It means the variable refers to no object. Calling a method on it throws a `NullPointerException`.
 
 ## Definition of Done
 - [ ] I can define a class and instantiate objects.
 - [ ] I can explain the difference between a class and an object.
 - [ ] I understand references, `null`, and aliasing.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M3 - OOP - Fields, Methods and Constructors]]

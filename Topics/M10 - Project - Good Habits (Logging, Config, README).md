@@ -3,7 +3,7 @@ title: Good Habits (Logging, Config, README)
 area: Project
 module: 10
 status: todo
-priority: good
+priority: must
 effort: 3
 tags:
   - java-roadmap
@@ -12,39 +12,64 @@ tags:
 # Good Habits (Logging, Config, README)
 
 > [!info] Topic
-> **Area:** Project · **Module:** 10 · **Priority:** good · **Est:** 3h
-> **Why this matters:** The difference between a toy and a portfolio piece is the finishing touches —
-> useful logs, clean config, and a README that lets anyone run it. These habits get you hired.
+> **Area:** Project · **Module:** 10 · **Priority:** must · **Est:** 3h
+> **Why this matters:** The difference between a toy and a portfolio piece is the finishing touches
+> — useful logs, clean config, and a README that lets anyone run it. These habits get you hired.
 
 ## Learning Objectives
-- Add structured, level-appropriate logging.
+- Add level-appropriate logging.
 - Keep configuration and secrets clean.
 - Write a README that lets others run the project.
 
 ## Learn
-- [ ] Read about SLF4J logging and log levels.
-- [ ] Look at a few well-written project READMEs for structure.
+- [ ] Read:
+      [Spring Boot — Logging](https://docs.spring.io/spring-boot/reference/features/logging.html)
+      (levels, structured logging) and the [SLF4J manual](https://www.slf4j.org/manual.html) basics.
+- [ ] Read: [Make a README](https://www.makeareadme.com/) and pick a license at
+      [choosealicense.com](https://choosealicense.com/).
 
 ## Concepts
-- [ ] Use SLF4J (`LoggerFactory.getLogger`) with levels: `error`/`warn`/`info`/`debug`; don't log
-      secrets or use `System.out` in real code.
+- [ ] Use SLF4J (`LoggerFactory.getLogger(...)`) with levels `error` / `warn` / `info` / `debug`;
+      use placeholders (`log.info("Created book {}", id)`), never log secrets or personal data, and
+      never use `System.out` in real code.
+- [ ] Tune levels per package in config (`logging.level.com.example=debug`); Spring Boot can also
+      emit structured JSON logs for log platforms.
 - [ ] Externalize config and keep secrets out of Git ([[M9 - Spring - Configuration and Profiles]]).
-- [ ] A good README: what it is, how to run it (prereqs + commands), API overview, and tech used.
-- [ ] Sensible commit history and a license make the repo look professional
+- [ ] A good README: what it is, how to run it (prerequisites + `docker compose up` /
+      `./mvnw spring-boot:run`), API overview (or a link to Swagger UI), how to test, tech used, and
+      the CI badge.
+- [ ] Sensible commit history, a license, and no dead code make the repository look professional
       ([[M6 - Tooling - GitHub and Pull Requests]]).
-- [ ] Small touches: meaningful names, no dead code, consistent formatting.
 
 ## Practice
 **Goal:** Make the project presentable.
 **Steps:**
-- [ ] Replace any `System.out` with proper logging at sensible levels.
-- [ ] Confirm no secrets are committed; document required env vars.
-- [ ] Write a README that a stranger could follow to run the app.
+- [ ] Replace any `System.out` with logging at sensible levels; log one line per important business
+      event.
+- [ ] Confirm no secrets are committed (check the history too); document the required environment
+      variables.
+- [ ] Write a README that a stranger could follow to run and test the app — then ask someone to try
+      it.
+- [ ] Add a license.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Which log level for: an unexpected exception, a retry, a created order, detailed request data?
+> `error`, `warn`, `info`, and `debug` respectively.
+
+> [!question]- Why `log.info("Created {}", id)` instead of string concatenation?
+> The message is only built if that level is enabled, and placeholders keep log formats consistent.
+
+> [!question]- What must a README let a stranger do?
+> Understand what the project is, and build, run, and test it from a fresh clone without asking you
+> anything.
 
 ## Definition of Done
 - [ ] The app logs usefully without leaking secrets.
 - [ ] Config is clean and secrets are out of Git.
-- [ ] The README lets someone else run the project.
+- [ ] The README lets someone else run and test the project.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M10 - Project - Packaging and Running (Jar and Docker Basics)]]
+- Next: [[M10 - Project - Packaging and Running (Jar and Container Image)]]

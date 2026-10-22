@@ -14,7 +14,8 @@ tags:
 > [!info] Topic
 > **Area:** Testing · **Module:** 7 · **Priority:** good · **Est:** 2h
 > **Why this matters:** AssertJ's fluent assertions make tests far more readable and their failure
-> messages far clearer than plain JUnit asserts. It's the de-facto assertion library in Spring projects.
+> messages far clearer than plain JUnit asserts. It's the de-facto assertion library in Spring
+> projects (included in Spring Boot's test starter).
 
 ## Learning Objectives
 - Write fluent assertions with AssertJ.
@@ -22,28 +23,45 @@ tags:
 - Read AssertJ's descriptive failure messages.
 
 ## Learn
-- [ ] Read the [AssertJ "Getting started"](https://assertj.github.io/doc/) section.
-- [ ] Add AssertJ to your test dependencies.
+- [ ] Read: the [AssertJ quick start](https://assertj.github.io/doc/#assertj-core-quick-start) and
+      skim the assertion highlights that follow.
 
 ## Concepts
 - [ ] One entry point: `assertThat(actual)` then chained, readable checks.
-- [ ] Objects: `isEqualTo`, `isNotNull`, `isInstanceOf`.
-- [ ] Collections: `contains`, `containsExactly`, `hasSize`, `extracting(...)`.
-- [ ] Strings: `startsWith`, `contains`, `matches`.
+- [ ] Objects: `isEqualTo`, `isNotNull`, `isInstanceOf`, `usingRecursiveComparison()`.
+- [ ] Collections: `contains`, `containsExactly`, `containsExactlyInAnyOrder`, `hasSize`,
+      `extracting(...)`.
+- [ ] Strings: `startsWith`, `contains`, `isBlank`, `matches`.
 - [ ] Exceptions: `assertThatThrownBy(() -> ...).isInstanceOf(...).hasMessageContaining(...)`.
 - [ ] Failure messages describe expected vs actual clearly — a big debugging time-saver.
 
 ## Practice
 **Goal:** Rewrite JUnit asserts in AssertJ.
 **Steps:**
-- [ ] Convert the `Calculator` test assertions from [[M7 - Testing - JUnit 5 Basics]] to AssertJ.
-- [ ] Assert on a `List` with `containsExactly` and `extracting`.
+- [ ] Convert the `Calculator` test assertions from [[M7 - Testing - JUnit Basics]] to AssertJ.
+- [ ] Assert on a `List` of records with `containsExactly` and `extracting`.
 - [ ] Assert an exception with `assertThatThrownBy`.
+- [ ] Make an assertion fail on purpose and compare the message with the JUnit equivalent.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Why prefer `assertThat(list).containsExactly(a, b)` over `assertEquals(List.of(a, b), list)`?
+> It reads like a sentence, and on failure it tells you exactly which elements were missing,
+> unexpected, or out of order.
+
+> [!question]- How do you check only one property of each object in a list?
+> `assertThat(books).extracting(Book::title).containsExactly("A", "B");`
+
+> [!question]- `containsExactly` vs `containsExactlyInAnyOrder`?
+> The first also checks the order of the elements; the second only checks that the same elements are
+> present.
 
 ## Definition of Done
 - [ ] I can write fluent AssertJ assertions.
 - [ ] I can assert on collections and exceptions.
 - [ ] I prefer AssertJ's messages for debugging failures.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M7 - Testing - Mockito and Test Doubles]]

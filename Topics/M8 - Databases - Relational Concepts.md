@@ -4,7 +4,7 @@ area: Databases
 module: 8
 status: todo
 priority: must
-effort: 3
+effort: 4
 tags:
   - java-roadmap
 ---
@@ -12,9 +12,10 @@ tags:
 # Relational Concepts
 
 > [!info] Topic
-> **Area:** Databases · **Module:** 8 · **Priority:** must · **Est:** 3h
+> **Area:** Databases · **Module:** 8 · **Priority:** must · **Est:** 4h
 > **Why this matters:** Almost every backend stores data in a relational database. Understanding
-> tables, keys, and relationships is the foundation for SQL, JDBC, and JPA in the rest of this module.
+> tables, keys, and relationships is the foundation for SQL, JDBC, and JPA in the rest of this
+> module.
 
 ## Learning Objectives
 - Explain tables, rows, columns, and data types.
@@ -22,27 +23,80 @@ tags:
 - Describe one-to-many and many-to-many relationships.
 
 ## Learn
-- [ ] Read an intro to relational databases (e.g. the PostgreSQL tutorial's basics).
-- [ ] Install PostgreSQL (or use Docker / H2) and a GUI like DBeaver — see [[Tools & Setup]].
+- [ ] Read: the [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html), Part I
+      ("Getting Started") — the official, concise intro.
+- [ ] Alternative: the [Neon PostgreSQL Tutorial](https://neon.com/postgresql/tutorial) — many
+      small, example-driven pages.
+- [ ] Read: [Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
+      (Wikipedia) — the "Example of a step-by-step normalization" section.
+- [ ] Set up: run PostgreSQL in Docker ([[M6 - Tooling - Docker Basics for Developers]]) and connect
+      with a GUI like [DBeaver](https://dbeaver.io/) or the IDE's database tool.
 
 ## Concepts
-- [ ] A **table** holds rows (records); each **column** has a type (`int`, `varchar`, `timestamp`, …).
-- [ ] A **primary key** uniquely identifies a row; a **foreign key** references another table's PK.
-- [ ] Relationships: one-to-many (a customer has many orders), many-to-many (via a join table).
-- [ ] **Normalization** reduces duplication; **constraints** (`NOT NULL`, `UNIQUE`, FK) enforce integrity.
-- [ ] SQL vs NoSQL in one line: relational gives structure + integrity + joins; you'll focus on relational.
+- [ ] A **table** holds rows (records); each **column** has a type (`bigint`, `text`/`varchar`,
+      `numeric`, `boolean`, `date`, `timestamptz`, …).
+- [ ] A **primary key** uniquely identifies a row (e.g.
+      `id bigint generated always as identity primary key`); a **foreign key** references another
+      table's primary key.
+- [ ] Relationships: one-to-many (a customer has many orders), many-to-many (via a join table such
+      as `enrollment(student_id, course_id)`).
+- [ ] **Normalization** stores each fact once. The three normal forms you're expected to know:
+- [ ] **1NF** — every column holds a single, atomic value (no `"red,green"` lists, no
+      `phone1, phone2, phone3` columns), and rows are identified by a key.
+- [ ] **2NF** — 1NF, and every non-key column depends on the *whole* key. It matters with composite
+      keys: in `enrollment(student_id, course_id, course_title)` the title depends only on
+      `course_id`, so it belongs in `course`.
+- [ ] **3NF** — 2NF, and no non-key column depends on another non-key column:
+      `order(customer_id, customer_city)` → the city belongs in `customer`. In short: "the key, the
+      whole key, and nothing but the key". Higher forms (BCNF, 4NF…) exist but rarely come up for
+      juniors.
+- [ ] **Denormalization** — deliberately duplicating data to speed up reads — is a conscious
+      trade-off made after normalizing, not instead of it.
+- [ ] **Constraints** (`NOT NULL`, `UNIQUE`, `CHECK`, foreign keys) let the database enforce
+      integrity.
+- [ ] SQL vs NoSQL in one line: relational gives structure, integrity, and joins; NoSQL stores trade
+      some of that for flexibility or scale. This roadmap focuses on relational.
 
 ## Practice
 **Goal:** Model a small domain.
 **Steps:**
-- [ ] Design tables for `customer` and `order` with a one-to-many relationship.
-- [ ] Add primary keys and a foreign key; mark required columns `NOT NULL`.
-- [ ] Sketch how you'd model a many-to-many (e.g. `student`–`course`) with a join table.
+- [ ] Start PostgreSQL in Docker and connect to it with a GUI tool.
+- [ ] Design tables for `customer` and `order` with a one-to-many relationship; add primary keys, a
+      foreign key, and `NOT NULL` where required.
+- [ ] Model a many-to-many (e.g. `student`–`course`) with a join table.
+- [ ] Take a flat, spreadsheet-style `orders` table (customer name, city, product, price, quantity
+      in every row) and normalize it step by step to 3NF.
+- [ ] Try to insert an order for a customer that doesn't exist and read the error.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Primary key vs foreign key?
+> A primary key uniquely identifies each row of its table. A foreign key is a column that must match
+> a primary key in another (or the same) table, linking rows together.
+
+> [!question]- How do you model a many-to-many relationship?
+> With a join table holding two foreign keys (e.g. `student_id`, `course_id`), usually with a
+> composite primary key or unique constraint on the pair.
+
+> [!question]- Why normalize a schema?
+> To store each fact once: no duplicated data that can drift out of sync, and smaller, simpler
+> updates.
+
+> [!question]- `order_item(order_id, product_id, product_name, quantity)` — which normal form does it break, and how do you fix it?
+> 2NF: `product_name` depends only on `product_id`, part of the composite key. Move it to a
+> `product` table and keep only `product_id` in `order_item`.
+
+> [!question]- Summarize 1NF, 2NF, and 3NF in one sentence.
+> Every non-key column holds one atomic value and depends on the key (1NF), the whole key (2NF), and
+> nothing but the key (3NF).
 
 ## Definition of Done
 - [ ] I can model data as tables with keys and relationships.
 - [ ] I can explain one-to-many and many-to-many.
 - [ ] I understand primary/foreign keys and constraints.
+- [ ] I can normalize a table to 3NF and explain each step.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M8 - Databases - SQL CRUD and Queries]]

@@ -22,27 +22,51 @@ tags:
 - Use basic `Arrays` utility methods.
 
 ## Learn
-- [ ] Read: [dev.java — "Arrays"](https://dev.java/learn/).
-- [ ] Read the `java.util.Arrays` Javadoc (sort, fill, toString, copyOf).
+- [ ] Read:
+      [dev.java — Creating Arrays in Your Programs](https://dev.java/learn/language/constructs/basics/arrays/).
+- [ ] Reference: the
+      [`java.util.Arrays` Javadoc](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html)
+      (`sort`, `fill`, `toString`, `copyOf`, `equals`).
 
 ## Concepts
-- [ ] Declaration: `int[] nums = new int[5];` or `int[] nums = {1, 2, 3};`.
+- [ ] Declaration: `int[] nums = new int[5];` or `int[] nums = {1, 2, 3};`. New arrays are filled
+      with defaults (`0`, `false`, `null`).
 - [ ] Fixed length: `nums.length` (a field, no parentheses); indices `0 .. length-1`.
 - [ ] Out-of-bounds access throws `ArrayIndexOutOfBoundsException`.
 - [ ] Iterate with an index `for` (when you need `i`) or for-each (when you don't).
-- [ ] `Arrays.sort`, `Arrays.toString`, `Arrays.copyOf`; 2D arrays are arrays of arrays.
+- [ ] `Arrays.sort`, `Arrays.toString`, `Arrays.copyOf`, `Arrays.equals`; 2D arrays are arrays of
+      arrays (`int[][] grid`).
 
 ## Practice
 **Goal:** Manipulate arrays confidently.
 **Steps:**
 - [ ] Fill an array with 10 numbers and compute the sum, min, and max in one pass.
-- [ ] Reverse an array in place.
+- [ ] Reverse an array in place (swap from both ends).
 - [ ] Sort an array with `Arrays.sort` and print it with `Arrays.toString`.
+- [ ] Store a 3×3 tic-tac-toe board in a `char[][]` and print it.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- What does `new int[3]` contain?
+> `{0, 0, 0}` — arrays are filled with default values: `0` for numbers, `false` for booleans, `null`
+> for objects.
+
+> [!question]- Why does printing an array show something like `[I@1b6d3586`?
+> Arrays don't override `toString()`, so you see the type and a hash code. Use
+> `Arrays.toString(arr)`.
+
+> [!question]- Two arrays have the same contents, but `a == b` is false. Why?
+> `==` compares references. Use `Arrays.equals(a, b)` to compare contents.
+
+> [!question]- `arr.length` vs `str.length()` — why the difference?
+> For arrays, `length` is a field; for strings, `length()` is a method.
 
 ## Definition of Done
 - [ ] I can create, fill, and iterate arrays without index errors.
-- [ ] I can use `Arrays` helpers for sort/print/copy.
+- [ ] I can use `Arrays` helpers for sort/print/copy/compare.
 - [ ] I understand arrays have fixed length (and why collections exist).
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
-- Next: [[M3 - OOP - Classes and Objects]]
+- Next: [[M2 - Core Java - Module Project (Console Bookshelf)]]

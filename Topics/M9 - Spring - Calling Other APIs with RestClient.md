@@ -1,0 +1,75 @@
+---
+title: Calling Other APIs with RestClient
+area: Spring
+module: 9
+status: todo
+priority: good
+effort: 3
+tags:
+  - java-roadmap
+---
+
+# Calling Other APIs with RestClient
+
+> [!info] Topic
+> **Area:** Spring · **Module:** 9 · **Priority:** good · **Est:** 3h
+> **Why this matters:** Backends constantly call other services — payment providers, currency or
+> weather APIs, the company's other microservices. Spring's `RestClient` makes those calls readable
+> and testable, and handling their failures is part of building a reliable app.
+
+## Learning Objectives
+- Call an external HTTP API with `RestClient` and map the JSON to records.
+- Handle errors and timeouts from the remote service.
+- Test the client without real network calls.
+
+## Learn
+- [ ] Read:
+      [Spring Framework — REST Clients](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html)
+      (the `RestClient` section; skim HTTP Interfaces).
+- [ ] Practice API: [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+
+## Concepts
+- [ ] Build one client from the auto-configured `RestClient.Builder` with a base URL, then
+      `restClient.get().uri("/posts/{id}", id).retrieve().body(Post.class)`.
+- [ ] Map responses to records; ignore fields you don't need.
+- [ ] 4xx/5xx responses throw `RestClientResponseException` subclasses; customize with
+      `.onStatus(...)`.
+- [ ] Always set connect and read timeouts — a slow upstream must not hang your threads.
+- [ ] When the upstream fails, answer your own client honestly (e.g. 502/503) instead of leaking its
+      error.
+- [ ] **HTTP Interfaces**: declare an interface with `@GetExchange` methods and let Spring generate
+      the client. `WebClient` is the reactive option; `RestTemplate` is the older API you'll see in
+      existing code.
+- [ ] Test with `@RestClientTest` and `MockRestServiceServer`, or a stub server like WireMock.
+
+## Practice
+**Goal:** Integrate a third-party API into your app.
+**Steps:**
+- [ ] Fetch `/posts/1` from JSONPlaceholder into a record and print it.
+- [ ] Expose an endpoint in your app that calls the external API and returns a combined result.
+- [ ] Handle an upstream 404 and a timeout with meaningful responses.
+- [ ] Write a `@RestClientTest` that stubs the upstream with `MockRestServiceServer`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- `RestClient` vs `WebClient` vs `RestTemplate`?
+> `RestClient`: the modern synchronous client (Spring 6.1+), the default choice. `WebClient`:
+> reactive/non-blocking. `RestTemplate`: the older synchronous API kept for existing code.
+
+> [!question]- Why must outgoing calls have timeouts?
+> Without them a slow or dead upstream keeps your request threads waiting indefinitely, and your
+> whole app can stall.
+
+> [!question]- How do you test code that calls a third-party API?
+> Replace the real server: `MockRestServiceServer` or WireMock returns canned responses, so tests
+> are fast, deterministic, and offline.
+
+## Definition of Done
+- [ ] I can call an external API with `RestClient` and map the result.
+- [ ] I handle upstream errors and set timeouts.
+- [ ] I can test the integration without the real service.
+- [ ] I can answer the Self-check questions without peeking.
+
+## Next
+- Next: [[M9 - Spring - API Docs and Monitoring (OpenAPI and Actuator)]]

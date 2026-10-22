@@ -3,7 +3,7 @@ title: Mockito and Test Doubles
 area: Testing
 module: 7
 status: todo
-priority: good
+priority: must
 effort: 3
 tags:
   - java-roadmap
@@ -12,39 +12,68 @@ tags:
 # Mockito and Test Doubles
 
 > [!info] Topic
-> **Area:** Testing · **Module:** 7 · **Priority:** good · **Est:** 3h
-> **Why this matters:** To unit-test a class in isolation you replace its collaborators with test
-> doubles. Mockito is the standard tool — and it's central to testing Spring services in Module 9.
+> **Area:** Testing · **Module:** 7 · **Priority:** must · **Est:** 3h
+> **Why this matters:** To unit-test a class in isolation, you replace its collaborators with test
+> doubles. Mockito is the standard tool — and it's central to testing Spring services in Modules 9
+> and 10.
 
 ## Learning Objectives
-- Explain stubs, mocks, fakes, and when to use each.
+- Explain stubs, mocks, and fakes, and when to use each.
 - Create mocks with Mockito and stub their behavior.
-- Verify interactions, and avoid over-mocking.
+- Verify interactions — and avoid over-mocking.
 
 ## Learn
-- [ ] Read the [Mockito docs](https://site.mockito.org) "How to" intro.
-- [ ] Read about `@Mock`, `@InjectMocks`, `when/thenReturn`, `verify`.
+- [ ] Read: [Martin Fowler — Test Double](https://martinfowler.com/bliki/TestDouble.html) (short).
+- [ ] Read: the
+      [Mockito documentation](https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html)
+      — sections 1–4 (verify, stub, argument matchers).
 
 ## Concepts
-- [ ] **Test doubles**: *stub* (canned answers), *mock* (verifies interactions), *fake* (working
-      lightweight impl, e.g. in-memory repo).
-- [ ] `mock(Type.class)` or `@Mock`; stub with `when(dep.call()).thenReturn(x)`.
-- [ ] Verify calls: `verify(dep).save(any())`, `verify(dep, times(1))...`.
-- [ ] Inject mocks into the class under test via constructor (why DI/[[M3 - OOP - Abstraction, Interfaces and Abstract Classes]] matters).
+- [ ] **Test doubles**: *stub* (canned answers), *mock* (verifies interactions), *fake* (a working
+      lightweight implementation, e.g. an in-memory repository).
+- [ ] `@ExtendWith(MockitoExtension.class)` + `@Mock`, or `mock(Type.class)`; stub with
+      `when(dep.call()).thenReturn(x)` or `.thenThrow(...)`.
+- [ ] Verify calls: `verify(dep).save(any())`, `verify(dep, never()).delete(...)`; capture arguments
+      with `ArgumentCaptor`.
+- [ ] Inject mocks via the constructor (why DI and
+      [[M3 - OOP - Abstraction, Interfaces and Abstract Classes]] matter).
 - [ ] **Over-mocking smell**: if you mock everything, you test mocks, not behavior. Mock at real
-      boundaries (DB, network), prefer real objects/fakes otherwise.
+      boundaries (DB, network, clock); use real objects or fakes otherwise. Don't mock value
+      objects.
+- [ ] *(JDK 21+)* If you see "Mockito is currently self-attaching to enable the inline-mock-maker",
+      add Mockito as a `-javaagent` in your test configuration as the Mockito docs describe — future
+      JDKs will block self-attaching.
 
 ## Practice
 **Goal:** Unit-test a class with a mocked dependency.
 **Steps:**
-- [ ] Build a `OrderService` that depends on a `PaymentGateway` interface.
+- [ ] Build an `OrderService` that depends on a `PaymentGateway` interface.
 - [ ] Mock the gateway, stub a success and a failure, and test both paths.
-- [ ] `verify` the gateway was called with the expected arguments.
+- [ ] `verify` the gateway was called with the expected amount (use an `ArgumentCaptor`), and never
+      called for an empty order.
+- [ ] Write the same test with a hand-written fake instead of a mock and compare.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Stub vs mock vs fake?
+> A stub returns canned answers; a mock also records calls so you can verify interactions; a fake is
+> a simplified working implementation (like an in-memory repository).
+
+> [!question]- What does `when(gateway.charge(any())).thenReturn(Result.OK)` do?
+> It programs the mock so any call to `charge` returns `Result.OK` instead of the default (`null`,
+> `0`, `false`).
+
+> [!question]- When is mocking a bad idea?
+> For simple value objects, for the class under test itself, and when a test would only check that
+> methods were called rather than what the code produces — that couples tests to implementation
+> details.
 
 ## Definition of Done
 - [ ] I can create and stub mocks and verify interactions.
 - [ ] I can explain stub vs mock vs fake.
 - [ ] I avoid over-mocking and mock at sensible boundaries.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M7 - Testing - Writing Testable Code (Intro to TDD)]]

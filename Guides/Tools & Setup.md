@@ -6,12 +6,14 @@ tags:
 
 # Tools & Setup
 
-Do this **before Module 1**. By the end you'll have Java installed, an editor open, Git working, and
-both build tools ready — everything you need to write and run real Java.
+Do sections 1–3 **before Module 1** and sections 4–5 when you reach Module 6. By the end you'll have
+Java installed, an editor open, Git working, the build tools ready, and Docker running — everything
+you need to write, test, and run real Java.
 
 > [!info] What you're installing
 > 1. A **JDK** (Java 25) — the compiler + runtime. 2. An **IDE** (IntelliJ IDEA). 3. **Git** —
 > version control. 4. **Maven** and **Gradle** — build tools (often bundled with the IDE).
+> 5. **Docker** — runs databases and your app in containers.
 > Back to home: [[Home]].
 
 ## 1. Install the JDK (Java 25 LTS)
@@ -62,7 +64,7 @@ click the green Run arrow. If you see `Hello` in the console, you're set.
 
 ## 3. Install Git
 
-Git tracks your code's history; you'll use it from Module 6 and for everything after.
+Git tracks your code's history; you'll start using it at the end of Module 1 and keep using it for everything after.
 
 - **macOS:** `brew install git` (or it ships with the Xcode Command Line Tools).
 - **Windows:** download **[Git for Windows](https://git-scm.com/download/win)**.
@@ -94,19 +96,40 @@ to master them now — just have them available.
 > `gradlew`) that downloads the right version automatically. Installing them globally is handy for
 > starting projects from scratch.
 
-## 5. Optional but useful
+## 5. Install Docker (before Module 6's Docker topic)
+
+Docker runs software in containers — you'll use it for PostgreSQL from Module 8 on, in tests via
+Testcontainers, and to run your capstone.
+
+- **macOS / Windows:** install **[Docker Desktop](https://docs.docker.com/desktop/)** (free for
+  personal use and learning).
+- **Linux:** install **[Docker Engine](https://docs.docker.com/engine/install/)** and the Compose plugin.
+- Alternative: **[Podman](https://podman.io/)** works with the same commands for everything here.
+
+**Verify:**
+```bash
+docker --version
+docker compose version
+docker run hello-world
+```
+
+## 6. Optional but useful
 
 - **A terminal you like** — the default is fine; iTerm2 (macOS) / Windows Terminal are nicer.
-- **Postman** or **[HTTPie](https://httpie.io)** — for poking REST APIs in Module 9.
-- **DBeaver** — a free GUI for databases, handy in Module 8.
+- **[HTTPie](https://httpie.io)**, `curl`, or Postman — for poking REST APIs in Module 9.
+- **[DBeaver](https://dbeaver.io/)** — a free GUI for databases, handy in Module 8 (IntelliJ also has a
+  database tool window).
+- **An AI assistant** in your IDE — read [[M1 - Foundations - Getting Unstuck and Learning with AI]]
+  first for how to use it without short-circuiting your learning.
 
 ## Setup checklist
 
 - [ ] `java -version` and `javac -version` both show 25
 - [ ] IntelliJ (or VS Code/Eclipse) installed; ran a Hello World
 - [ ] `git --version` works; name + email configured; GitHub account created
-- [ ] `mvn -version` works
-- [ ] `gradle -version` works
+- [ ] `mvn -version` works (or you'll use the `./mvnw` wrapper)
+- [ ] `gradle -version` works (or you'll use the `./gradlew` wrapper)
+- [ ] `docker run hello-world` prints its greeting
 
 Done? Head back to [[Home]] and start **Module 1**.
 

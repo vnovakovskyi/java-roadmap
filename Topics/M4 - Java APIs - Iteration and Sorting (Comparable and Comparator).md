@@ -14,36 +14,68 @@ tags:
 > [!info] Topic
 > **Area:** Java APIs · **Module:** 4 · **Priority:** must · **Est:** 4h
 > **Why this matters:** Sorting and ordering data is an everyday task. Knowing `Comparable` vs
-> `Comparator` lets you order objects any way you need — and it sets up the Streams API in Module 5.
+> `Comparator` lets you order objects any way you need — and it sets up lambdas and streams in
+> Module 5.
 
 ## Learning Objectives
-- Iterate collections (for-each, iterator, `forEach`).
+- Iterate collections safely (for-each, `Iterator`).
 - Make a class sortable with `Comparable`.
-- Sort flexibly with `Comparator` (including by multiple keys).
+- Sort flexibly with `Comparator` (including by multiple keys and reversed).
 
 ## Learn
-- [ ] Read the `Comparable` and `Comparator` Javadocs.
-- [ ] Read about `List.sort`, `Collections.sort`, and `Comparator.comparing`.
+- [ ] Read:
+      [dev.java — Iterating over the Elements of a Collection](https://dev.java/learn/api/collections-and-streams/collections-framework/iterating/).
+- [ ] Reference: the
+      [`Comparable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html)
+      and
+      [`Comparator`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html)
+      Javadocs.
 
 ## Concepts
-- [ ] **`Comparable<T>`**: a class's *natural* order via `compareTo` (returns −/0/+).
-- [ ] **`Comparator<T>`**: an external/alternate order — pass it to `sort`.
-- [ ] Build comparators fluently: `Comparator.comparing(Person::age).thenComparing(Person::name)`;
-      `.reversed()` to flip.
-- [ ] Iteration options: for-each (default), `Iterator` (when removing during iteration), `forEach`.
-- [ ] `compareTo`/`compare` must be consistent with `equals` to avoid surprises in sorted sets/maps.
+- [ ] **`Comparable<T>`**: a class's *natural* order via `compareTo` (returns negative / 0 /
+      positive).
+- [ ] **`Comparator<T>`**: an external, alternative order — e.g.
+      `class ByAge implements Comparator<Person>`, passed to `list.sort(...)`.
+- [ ] Combine comparators: `byAge.thenComparing(byName)`, `byAge.reversed()`. In Module 5 lambdas
+      shrink each comparator to one line: `Comparator.comparing(Person::age)`.
+- [ ] Iteration: for-each is the default. Removing elements *inside* a for-each throws
+      `ConcurrentModificationException` — use `iterator.remove()` (or `removeIf`, after Module 5).
+- [ ] `compareTo`/`compare` should be consistent with `equals`, or sorted sets and maps behave
+      surprisingly.
 
 ## Practice
-**Goal:** Order objects two different ways.
+**Goal:** Order objects in different ways.
 **Steps:**
 - [ ] Give `Person(name, age)` a natural order by name via `Comparable`.
-- [ ] Sort a `List<Person>` by age using a `Comparator`, then by age-then-name.
+- [ ] Write `ByAge implements Comparator<Person>`; sort a `List<Person>` by age, then by
+      age-then-name.
 - [ ] Reverse the order with `.reversed()`.
+- [ ] Remove all minors while iterating — first with for-each (watch it fail), then with an
+      `Iterator`.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- `Comparable` vs `Comparator` — what's the difference?
+> `Comparable` defines the class's own natural order (`compareTo`, implemented by the class).
+> `Comparator` is a separate object defining any other order, passed to `sort`.
+
+> [!question]- What should `a.compareTo(b)` return?
+> A negative number if `a` comes before `b`, zero if they're equal in order, a positive number if
+> `a` comes after `b`.
+
+> [!question]- You remove elements from a list inside a for-each loop and get `ConcurrentModificationException`. How do you fix it?
+> Iterate with an explicit `Iterator` and call `iterator.remove()`, or use `list.removeIf(...)`.
+
+> [!question]- How do you sort by age, then by name for equal ages?
+> Chain comparators: `byAge.thenComparing(byName)` (later:
+> `Comparator.comparing(Person::age).thenComparing(Person::name)`).
 
 ## Definition of Done
 - [ ] I can implement `Comparable` for natural ordering.
 - [ ] I can sort with a `Comparator`, including multi-key and reversed.
-- [ ] I can choose the right iteration approach.
+- [ ] I can remove elements during iteration safely.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M4 - Java APIs - Exceptions and Error Handling]]

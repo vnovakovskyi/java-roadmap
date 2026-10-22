@@ -22,28 +22,52 @@ tags:
 - Recognize when composition is better than inheritance.
 
 ## Learn
-- [ ] Read: [dev.java — "Inheritance"](https://dev.java/learn/inheritance/).
-- [ ] Read about `super`, `Object` as the root class, and `final` classes/methods.
+- [ ] Read:
+      [dev.java — Inheritance](https://dev.java/learn/language/oop/inheritance/what-is-inheritance/)
+      and [Object as a Superclass](https://dev.java/learn/language/oop/inheritance/objects/).
+- [ ] Read:
+      [Flexible Constructor Bodies](https://docs.oracle.com/en/java/javase/25/language/flexible-constructor-bodies.html)
+      (Java 25) — code before `super(...)`.
 
 ## Concepts
-- [ ] `class Dog extends Animal` — `Dog` inherits accessible fields/methods of `Animal`.
-- [ ] Every class ultimately extends `Object`.
-- [ ] `super(...)` calls the parent constructor; `super.method()` calls the parent's version. *(Java 25+)*
-      You may validate or prepare arguments *before* `super(...)`, as long as that code doesn't use `this`.
-- [ ] **Is-a** vs **has-a**: use inheritance for genuine "is-a"; otherwise prefer **composition**.
-- [ ] `final` prevents overriding/extension; deep hierarchies are a smell.
+- [ ] `class Dog extends Animal` — `Dog` inherits the accessible fields and methods of `Animal`.
+- [ ] Every class ultimately extends `Object`. A class can extend only **one** class.
+- [ ] `super(...)` calls the parent constructor; `super.method()` calls the parent's version. *(Java
+      25+)* You may validate or prepare arguments *before* `super(...)`, as long as that code
+      doesn't use `this`.
+- [ ] **Is-a** vs **has-a**: use inheritance for a genuine "is-a"; otherwise prefer **composition**
+      (a field).
+- [ ] `final` prevents overriding (methods) or extension (classes); deep hierarchies are a smell.
 
 ## Practice
 **Goal:** Build a small hierarchy and feel its trade-offs.
 **Steps:**
 - [ ] Create `Animal` with a `speak()` method and subclasses `Dog`/`Cat` that override it.
-- [ ] Give `Animal` a constructor and call it from a subclass via `super`.
+- [ ] Give `Animal` a constructor and call it from a subclass via `super(...)`; validate an argument
+      before the `super` call.
 - [ ] Rewrite one relationship using composition (a field) instead of inheritance and compare.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Give an example of "is-a" and of "has-a".
+> A `Dog` *is an* `Animal` → inheritance. A `Car` *has an* `Engine` → composition (a field).
+
+> [!question]- Why do people say "favor composition over inheritance"?
+> A subclass is tightly coupled to its parent's implementation: changes in the parent ripple down,
+> and you inherit everything. Composition lets you combine and swap parts freely.
+
+> [!question]- Can a Java class extend two classes?
+> No — classes have single inheritance. A class can implement many interfaces, though.
+
+> [!question]- What do `final` classes and `final` methods prevent?
+> A `final` class can't be extended (e.g. `String`); a `final` method can't be overridden.
 
 ## Definition of Done
 - [ ] I can create subclasses and use `super` correctly.
 - [ ] I can explain "is-a vs has-a" and when to prefer composition.
 - [ ] I understand `Object` is the root of all classes.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M3 - OOP - Polymorphism and Overriding]]

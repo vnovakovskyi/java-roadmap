@@ -18,36 +18,64 @@ tags:
 > course — just enough to choose well and answer the common "why a HashMap here?" question.
 
 ## Learning Objectives
-- Read Big-O notation at a high level (constant / linear / log).
+- Read Big-O notation at a high level (constant / logarithmic / linear / quadratic).
 - Compare the common collections by typical operation cost.
-- Choose `ArrayList` vs `LinkedList` vs `HashMap` vs `HashSet` vs `TreeMap` for a task.
+- Choose a list, set, map, queue, or stack implementation for a task.
 
 ## Learn
-- [ ] Read a gentle "Big-O for beginners" explainer (visual, not mathematical).
-- [ ] Skim a Java "collection time complexity" cheat sheet.
+- [ ] Read: [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) — the charts and the "common data
+      structure operations" table.
+- [ ] Read:
+      [dev.java — ArrayList vs LinkedList](https://dev.java/learn/api/collections-and-streams/collections-framework/arraylist-vs-linkedlist/)
+      and
+      [Stacks and Queues](https://dev.java/learn/api/collections-and-streams/collections-framework/stacks-queues/).
+- [ ] Optional: watch data structures animate on [VisuAlgo](https://visualgo.net/en).
 
 ## Concepts
-- [ ] **Big-O** describes how cost grows with size *n*: `O(1)` constant, `O(log n)` logarithmic,
-      `O(n)` linear, `O(n log n)`, `O(n^2)`. Use it to compare, not to micro-optimize.
-- [ ] `ArrayList`: `O(1)` index access, `O(1)` amortized append, `O(n)` middle insert/search.
+- [ ] **Big-O** describes how cost grows with size *n*: `O(1)` constant, `O(log n)`, `O(n)`,
+      `O(n log n)`, `O(n²)`. Use it to compare, not to micro-optimize.
+- [ ] `ArrayList`: `O(1)` index access, `O(1)` amortized append, `O(n)` insert in the middle or
+      search.
 - [ ] `HashMap`/`HashSet`: ~`O(1)` average add/lookup (needs correct `equals`/`hashCode` —
       [[M3 - OOP - equals, hashCode and toString]]); no ordering.
 - [ ] `TreeMap`/`TreeSet`: sorted, `O(log n)` operations.
-- [ ] `LinkedList`: fast add/remove at ends, slow random access — rarely the right default.
-- [ ] Rule of thumb: `ArrayList` for lists, `HashMap`/`HashSet` for lookups, `Tree*` when you need
-      sorted order. Measure only if it actually matters.
+- [ ] `ArrayDeque` is the go-to **stack** (`push`/`pop`) and **queue** (`offer`/`poll`);
+      `PriorityQueue` always hands out the smallest (or highest-priority) element first.
+      `LinkedList` and the old `Stack` class are rarely the right choice.
+- [ ] Rule of thumb: `ArrayList` for lists, `HashMap`/`HashSet` for lookups, `Tree*` for sorted
+      order, `ArrayDeque` for stacks/queues. Measure only if it actually matters.
 
 ## Practice
 **Goal:** Make and justify a data-structure choice.
 **Steps:**
 - [ ] Given "look up users by id thousands of times", pick a structure and say why (Big-O).
-- [ ] Compare searching a `List` (`contains`, `O(n)`) vs a `HashSet` (`O(1)`) for membership.
+- [ ] Time `contains` on a 1,000,000-element `ArrayList` vs a `HashSet` (`System.nanoTime()`), and
+      explain the gap.
+- [ ] Implement an "undo" history with `ArrayDeque` as a stack, and a print queue with it as a
+      queue.
 - [ ] Write one sentence per collection: when you'd reach for it.
+
+## Self-check
+Answer out loud or on paper first, then expand to compare.
+
+> [!question]- Which structure for "look up users by id thousands of times", and why?
+> A `HashMap<Long, User>`: average `O(1)` lookups, versus `O(n)` scanning a list each time.
+
+> [!question]- Why is `LinkedList` rarely a good default?
+> Index access is `O(n)` and its nodes are scattered in memory; `ArrayList` (or `ArrayDeque` for
+> adding/removing at the ends) is usually faster in practice.
+
+> [!question]- What should you use for a stack or a queue?
+> `ArrayDeque` — `push`/`pop` for a stack, `offer`/`poll` for a queue.
+
+> [!question]- Rank these from fastest-growing to slowest: `O(n)`, `O(1)`, `O(n²)`, `O(log n)`.
+> `O(n²)` > `O(n)` > `O(log n)` > `O(1)`.
 
 ## Definition of Done
 - [ ] I can read common Big-O classes and rank them.
 - [ ] I can justify a collection choice by its operation costs.
-- [ ] I know which structure to default to for lists vs lookups vs sorted data.
+- [ ] I know which structure to default to for lists, lookups, sorted data, stacks, and queues.
+- [ ] I can answer the Self-check questions without peeking.
 
 ## Next
 - Next: [[M4 - Java APIs - Generics Basics]]
