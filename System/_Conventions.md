@@ -9,7 +9,16 @@ tags:
 This note explains how the **Java Developer Roadmap** works. Read it once, then mostly forget it —
 the day-to-day flow is straightforward.
 
-## The daily workflow
+> [!tip] Studying with the tutor
+> The roadmap is made to be studied with the
+> [tutor](https://github.com/vnovakovskyi/claude-learn-skills) plugin for Claude Code. The tutor
+> reads this vault as its curriculum — the Module Index in [[Home]] for the order, the topic
+> sections, the Self-check questions for quizzes, the Definition of Done for finishing a topic — and
+> keeps your progress in a workbook of its own. It never edits the roadmap and ignores `status` and
+> checkboxes, so with the tutor, skip the daily workflow below and leave them as they are. How to
+> start: [[README]].
+
+## The daily workflow (studying on your own)
 
 1. Open **[[Home]]** (bookmark it: right-click → Bookmark — one tap on
    desktop and mobile).

@@ -419,12 +419,14 @@
 <text x="56" y="3574" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  PostgreSQL · Flyway</text>
 <text x="56" y="3596" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Boot 4</text>
 <text x="56" y="3618" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  An AI assistant — used wisely</text>
-<rect x="630" y="3396" width="570" height="174" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="630" y="3396" width="570" height="218" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
 <text x="646" y="3420" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Recommended books &amp; free resources</text>
 <text x="646" y="3442" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Head First Java (beginner)</text>
 <text x="646" y="3464" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Effective Java (level-up)</text>
 <text x="646" y="3486" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Modern Java in Action (streams)</text>
 <text x="646" y="3508" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Start Here, 2nd ed. (Spring)</text>
-<text x="646" y="3530" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Pro Git (free)</text>
-<text x="646" y="3552" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  dev.java · Helsinki Java MOOC (free)</text>
+<text x="646" y="3530" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Grokking Algorithms, 2nd ed. (interviews)</text>
+<text x="646" y="3552" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Pro Git (free)</text>
+<text x="646" y="3574" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  dev.java · Helsinki Java MOOC (free)</text>
+<text x="646" y="3596" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Exercism Java track (free practice)</text>
 </svg>
