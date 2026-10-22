@@ -10,9 +10,17 @@ tags:
 > No prior programming experience needed. Work through **11 modules** — from "what is a program" to
 > a secured Spring Boot API and your first job search — at your own pace. A realistic target is
 > **~7 months at ~10–12 h/week** (~335 h in total; the core `must` path is ~260 h).
-> **Start here every session:** check the Dashboard below → pick something from *In Progress* or
-> *Next Up* → open the topic → work it top-to-bottom → answer its Self-check → set `status: done`
-> when you meet the Definition of Done.
+> **Studying on your own? Start here every session:** check the Dashboard below → pick something
+> from *In Progress* or *Next Up* → open the topic → work it top-to-bottom → answer its Self-check →
+> set `status: done` when you meet the Definition of Done.
+
+> [!tip] Made to be studied with the tutor
+> The recommended way through this roadmap is the
+> [tutor](https://github.com/vnovakovskyi/claude-learn-skills) plugin for Claude Code: it teaches
+> each topic, reviews your practice, quizzes you, and keeps your progress in a workbook of its own.
+> With the tutor you don't need the Dashboard below — leave the `status` fields and checkboxes here
+> as they are, so `git pull` brings you roadmap updates cleanly. Setup: install the plugin, then run
+> `/tutor:enroll` in this folder (see [[README]]).
 
 ## Quick links
 - [[_Conventions]] — how this vault works + the frontmatter rules

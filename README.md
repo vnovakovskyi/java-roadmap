@@ -4,7 +4,10 @@
 [![Links](https://github.com/vnovakovskyi/java-roadmap/actions/workflows/links.yml/badge.svg)](https://github.com/vnovakovskyi/java-roadmap/actions/workflows/links.yml)
 
 A structured, hands-on path from **zero programming experience** to a **job-ready junior Java
-developer** — built as an [Obsidian](https://obsidian.md) vault you can download and work through.
+developer** — made to be studied with **[tutor](https://github.com/vnovakovskyi/claude-learn-skills)**,
+a personal-tutor plugin for [Claude Code](https://code.claude.com). The roadmap is the textbook; the
+tutor is the teacher. It's also an [Obsidian](https://obsidian.md) vault you can work through on
+your own.
 
 It covers everything you actually need — the knowledge, the tools, the books, and the job search —
 organized into **11 modules** and **94 hands-on topics**, from "what is a program" all the way to a
@@ -13,6 +16,12 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
 
 ## What's inside
 
+- **A tutor that takes you through it.** With the
+  [tutor](https://github.com/vnovakovskyi/claude-learn-skills) plugin, Claude Code knows where you
+  stopped and what's next, teaches each topic your way, reviews your practice code, quizzes you, and
+  brings finished topics back before you forget them. The roadmap is shaped for it: one topic per
+  file, one place that defines the order, the same sections in every topic, and Self-check
+  questions the tutor's quizzes are built on.
 - **Every topic follows the same loop:** Learning Objectives → Learn (curated, free resources with
   direct links) → Concepts → Practice → **Self-check** (questions with collapsible answers) →
   Definition of Done → Next.
@@ -21,9 +30,10 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
   tests → PostgreSQL.
 - **A capstone of your own design** (Module 10) and a **Getting Hired** module (Module 11):
   portfolio, CV, interviews, coding practice, and the job search.
-- **Learning with AI, done right:** how to use assistants as a tutor without letting them do your
+- **Learning with AI, done right:** how to learn with AI assistants without letting them do your
   practice for you — and how to use them productively on the job.
-- **A live progress dashboard** (Obsidian Bases) and a clickable visual map (`Roadmap.canvas`).
+- **In Obsidian:** a clickable visual map (`Roadmap.canvas`) and, for studying on your own, a live
+  progress dashboard (Obsidian Bases).
 
 ## The path at a glance
 
@@ -55,7 +65,44 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
 Target: roughly **7 months at ~10–12 hours/week** (~335 h; the core `must` path is ~260 h). Go at
 your own pace.
 
-## How to use this as an Obsidian vault
+## Study with the tutor (recommended)
+
+The roadmap and the [tutor](https://github.com/vnovakovskyi/claude-learn-skills) plugin go together:
+the roadmap is the curriculum, the tutor is the teacher. You need
+[Claude Code](https://code.claude.com) (in the terminal, the desktop app, or an IDE extension) and
+Git.
+
+1. Install the plugin. In a Claude Code session:
+   ```text
+   /plugin marketplace add vnovakovskyi/claude-learn-skills
+   /plugin install tutor@novakovskyi-learn-skills
+   ```
+2. Clone the roadmap:
+   ```bash
+   git clone https://github.com/vnovakovskyi/java-roadmap.git
+   ```
+3. Start Claude Code in the `java-roadmap` folder and run `/tutor:enroll`. The tutor asks where to
+   keep your workbook, gets to know you (goal, background, hours per week), offers a placement check
+   if you already know some Java, and builds your plan. It helps you set up the JDK, IDE and Git
+   from **`Tools & Setup`** too.
+4. From then on, start Claude Code in your workbook folder (`java-roadmap-workbook`, next to the
+   roadmap by default) and ask "what's next?", or run `/tutor:open`.
+
+Each topic goes the same way: `/tutor:open` shows what's in it → `/tutor:teach` explains it or
+finds you something to read or watch → `/tutor:practice` gives the task, hints when you're stuck,
+and reviews your code → `/tutor:quiz` asks with answer options, then open questions. Later,
+`/tutor:review` brings finished topics back before they fade. You can also just talk to it, in any
+language.
+
+> **Your progress lives in the workbook, not in the roadmap.** The tutor never edits the roadmap
+> and doesn't read the `status` fields or checkboxes in it, so leave them as they are. Then
+> `git pull` brings you roadmap updates cleanly, and the tutor adapts your plan to them.
+
+All commands and options are in the [tutor README](https://github.com/vnovakovskyi/claude-learn-skills#readme).
+
+## Or study on your own in Obsidian
+
+Without Claude Code, the roadmap works as a self-paced [Obsidian](https://obsidian.md) vault:
 
 1. Install [Obsidian](https://obsidian.md) (free, desktop and mobile).
 2. Download this repo: **Code → Download ZIP**, then unzip it — or `git clone` it.
@@ -65,7 +112,8 @@ your own pace.
    topics in order. The rest of the setup (build tools, Docker) waits until Module 6.
 
 Tick the checkboxes and update each note's `status` as you progress; the built-in Dashboard tracks
-everything for you.
+everything for you. (This is only for studying without the tutor: with it, your progress is in the
+workbook.)
 
 > The Dashboard uses Obsidian's built-in **Bases**. If it doesn't render on your device, the
 > **Module Index** inside `Home.md` gives you the same navigation.
@@ -238,6 +286,9 @@ request**. No fix is too small; even a one-character typo correction is apprecia
 change? Open an issue and let's talk it through. See the [contributing guide](.github/CONTRIBUTING.md)
 for the conventions and the one command that checks your change. Thank you for helping make this
 roadmap better for the next learner.
+
+Found a problem with the tutor itself rather than the roadmap? Open an issue in
+[claude-learn-skills](https://github.com/vnovakovskyi/claude-learn-skills/issues).
 
 ## License
 
