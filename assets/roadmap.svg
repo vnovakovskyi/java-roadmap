@@ -235,14 +235,14 @@
 <rect x="50" y="2559" width="6" height="16" rx="2" fill="#334155"/>
 <rect x="40" y="2608" width="570" height="240" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
 <text x="56" y="2632" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Tools you&#x27;ll set up &amp; use</text>
-<text x="56" y="2654" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JDK 21 (Temurin)</text>
+<text x="56" y="2654" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JDK 25 LTS (Temurin)</text>
 <text x="56" y="2676" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  IntelliJ IDEA</text>
 <text x="56" y="2698" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Git &amp; GitHub</text>
 <text x="56" y="2720" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Maven</text>
 <text x="56" y="2742" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Gradle</text>
-<text x="56" y="2764" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JUnit 5 · AssertJ · Mockito</text>
+<text x="56" y="2764" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  JUnit 6 · AssertJ · Mockito</text>
 <text x="56" y="2786" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  PostgreSQL · DBeaver</text>
-<text x="56" y="2808" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Boot 3</text>
+<text x="56" y="2808" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Spring Boot 4</text>
 <text x="56" y="2830" font-size="13" fill="#334155" font-family="Segoe UI, Helvetica, Arial, sans-serif">•  Docker (basics)</text>
 <rect x="630" y="2608" width="570" height="174" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
 <text x="646" y="2632" font-size="15" font-weight="700" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif">Recommended books &amp; free resources</text>

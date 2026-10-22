@@ -13,17 +13,18 @@ tags:
 
 > [!info] Topic
 > **Area:** Testing · **Module:** 7 · **Priority:** must · **Est:** 4h
-> **Why this matters:** JUnit 5 is the standard Java testing framework. Writing and running unit
-> tests is an everyday skill you'll use in every project from here on.
+> **Why this matters:** JUnit is the standard Java testing framework. The current major version is
+> **JUnit 6**; its Jupiter API is the same one older tutorials call "JUnit 5", so they still apply.
+> Writing and running unit tests is an everyday skill you'll use in every project from here on.
 
 ## Learning Objectives
-- Write and run JUnit 5 tests.
+- Write and run JUnit tests.
 - Use lifecycle and assertion methods.
 - Use parameterized tests and exception assertions.
 
 ## Learn
-- [ ] Read the [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/) (writing tests).
-- [ ] Add JUnit 5 to a Maven and a Gradle project (`test` scope / `testImplementation`).
+- [ ] Read the [JUnit User Guide](https://docs.junit.org/current/user-guide/) (writing tests).
+- [ ] Add JUnit to a Maven and a Gradle project (`test` scope / `testImplementation`).
 
 ## Concepts
 - [ ] `@Test` marks a test; the **Arrange–Act–Assert** structure keeps tests readable.
@@ -40,7 +41,7 @@ tags:
 - [ ] Run the tests from the IDE and from the command line (`mvn test` / `./gradlew test`).
 
 ## Definition of Done
-- [ ] I can write, name, and run JUnit 5 tests.
+- [ ] I can write, name, and run JUnit tests.
 - [ ] I can use lifecycle hooks and `assertThrows`.
 - [ ] I can write a parameterized test.
 

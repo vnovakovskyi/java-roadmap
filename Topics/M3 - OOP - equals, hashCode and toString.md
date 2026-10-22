@@ -38,7 +38,8 @@ tags:
 **Steps:**
 - [ ] Write a `Point(x, y)` class; override `equals`, `hashCode`, `toString`.
 - [ ] Put points in a `HashSet`; add a duplicate `(1,1)` and confirm the set treats them as equal.
-- [ ] Break `hashCode` (return a constant or omit it) and observe the breakage; then fix it.
+- [ ] Delete `hashCode` (keep `equals`) and watch the set accept a "duplicate"; then restore it.
+      (A constant `hashCode` is legal — just slow — so it won't show the bug.)
 
 ## Definition of Done
 - [ ] I can correctly override `equals`, `hashCode`, and `toString`.

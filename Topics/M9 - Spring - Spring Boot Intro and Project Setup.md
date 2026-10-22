@@ -22,13 +22,15 @@ tags:
 - Know what the embedded server and main class do.
 
 ## Learn
-- [ ] Use [start.spring.io](https://start.spring.io) to generate a project (Web, Spring Data JPA, a DB driver).
+- [ ] Use [start.spring.io](https://start.spring.io) to generate a project (Spring Boot 4.x, Java 25;
+      dependencies: Spring Web, Spring Data JPA, a DB driver).
 - [ ] Read the [Spring "Building a RESTful Web Service" guide](https://spring.io/guides/gs/rest-service/).
 
 ## Concepts
 - [ ] Spring Boot = Spring + sensible defaults + embedded server; you run a normal `main` and it boots
       a web app.
-- [ ] **Starters** (`spring-boot-starter-web`, `-data-jpa`) pull in curated dependency sets.
+- [ ] **Starters** (`spring-boot-starter-webmvc`, `-data-jpa`) pull in curated dependency sets.
+      *(Spring Boot 4)* `spring-boot-starter-web` from older tutorials is the deprecated old name.
 - [ ] **Auto-configuration** wires beans based on what's on the classpath.
 - [ ] Layout: `@SpringBootApplication` main class, `application.properties`/`.yml`, `src/main/resources`.
 - [ ] Build/run with Maven or Gradle ([[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)]] /

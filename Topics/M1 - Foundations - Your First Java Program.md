@@ -22,7 +22,7 @@ tags:
 - Explain why the file name must match the public class name.
 
 ## Learn
-- [ ] Read: [dev.java — "Hello World"](https://dev.java/learn/getting-started/) walkthrough.
+- [ ] Read: [dev.java — "Getting Started with Java"](https://dev.java/learn/first-steps/first-java-code/getting-started/) walkthrough.
 - [ ] Read about the `main` method signature: `public static void main(String[] args)`.
 
 ## Concepts
@@ -30,8 +30,9 @@ tags:
 - [ ] A `.java` file's name must match its `public` class (`Hello.java` ↔ `class Hello`).
 - [ ] Statements end with `;`. Blocks are wrapped in `{ }`.
 - [ ] `System.out.println(...)` prints a line to the console.
-- [ ] Modern Java (21) also allows simpler entry points in preview form, but the classic `main` is
-      what you'll see everywhere — learn it first.
+- [ ] *(Java 25+)* A **compact source file** needs no class and no `static`:
+      `void main() { IO.println("Hello"); }` — perfect for first experiments. Real projects still use
+      the classic `public static void main(String[] args)` inside a class, so learn to read both.
 
 ## Practice
 **Goal:** Build a tiny interactive program.

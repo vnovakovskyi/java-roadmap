@@ -10,43 +10,50 @@ Do this **before Module 1**. By the end you'll have Java installed, an editor op
 both build tools ready — everything you need to write and run real Java.
 
 > [!info] What you're installing
-> 1. A **JDK** (Java 21) — the compiler + runtime. 2. An **IDE** (IntelliJ IDEA). 3. **Git** —
+> 1. A **JDK** (Java 25) — the compiler + runtime. 2. An **IDE** (IntelliJ IDEA). 3. **Git** —
 > version control. 4. **Maven** and **Gradle** — build tools (often bundled with the IDE).
 > Back to home: [[Home]].
 
-## 1. Install the JDK (Java 21 LTS)
+## 1. Install the JDK (Java 25 LTS)
 
-Java 21 is the current Long-Term-Support release — what most jobs target. You want the **JDK**
-(Java Development Kit), not just the JRE.
+Java 25 (September 2025) is the current **Long-Term-Support (LTS)** release — the version new
+projects and most jobs target. A new Java version ships every six months (Java 27 came out in
+September 2026), but only every fourth one is an LTS; stick with the LTS while learning. You want
+the **JDK** (Java Development Kit), not just the JRE.
 
 **Recommended: a managed install** so you can switch versions later.
 
 - **macOS / Linux — [SDKMAN!](https://sdkman.io)** (easiest):
   ```bash
   curl -s "https://get.sdkman.io" | bash       # then restart your terminal
-  sdk install java 21.0.4-tem                   # Eclipse Temurin 21 (Adoptium)
-  sdk default java 21.0.4-tem
+  sdk list java | grep -- "-tem"               # find the newest 25.x Temurin identifier
+  sdk install java 25.x.y-tem                  # paste the identifier you found
   ```
-- **macOS — Homebrew** alternative: `brew install temurin@21`
-- **Windows** — download the **Temurin 21 (.msi)** installer from
-  [adoptium.net](https://adoptium.net), or use `winget install EclipseAdoptium.Temurin.21.JDK`.
+  SDKMAN only keeps recent patch builds, so never copy a full version number from an old
+  tutorial — always pick it from `sdk list java`.
+- **macOS — Homebrew** alternative: `brew install --cask temurin@25`
+- **Windows** — download the **Temurin 25 (.msi)** installer from
+  [adoptium.net](https://adoptium.net/temurin/releases/), or use
+  `winget install EclipseAdoptium.Temurin.25.JDK`.
 
 **Verify** (this is your first checkpoint):
 ```bash
-java -version     # should say 21.x
-javac -version    # should say 21.x
+java -version     # should say 25.x
+javac -version    # should say 25.x
 ```
-If both print a 21 version, the JDK is installed correctly.
+If both print a 25 version, the JDK is installed correctly.
 
 > [!tip] JDK vs JRE vs JVM
 > The **JVM** runs Java bytecode. The **JRE** = JVM + core libraries (run only). The **JDK** = JRE +
 > the compiler (`javac`) and tools (build + run). You install the JDK. Module 1 covers this in depth.
 
-## 2. Install an IDE (IntelliJ IDEA Community)
+## 2. Install an IDE (IntelliJ IDEA)
 
 An IDE gives you autocomplete, instant error highlighting, a debugger, and one-click run.
 
-- Download **[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/)** (free).
+- Download **[IntelliJ IDEA](https://www.jetbrains.com/idea/download/)**. Since version 2025.3
+  there is a single download (the separate "Community Edition" is gone); its free tier covers
+  everything this roadmap needs — you don't need a paid subscription.
 - Alternatives: **VS Code** + the *Extension Pack for Java*, or **Eclipse**. This roadmap shows
   IntelliJ, but any of them work.
 
@@ -79,7 +86,7 @@ to master them now — just have them available.
 - **Maven** — XML config (`pom.xml`), the long-time default in enterprise Java.
   - Install: `sdk install maven` · `brew install maven` · or [maven.apache.org](https://maven.apache.org/install.html)
   - Verify: `mvn -version`
-- **Gradle** — concise config (`build.gradle`), faster builds, common in newer projects.
+- **Gradle** — concise config (`build.gradle.kts`, Kotlin DSL by default), faster builds, common in newer projects.
   - Install: `sdk install gradle` · `brew install gradle` · or [gradle.org](https://gradle.org/install/)
   - Verify: `gradle -version`
 
@@ -95,7 +102,7 @@ to master them now — just have them available.
 
 ## Setup checklist
 
-- [ ] `java -version` and `javac -version` both show 21
+- [ ] `java -version` and `javac -version` both show 25
 - [ ] IntelliJ (or VS Code/Eclipse) installed; ran a Hello World
 - [ ] `git --version` works; name + email configured; GitHub account created
 - [ ] `mvn -version` works

@@ -22,7 +22,7 @@ tags:
 > and the build tools come later in Module 6.
 
 ## Learning Objectives
-- Confirm JDK 21 is installed and runs from the command line.
+- Confirm JDK 25 is installed and runs from the command line.
 - Confirm your IDE can run a Java file.
 - Know where to look when a tool "isn't found".
 
@@ -39,12 +39,12 @@ tags:
 ## Practice
 **Goal:** Prove the environment works end-to-end.
 **Steps:**
-- [ ] Run `java -version` and `javac -version`; confirm both report 21.
+- [ ] Run `java -version` and `javac -version`; confirm both report 25.
 - [ ] In your IDE, create a new project and run a one-line program that prints something.
 - [ ] Intentionally break it (delete a semicolon), see the error, fix it, re-run.
 
 ## Definition of Done
-- [ ] `java -version` and `javac -version` both show 21.
+- [ ] `java -version` and `javac -version` both show 25.
 - [ ] I ran a program from the IDE and saw output.
 - [ ] I completed the checklist at the bottom of [[Tools & Setup]] (JDK + IDE parts).
 

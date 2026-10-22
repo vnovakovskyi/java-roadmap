@@ -28,8 +28,11 @@ tags:
 
 ## Concepts
 - [ ] **Unit** tests for service logic with mocked repositories — fast and isolated.
-- [ ] **Web slice** tests with `@WebMvcTest` + `MockMvc` to verify endpoints, status, and JSON.
-- [ ] **Integration** tests with `@SpringBootTest` boot the context; use an H2 or Testcontainers DB.
+- [ ] **Web slice** tests with `@WebMvcTest` + `MockMvcTester` to verify endpoints, status, and JSON;
+      replace the service with `@MockitoBean`. *(Spring Boot 4)* `@MockBean` from older tutorials was
+      removed, and slice tests need their test starter (e.g. `spring-boot-starter-webmvc-test`).
+- [ ] **Integration** tests with `@SpringBootTest` boot the context (add `@AutoConfigureMockMvc` to get
+      `MockMvc`); use an H2 or Testcontainers DB.
 - [ ] Keep to the pyramid ([[M7 - Testing - Why We Test and the Test Pyramid]]): many unit, fewer
       integration.
 - [ ] Run via `mvn test` / `./gradlew test`; make tests part of your build.

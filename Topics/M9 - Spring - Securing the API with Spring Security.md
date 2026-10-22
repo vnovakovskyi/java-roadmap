@@ -29,7 +29,8 @@ tags:
 ## Concepts
 - [ ] **Authentication** = who you are; **authorization** = what you're allowed to do.
 - [ ] Adding `spring-boot-starter-security` secures everything by default — you then configure what's
-      public vs protected via a `SecurityFilterChain` bean.
+      public vs protected via a `SecurityFilterChain` bean. *(Spring Security 7)* Only the lambda style
+      (`http.authorizeHttpRequests(auth -> ...)`) works — older `.and()` chains were removed.
 - [ ] Start simple: HTTP Basic or form login with in-memory users and roles; restrict by path/role.
 - [ ] Never store plaintext passwords — hash them (e.g. BCrypt via `PasswordEncoder`).
 - [ ] **JWT / token auth** (overview): the client sends a signed token per request; the server

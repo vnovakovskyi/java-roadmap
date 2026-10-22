@@ -31,7 +31,9 @@ tags:
       lightweight and managed by the JVM — you can have millions.
 - [ ] Best for **blocking I/O-bound** work (DB calls, HTTP); not a speed-up for CPU-bound work.
 - [ ] Create via `Thread.ofVirtual().start(...)` or `Executors.newVirtualThreadPerTaskExecutor()`.
-- [ ] You usually keep the same blocking code style — the JVM handles the rest.
+- [ ] You usually keep the same blocking code style — the JVM handles the rest. *(Java 24+)* Blocking
+      inside `synchronized` no longer "pins" a virtual thread, so older advice to replace
+      `synchronized` with `ReentrantLock` is mostly obsolete.
 - [ ] **Thread-safety still applies**: virtual threads don't remove race conditions (see
       [[M5 - Modern Java - Concurrency Basics (Threads and Executors)]]).
 

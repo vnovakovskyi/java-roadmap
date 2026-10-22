@@ -28,7 +28,8 @@ tags:
 ## Concepts
 - [ ] `class Dog extends Animal` — `Dog` inherits accessible fields/methods of `Animal`.
 - [ ] Every class ultimately extends `Object`.
-- [ ] `super(...)` calls the parent constructor (must be first); `super.method()` calls the parent's version.
+- [ ] `super(...)` calls the parent constructor; `super.method()` calls the parent's version. *(Java 25+)*
+      You may validate or prepare arguments *before* `super(...)`, as long as that code doesn't use `this`.
 - [ ] **Is-a** vs **has-a**: use inheritance for genuine "is-a"; otherwise prefer **composition**.
 - [ ] `final` prevents overriding/extension; deep hierarchies are a smell.
 

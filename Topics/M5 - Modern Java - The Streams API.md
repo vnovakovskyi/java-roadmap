@@ -22,7 +22,7 @@ tags:
 - Group and summarize data with `Collectors`.
 
 ## Learn
-- [ ] Read: [dev.java — "The Stream API"](https://dev.java/learn/api/streams/).
+- [ ] Read: [dev.java — "The Stream API"](https://dev.java/learn/api/collections-and-streams/streams/).
 - [ ] Read about `Collectors` (`toList`, `groupingBy`, `joining`, `counting`).
 
 ## Concepts
@@ -30,7 +30,8 @@ tags:
       terminal (`collect`, `forEach`, `count`, `reduce`, `findFirst`).
 - [ ] Streams are **lazy** (intermediate ops run only when a terminal op fires) and **don't mutate**
       the source.
-- [ ] `collect(Collectors.toList())`, `groupingBy(...)`, `joining(", ")` are workhorses.
+- [ ] `.toList()` (Java 16+, returns an unmodifiable list), `collect(Collectors.groupingBy(...))`,
+      `collect(Collectors.joining(", "))` are workhorses.
 - [ ] `reduce` folds elements into one value; `mapToInt(...).sum()` for numeric sums.
 - [ ] Pairs naturally with `Optional` (`findFirst`) and lambdas/method references.
 

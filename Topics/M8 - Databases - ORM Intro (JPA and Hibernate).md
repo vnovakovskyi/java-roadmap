@@ -26,8 +26,9 @@ tags:
 - [ ] Read about entities, the `EntityManager`, and the persistence context.
 
 ## Concepts
-- [ ] **ORM** maps classes↔tables, objects↔rows. **JPA** is the specification; **Hibernate** is the
-      most common implementation.
+- [ ] **ORM** maps classes↔tables, objects↔rows. **JPA** (now *Jakarta Persistence*) is the
+      specification; **Hibernate** is the most common implementation. Imports are
+      `jakarta.persistence.*` — tutorials using `javax.persistence.*` are pre-2022 and outdated.
 - [ ] Annotate entities: `@Entity`, `@Id`, `@GeneratedValue`, `@Column`, relationships
       (`@OneToMany`, `@ManyToOne`).
 - [ ] The **persistence context** tracks managed entities; changes flush to the DB in a transaction.

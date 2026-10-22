@@ -27,7 +27,7 @@ tags:
 
 ## Concepts
 - [ ] Replace the in-memory list with a `JpaRepository` and a real DB (PostgreSQL; H2 for quick local).
-- [ ] Define the schema with Flyway migrations rather than auto-DDL.
+- [ ] Define the schema with Flyway migrations rather than auto-DDL (add `spring-boot-starter-flyway`).
 - [ ] Configure the datasource via profiles ([[M9 - Spring - Configuration and Profiles]]); keep
       credentials out of Git.
 - [ ] Watch the generated SQL; check for the N+1 problem on relationships.
