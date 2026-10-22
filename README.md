@@ -31,17 +31,26 @@ tested, secured Spring Boot REST API running in Docker. Up to date for **Java 25
 
 > In Obsidian you can also open the interactive **`Roadmap.canvas`** to navigate straight to any topic.
 
-1. **Foundations & Setup** — how programming and Java work; install, run, debug; Git from day one
-2. **Core Java** — syntax, types, control flow, methods, recursion, arrays
-3. **Object-Oriented Programming** — classes, memory, encapsulation, inheritance, interfaces, SOLID, design patterns
-4. **Essential Java APIs** — numbers, collections, generics, sorting, exceptions, enums, Optional
-5. **Modern Java** — lambdas, streams, records, pattern matching, date/time, files, concurrency
-6. **Tooling & Workflow** — Git & GitHub, Maven, Gradle, CI with GitHub Actions, Docker, AI assistants
-7. **Testing** — JUnit 6, AssertJ, Mockito, writing testable code
+1. **Foundations & Setup** — how programming and Java work; setup, the command line, errors and the
+   debugger; learning with AI; Git basics
+2. **Core Java: Syntax & Control Flow** — types, operators, strings and input, control flow, methods,
+   recursion, arrays
+3. **Object-Oriented Programming** — classes, memory, encapsulation, inheritance, polymorphism,
+   interfaces, SOLID, design patterns
+4. **Essential Java APIs** — wrappers & BigDecimal, collections & Big-O, generics, sorting, exceptions,
+   enums, Optional
+5. **Modern Java** — lambdas, streams, records, pattern matching & sealed types, date/time, files,
+   concurrency
+6. **Tooling & Workflow** — Git & GitHub, Maven, Gradle, the IDE, AI assistants, CI with GitHub
+   Actions, Docker
+7. **Testing** — the test pyramid, JUnit 6, AssertJ, Mockito, testable code and TDD
 8. **Databases & SQL** — SQL, joins, transactions & indexes, JDBC, JPA/Hibernate, Flyway
-9. **Web Development with Spring Boot** — REST, data, validation, config, REST clients, docs, security
-10. **Capstone** — your own CRUD app, end-to-end: tested, documented, containerized
-11. **Getting Hired** — portfolio, CV, technical interviews, coding practice, the job search
+9. **Web Development with Spring Boot** — HTTP & REST, controllers, dependency injection, data,
+   validation, config, REST clients, docs & monitoring, security
+10. **Putting It Together: Capstone** — your own CRUD app, end-to-end: tested, documented,
+    containerized
+11. **Getting Hired** — portfolio, CV, technical interviews, coding practice, the job search, what's
+    next
 
 Target: roughly **7 months at ~10–12 hours/week** (~335 h; the core `must` path is ~260 h). Go at
 your own pace.
@@ -52,7 +61,8 @@ your own pace.
 2. Download this repo: **Code → Download ZIP**, then unzip it — or `git clone` it.
 3. In Obsidian: **Open folder as vault** → choose the downloaded `java-roadmap` folder.
 4. Open **`Home.md`** — that's your home base. Bookmark it.
-5. Begin with **`Tools & Setup`**, then start Module 1 and work through the topics in order.
+5. Do sections 1–3 of **`Tools & Setup`** (JDK, IDE, Git), then start Module 1 and work through the
+   topics in order. The rest of the setup (build tools, Docker) waits until Module 6.
 
 Tick the checkboxes and update each note's `status` as you progress; the built-in Dashboard tracks
 everything for you.

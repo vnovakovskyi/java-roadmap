@@ -37,7 +37,8 @@ TOOLS = ["JDK 25 LTS (Temurin)", "IntelliJ IDEA", "Git, GitHub & GitHub Actions"
          "Docker & Docker Compose", "JUnit 6 · AssertJ · Mockito · Testcontainers", "PostgreSQL · Flyway",
          "Spring Boot 4", "An AI assistant — used wisely"]
 BOOKS = ["Head First Java (beginner)", "Effective Java (level-up)", "Modern Java in Action (streams)",
-         "Spring Start Here, 2nd ed. (Spring)", "Pro Git (free)", "dev.java · Helsinki Java MOOC (free)"]
+         "Spring Start Here, 2nd ed. (Spring)", "Grokking Algorithms, 2nd ed. (interviews)", "Pro Git (free)",
+         "dev.java · Helsinki Java MOOC (free)", "Exercism Java track (free practice)"]
 MODULE_COLORS = ["#0f766e", "#1d4ed8", "#6d28d9", "#be123c", "#b45309", "#0e7490", "#15803d", "#9333ea",
                  "#c2410c", "#334155", "#4d7c0f"]
 PRIORITY_STYLE = {"must": ("#fef3c7", "#f59e0b"), "good": ("#ffedd5", "#fb923c"), "optional": ("#e5e7eb", "#9ca3af")}

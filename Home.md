@@ -20,7 +20,7 @@ tags:
 - [[Books & Resources]] — recommended books and free learning resources
 - [[Roadmap.canvas|Roadmap (visual)]] — the whole path as a map
 
-> [!example] One project, eight versions: Bookshelf
+> [!example] One project, seven versions: Bookshelf
 > From Module 2 to Module 8 every module ends with a new version of the same app — **Bookshelf**:
 > a console app (M2) → classes (M3) → collections (M4) → modern Java and files (M5) → a real build
 > with CI (M6) → tests (M7) → PostgreSQL (M8). Then Module 9 teaches Spring with the same domain, and
