@@ -119,7 +119,7 @@ docker run hello-world
 - **[HTTPie](https://httpie.io)**, `curl`, or Postman — for poking REST APIs in Module 9.
 - **[DBeaver](https://dbeaver.io/)** — a free GUI for databases, handy in Module 8 (IntelliJ also has a
   database tool window).
-- **An AI assistant** in your IDE — read [[M1 - Foundations - Getting Unstuck and Learning with AI]]
+- **An AI assistant** in your IDE — read [[M1.07 - Foundations - Getting Unstuck and Learning with AI]]
   first for how to use it without short-circuiting your learning.
 
 ## Setup checklist

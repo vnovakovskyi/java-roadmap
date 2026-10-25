@@ -14,19 +14,24 @@ and open a pull request. That's all.
 - `System/_Conventions.md` defines the frontmatter values (`area`, `module`, `status`, `priority`,
   `effort`), the section order, and the stack versions the content targets.
 - The **Module Index in `Home.md`** is the single source of truth for the order of topics.
-- `assets/roadmap.svg`, `Roadmap.canvas`, and the topic list in `README.md` are **generated** from
-  it — don't edit them by hand.
+- Topic files are numbered by their place in it: `M3.05 - OOP - Inheritance.md` is the 5th topic of
+  Module 3. The numbers, the **Next** links, `assets/roadmap.svg`, `Roadmap.canvas`, and the topic
+  list in `README.md` are **generated** from the index — don't edit them by hand.
 
 ## Adding, renaming, or reordering a topic
 
-1. Create or edit the note in `Topics/` (name: `M{module} - {Area} - {Topic}.md`).
-2. Update the Module Index in `Home.md` and the **Next** links of the neighbouring topics.
-3. Regenerate and check:
+1. Create or edit the note in `Topics/`. A new note is named `M{module} - {Area} - {Topic}.md`;
+   `build` adds its number.
+2. Put it in the right place in the Module Index in `Home.md` (to reorder, move the lines). Moving a
+   topic to another module? Also update its `module` and `area` and the info callout.
+3. Number, regenerate and check:
    ```bash
    python3 .github/scripts/vault.py build
    python3 .github/scripts/vault.py check
    ```
-   The same check runs on every pull request, together with an external link checker.
+   `build` renames the topic files to match the index (a new topic shifts only the topics after it in
+   its module), updates every link to a renamed note, and sets the **Next** links. The same check
+   runs on every pull request, together with an external link checker.
 
 ## Guidelines for content
 
