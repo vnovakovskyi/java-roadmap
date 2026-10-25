@@ -23,7 +23,7 @@
 		{
 			"id": "m1c0",
 			"type": "text",
-			"text": "[[M1 - Foundations - How Programming and Java Work|How Programming and Java Work]]",
+			"text": "[[M1.01 - Foundations - How Programming and Java Work|How Programming and Java Work]]",
 			"x": 15,
 			"y": 60,
 			"width": 400,
@@ -33,7 +33,7 @@
 		{
 			"id": "m1c1",
 			"type": "text",
-			"text": "[[M1 - Foundations - Set Up and Verify Your Environment|Set Up and Verify Your Environment]]",
+			"text": "[[M1.02 - Foundations - Set Up and Verify Your Environment|Set Up and Verify Your Environment]]",
 			"x": 15,
 			"y": 130,
 			"width": 400,
@@ -43,7 +43,7 @@
 		{
 			"id": "m1c2",
 			"type": "text",
-			"text": "[[M1 - Foundations - Your First Java Program|Your First Java Program]]",
+			"text": "[[M1.03 - Foundations - Your First Java Program|Your First Java Program]]",
 			"x": 15,
 			"y": 200,
 			"width": 400,
@@ -53,7 +53,7 @@
 		{
 			"id": "m1c3",
 			"type": "text",
-			"text": "[[M1 - Foundations - The Command Line Basics|The Command Line Basics]]",
+			"text": "[[M1.04 - Foundations - The Command Line Basics|The Command Line Basics]]",
 			"x": 15,
 			"y": 270,
 			"width": 400,
@@ -63,7 +63,7 @@
 		{
 			"id": "m1c4",
 			"type": "text",
-			"text": "[[M1 - Foundations - How Java Compiles and Runs|How Java Compiles and Runs]]",
+			"text": "[[M1.05 - Foundations - How Java Compiles and Runs|How Java Compiles and Runs]]",
 			"x": 15,
 			"y": 340,
 			"width": 400,
@@ -73,7 +73,7 @@
 		{
 			"id": "m1c5",
 			"type": "text",
-			"text": "[[M1 - Foundations - Reading Errors and Using the Debugger|Reading Errors and Using the Debugger]]",
+			"text": "[[M1.06 - Foundations - Reading Errors and Using the Debugger|Reading Errors and Using the Debugger]]",
 			"x": 15,
 			"y": 410,
 			"width": 400,
@@ -83,7 +83,7 @@
 		{
 			"id": "m1c6",
 			"type": "text",
-			"text": "[[M1 - Foundations - Getting Unstuck and Learning with AI|Getting Unstuck and Learning with AI]]",
+			"text": "[[M1.07 - Foundations - Getting Unstuck and Learning with AI|Getting Unstuck and Learning with AI]]",
 			"x": 15,
 			"y": 480,
 			"width": 400,
@@ -93,7 +93,7 @@
 		{
 			"id": "m1c7",
 			"type": "text",
-			"text": "[[M1 - Foundations - Saving Your Work with Git|Saving Your Work with Git]]",
+			"text": "[[M1.08 - Foundations - Saving Your Work with Git|Saving Your Work with Git]]",
 			"x": 15,
 			"y": 550,
 			"width": 400,
@@ -113,7 +113,7 @@
 		{
 			"id": "m2c0",
 			"type": "text",
-			"text": "[[M2 - Core Java - Variables, Primitives and Types|Variables, Primitives and Types]]",
+			"text": "[[M2.01 - Core Java - Variables, Primitives and Types|Variables, Primitives and Types]]",
 			"x": 475,
 			"y": 60,
 			"width": 400,
@@ -123,7 +123,7 @@
 		{
 			"id": "m2c1",
 			"type": "text",
-			"text": "[[M2 - Core Java - Operators and Expressions|Operators and Expressions]]",
+			"text": "[[M2.02 - Core Java - Operators and Expressions|Operators and Expressions]]",
 			"x": 475,
 			"y": 130,
 			"width": 400,
@@ -133,7 +133,7 @@
 		{
 			"id": "m2c2",
 			"type": "text",
-			"text": "[[M2 - Core Java - Strings and Basic Input-Output|Strings and Basic Input-Output]]",
+			"text": "[[M2.03 - Core Java - Strings and Basic Input-Output|Strings and Basic Input-Output]]",
 			"x": 475,
 			"y": 200,
 			"width": 400,
@@ -143,7 +143,7 @@
 		{
 			"id": "m2c3",
 			"type": "text",
-			"text": "[[M2 - Core Java - Conditionals (if and switch)|Conditionals (if and switch)]]",
+			"text": "[[M2.04 - Core Java - Conditionals (if and switch)|Conditionals (if and switch)]]",
 			"x": 475,
 			"y": 270,
 			"width": 400,
@@ -153,7 +153,7 @@
 		{
 			"id": "m2c4",
 			"type": "text",
-			"text": "[[M2 - Core Java - Loops (for and while)|Loops (for and while)]]",
+			"text": "[[M2.05 - Core Java - Loops (for and while)|Loops (for and while)]]",
 			"x": 475,
 			"y": 340,
 			"width": 400,
@@ -163,7 +163,7 @@
 		{
 			"id": "m2c5",
 			"type": "text",
-			"text": "[[M2 - Core Java - Methods and Parameters|Methods and Parameters]]",
+			"text": "[[M2.06 - Core Java - Methods and Parameters|Methods and Parameters]]",
 			"x": 475,
 			"y": 410,
 			"width": 400,
@@ -173,7 +173,7 @@
 		{
 			"id": "m2c6",
 			"type": "text",
-			"text": "[[M2 - Core Java - Recursion|Recursion]]",
+			"text": "[[M2.07 - Core Java - Recursion|Recursion]]",
 			"x": 475,
 			"y": 480,
 			"width": 400,
@@ -183,7 +183,7 @@
 		{
 			"id": "m2c7",
 			"type": "text",
-			"text": "[[M2 - Core Java - Arrays|Arrays]]",
+			"text": "[[M2.08 - Core Java - Arrays|Arrays]]",
 			"x": 475,
 			"y": 550,
 			"width": 400,
@@ -193,7 +193,7 @@
 		{
 			"id": "m2c8",
 			"type": "text",
-			"text": "[[M2 - Core Java - Module Project (Console Bookshelf)|Module Project (Console Bookshelf)]]",
+			"text": "[[M2.09 - Core Java - Module Project (Console Bookshelf)|Module Project (Console Bookshelf)]]",
 			"x": 475,
 			"y": 620,
 			"width": 400,
@@ -213,7 +213,7 @@
 		{
 			"id": "m3c0",
 			"type": "text",
-			"text": "[[M3 - OOP - Classes and Objects|Classes and Objects]]",
+			"text": "[[M3.01 - OOP - Classes and Objects|Classes and Objects]]",
 			"x": 935,
 			"y": 60,
 			"width": 400,
@@ -223,7 +223,7 @@
 		{
 			"id": "m3c1",
 			"type": "text",
-			"text": "[[M3 - OOP - Fields, Methods and Constructors|Fields, Methods and Constructors]]",
+			"text": "[[M3.02 - OOP - Fields, Methods and Constructors|Fields, Methods and Constructors]]",
 			"x": 935,
 			"y": 130,
 			"width": 400,
@@ -233,7 +233,7 @@
 		{
 			"id": "m3c2",
 			"type": "text",
-			"text": "[[M3 - OOP - Memory Basics (Stack, Heap and Garbage Collection)|Memory Basics (Stack, Heap and Garbage Collection)]]",
+			"text": "[[M3.03 - OOP - Memory Basics (Stack, Heap and Garbage Collection)|Memory Basics (Stack, Heap and Garbage Collection)]]",
 			"x": 935,
 			"y": 200,
 			"width": 400,
@@ -243,7 +243,7 @@
 		{
 			"id": "m3c3",
 			"type": "text",
-			"text": "[[M3 - OOP - Encapsulation and Access Modifiers|Encapsulation and Access Modifiers]]",
+			"text": "[[M3.04 - OOP - Encapsulation and Access Modifiers|Encapsulation and Access Modifiers]]",
 			"x": 935,
 			"y": 270,
 			"width": 400,
@@ -253,7 +253,7 @@
 		{
 			"id": "m3c4",
 			"type": "text",
-			"text": "[[M3 - OOP - Inheritance|Inheritance]]",
+			"text": "[[M3.05 - OOP - Inheritance|Inheritance]]",
 			"x": 935,
 			"y": 340,
 			"width": 400,
@@ -263,7 +263,7 @@
 		{
 			"id": "m3c5",
 			"type": "text",
-			"text": "[[M3 - OOP - Polymorphism and Overriding|Polymorphism and Overriding]]",
+			"text": "[[M3.06 - OOP - Polymorphism and Overriding|Polymorphism and Overriding]]",
 			"x": 935,
 			"y": 410,
 			"width": 400,
@@ -273,7 +273,7 @@
 		{
 			"id": "m3c6",
 			"type": "text",
-			"text": "[[M3 - OOP - Abstraction, Interfaces and Abstract Classes|Abstraction, Interfaces and Abstract Classes]]",
+			"text": "[[M3.07 - OOP - Abstraction, Interfaces and Abstract Classes|Abstraction, Interfaces and Abstract Classes]]",
 			"x": 935,
 			"y": 480,
 			"width": 400,
@@ -283,7 +283,7 @@
 		{
 			"id": "m3c7",
 			"type": "text",
-			"text": "[[M3 - OOP - equals, hashCode and toString|equals, hashCode and toString]]",
+			"text": "[[M3.08 - OOP - equals, hashCode and toString|equals, hashCode and toString]]",
 			"x": 935,
 			"y": 550,
 			"width": 400,
@@ -293,7 +293,7 @@
 		{
 			"id": "m3c8",
 			"type": "text",
-			"text": "[[M3 - OOP - SOLID and Clean Code Principles|SOLID and Clean Code Principles]]",
+			"text": "[[M3.09 - OOP - SOLID and Clean Code Principles|SOLID and Clean Code Principles]]",
 			"x": 935,
 			"y": 620,
 			"width": 400,
@@ -303,7 +303,7 @@
 		{
 			"id": "m3c9",
 			"type": "text",
-			"text": "[[M3 - OOP - Design Patterns (the Essential Few)|Design Patterns (the Essential Few)]]",
+			"text": "[[M3.10 - OOP - Design Patterns (the Essential Few)|Design Patterns (the Essential Few)]]",
 			"x": 935,
 			"y": 690,
 			"width": 400,
@@ -313,7 +313,7 @@
 		{
 			"id": "m3c10",
 			"type": "text",
-			"text": "[[M3 - OOP - Module Project (Bookshelf with Classes)|Module Project (Bookshelf with Classes)]]",
+			"text": "[[M3.11 - OOP - Module Project (Bookshelf with Classes)|Module Project (Bookshelf with Classes)]]",
 			"x": 935,
 			"y": 760,
 			"width": 400,
@@ -333,7 +333,7 @@
 		{
 			"id": "m4c0",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Wrapper Types, Autoboxing and BigDecimal|Wrapper Types, Autoboxing and BigDecimal]]",
+			"text": "[[M4.01 - Java APIs - Wrapper Types, Autoboxing and BigDecimal|Wrapper Types, Autoboxing and BigDecimal]]",
 			"x": 1395,
 			"y": 60,
 			"width": 400,
@@ -343,7 +343,7 @@
 		{
 			"id": "m4c1",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Collections Overview (List, Set, Map)|Collections Overview (List, Set, Map)]]",
+			"text": "[[M4.02 - Java APIs - Collections Overview (List, Set, Map)|Collections Overview (List, Set, Map)]]",
 			"x": 1395,
 			"y": 130,
 			"width": 400,
@@ -353,7 +353,7 @@
 		{
 			"id": "m4c2",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Choosing Collections and Big-O Basics|Choosing Collections and Big-O Basics]]",
+			"text": "[[M4.03 - Java APIs - Choosing Collections and Big-O Basics|Choosing Collections and Big-O Basics]]",
 			"x": 1395,
 			"y": 200,
 			"width": 400,
@@ -363,7 +363,7 @@
 		{
 			"id": "m4c3",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Generics Basics|Generics Basics]]",
+			"text": "[[M4.04 - Java APIs - Generics Basics|Generics Basics]]",
 			"x": 1395,
 			"y": 270,
 			"width": 400,
@@ -373,7 +373,7 @@
 		{
 			"id": "m4c4",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Iteration and Sorting (Comparable and Comparator)|Iteration and Sorting (Comparable and Comparator)]]",
+			"text": "[[M4.05 - Java APIs - Iteration and Sorting (Comparable and Comparator)|Iteration and Sorting (Comparable and Comparator)]]",
 			"x": 1395,
 			"y": 340,
 			"width": 400,
@@ -383,7 +383,7 @@
 		{
 			"id": "m4c5",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Exceptions and Error Handling|Exceptions and Error Handling]]",
+			"text": "[[M4.06 - Java APIs - Exceptions and Error Handling|Exceptions and Error Handling]]",
 			"x": 1395,
 			"y": 410,
 			"width": 400,
@@ -393,7 +393,7 @@
 		{
 			"id": "m4c6",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Enums|Enums]]",
+			"text": "[[M4.07 - Java APIs - Enums|Enums]]",
 			"x": 1395,
 			"y": 480,
 			"width": 400,
@@ -403,7 +403,7 @@
 		{
 			"id": "m4c7",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Optional and Null-Safety|Optional and Null-Safety]]",
+			"text": "[[M4.08 - Java APIs - Optional and Null-Safety|Optional and Null-Safety]]",
 			"x": 1395,
 			"y": 550,
 			"width": 400,
@@ -413,7 +413,7 @@
 		{
 			"id": "m4c8",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Packages and Project Organization|Packages and Project Organization]]",
+			"text": "[[M4.09 - Java APIs - Packages and Project Organization|Packages and Project Organization]]",
 			"x": 1395,
 			"y": 620,
 			"width": 400,
@@ -423,7 +423,7 @@
 		{
 			"id": "m4c9",
 			"type": "text",
-			"text": "[[M4 - Java APIs - Module Project (Bookshelf with Collections)|Module Project (Bookshelf with Collections)]]",
+			"text": "[[M4.10 - Java APIs - Module Project (Bookshelf with Collections)|Module Project (Bookshelf with Collections)]]",
 			"x": 1395,
 			"y": 690,
 			"width": 400,
@@ -443,7 +443,7 @@
 		{
 			"id": "m5c0",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Lambdas and Functional Interfaces|Lambdas and Functional Interfaces]]",
+			"text": "[[M5.01 - Modern Java - Lambdas and Functional Interfaces|Lambdas and Functional Interfaces]]",
 			"x": 1855,
 			"y": 60,
 			"width": 400,
@@ -453,7 +453,7 @@
 		{
 			"id": "m5c1",
 			"type": "text",
-			"text": "[[M5 - Modern Java - The Streams API|The Streams API]]",
+			"text": "[[M5.02 - Modern Java - The Streams API|The Streams API]]",
 			"x": 1855,
 			"y": 130,
 			"width": 400,
@@ -463,7 +463,7 @@
 		{
 			"id": "m5c2",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Records|Records]]",
+			"text": "[[M5.03 - Modern Java - Records|Records]]",
 			"x": 1855,
 			"y": 200,
 			"width": 400,
@@ -473,7 +473,7 @@
 		{
 			"id": "m5c3",
 			"type": "text",
-			"text": "[[M5 - Modern Java - var, Enhanced switch and Text Blocks|var, Enhanced switch and Text Blocks]]",
+			"text": "[[M5.04 - Modern Java - var, Enhanced switch and Text Blocks|var, Enhanced switch and Text Blocks]]",
 			"x": 1855,
 			"y": 270,
 			"width": 400,
@@ -483,7 +483,7 @@
 		{
 			"id": "m5c4",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Pattern Matching and Sealed Types|Pattern Matching and Sealed Types]]",
+			"text": "[[M5.05 - Modern Java - Pattern Matching and Sealed Types|Pattern Matching and Sealed Types]]",
 			"x": 1855,
 			"y": 340,
 			"width": 400,
@@ -493,7 +493,7 @@
 		{
 			"id": "m5c5",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Date and Time (java.time)|Date and Time (java.time)]]",
+			"text": "[[M5.06 - Modern Java - Date and Time (java.time)|Date and Time (java.time)]]",
 			"x": 1855,
 			"y": 410,
 			"width": 400,
@@ -503,7 +503,7 @@
 		{
 			"id": "m5c6",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Files and I-O Basics|Files and I/O Basics]]",
+			"text": "[[M5.07 - Modern Java - Files and I-O Basics|Files and I/O Basics]]",
 			"x": 1855,
 			"y": 480,
 			"width": 400,
@@ -513,7 +513,7 @@
 		{
 			"id": "m5c7",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Concurrency Basics (Threads and Executors)|Concurrency Basics (Threads and Executors)]]",
+			"text": "[[M5.08 - Modern Java - Concurrency Basics (Threads and Executors)|Concurrency Basics (Threads and Executors)]]",
 			"x": 1855,
 			"y": 550,
 			"width": 400,
@@ -523,7 +523,7 @@
 		{
 			"id": "m5c8",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Virtual Threads (Java 21)|Virtual Threads (Java 21)]]",
+			"text": "[[M5.09 - Modern Java - Virtual Threads (Java 21)|Virtual Threads (Java 21)]]",
 			"x": 1855,
 			"y": 620,
 			"width": 400,
@@ -533,7 +533,7 @@
 		{
 			"id": "m5c9",
 			"type": "text",
-			"text": "[[M5 - Modern Java - Module Project (Bookshelf Stats and Saving)|Module Project (Bookshelf Stats and Saving)]]",
+			"text": "[[M5.10 - Modern Java - Module Project (Bookshelf Stats and Saving)|Module Project (Bookshelf Stats and Saving)]]",
 			"x": 1855,
 			"y": 690,
 			"width": 400,
@@ -553,7 +553,7 @@
 		{
 			"id": "m6c0",
 			"type": "text",
-			"text": "[[M6 - Tooling - Git Branching, Merging and Undo|Git Branching, Merging and Undo]]",
+			"text": "[[M6.01 - Tooling - Git Branching, Merging and Undo|Git Branching, Merging and Undo]]",
 			"x": 2315,
 			"y": 60,
 			"width": 400,
@@ -563,7 +563,7 @@
 		{
 			"id": "m6c1",
 			"type": "text",
-			"text": "[[M6 - Tooling - GitHub and Pull Requests|GitHub and Pull Requests]]",
+			"text": "[[M6.02 - Tooling - GitHub and Pull Requests|GitHub and Pull Requests]]",
 			"x": 2315,
 			"y": 130,
 			"width": 400,
@@ -573,7 +573,7 @@
 		{
 			"id": "m6c2",
 			"type": "text",
-			"text": "[[M6 - Tooling - Maven (Project, Dependencies, Lifecycle)|Maven (Project, Dependencies, Lifecycle)]]",
+			"text": "[[M6.03 - Tooling - Maven (Project, Dependencies, Lifecycle)|Maven (Project, Dependencies, Lifecycle)]]",
 			"x": 2315,
 			"y": 200,
 			"width": 400,
@@ -583,7 +583,7 @@
 		{
 			"id": "m6c3",
 			"type": "text",
-			"text": "[[M6 - Tooling - Gradle (Project, Dependencies, Tasks)|Gradle (Project, Dependencies, Tasks)]]",
+			"text": "[[M6.04 - Tooling - Gradle (Project, Dependencies, Tasks)|Gradle (Project, Dependencies, Tasks)]]",
 			"x": 2315,
 			"y": 270,
 			"width": 400,
@@ -593,7 +593,7 @@
 		{
 			"id": "m6c4",
 			"type": "text",
-			"text": "[[M6 - Tooling - Dependency Management and Semantic Versioning|Dependency Management and Semantic Versioning]]",
+			"text": "[[M6.05 - Tooling - Dependency Management and Semantic Versioning|Dependency Management and Semantic Versioning]]",
 			"x": 2315,
 			"y": 340,
 			"width": 400,
@@ -603,7 +603,7 @@
 		{
 			"id": "m6c5",
 			"type": "text",
-			"text": "[[M6 - Tooling - Effective IDE Use and Debugging|Effective IDE Use and Debugging]]",
+			"text": "[[M6.06 - Tooling - Effective IDE Use and Debugging|Effective IDE Use and Debugging]]",
 			"x": 2315,
 			"y": 410,
 			"width": 400,
@@ -613,7 +613,7 @@
 		{
 			"id": "m6c6",
 			"type": "text",
-			"text": "[[M6 - Tooling - AI Coding Assistants in Your Workflow|AI Coding Assistants in Your Workflow]]",
+			"text": "[[M6.07 - Tooling - AI Coding Assistants in Your Workflow|AI Coding Assistants in Your Workflow]]",
 			"x": 2315,
 			"y": 480,
 			"width": 400,
@@ -623,7 +623,7 @@
 		{
 			"id": "m6c7",
 			"type": "text",
-			"text": "[[M6 - Tooling - Continuous Integration with GitHub Actions|Continuous Integration with GitHub Actions]]",
+			"text": "[[M6.08 - Tooling - Continuous Integration with GitHub Actions|Continuous Integration with GitHub Actions]]",
 			"x": 2315,
 			"y": 550,
 			"width": 400,
@@ -633,7 +633,7 @@
 		{
 			"id": "m6c8",
 			"type": "text",
-			"text": "[[M6 - Tooling - Docker Basics for Developers|Docker Basics for Developers]]",
+			"text": "[[M6.09 - Tooling - Docker Basics for Developers|Docker Basics for Developers]]",
 			"x": 2315,
 			"y": 620,
 			"width": 400,
@@ -643,7 +643,7 @@
 		{
 			"id": "m6c9",
 			"type": "text",
-			"text": "[[M6 - Tooling - Module Project (Bookshelf as a Real Project)|Module Project (Bookshelf as a Real Project)]]",
+			"text": "[[M6.10 - Tooling - Module Project (Bookshelf as a Real Project)|Module Project (Bookshelf as a Real Project)]]",
 			"x": 2315,
 			"y": 690,
 			"width": 400,
@@ -663,7 +663,7 @@
 		{
 			"id": "m7c0",
 			"type": "text",
-			"text": "[[M7 - Testing - Why We Test and the Test Pyramid|Why We Test and the Test Pyramid]]",
+			"text": "[[M7.01 - Testing - Why We Test and the Test Pyramid|Why We Test and the Test Pyramid]]",
 			"x": 2775,
 			"y": 60,
 			"width": 400,
@@ -673,7 +673,7 @@
 		{
 			"id": "m7c1",
 			"type": "text",
-			"text": "[[M7 - Testing - JUnit Basics|JUnit Basics]]",
+			"text": "[[M7.02 - Testing - JUnit Basics|JUnit Basics]]",
 			"x": 2775,
 			"y": 130,
 			"width": 400,
@@ -683,7 +683,7 @@
 		{
 			"id": "m7c2",
 			"type": "text",
-			"text": "[[M7 - Testing - Assertions with AssertJ|Assertions with AssertJ]]",
+			"text": "[[M7.03 - Testing - Assertions with AssertJ|Assertions with AssertJ]]",
 			"x": 2775,
 			"y": 200,
 			"width": 400,
@@ -693,7 +693,7 @@
 		{
 			"id": "m7c3",
 			"type": "text",
-			"text": "[[M7 - Testing - Mockito and Test Doubles|Mockito and Test Doubles]]",
+			"text": "[[M7.04 - Testing - Mockito and Test Doubles|Mockito and Test Doubles]]",
 			"x": 2775,
 			"y": 270,
 			"width": 400,
@@ -703,7 +703,7 @@
 		{
 			"id": "m7c4",
 			"type": "text",
-			"text": "[[M7 - Testing - Writing Testable Code (Intro to TDD)|Writing Testable Code (Intro to TDD)]]",
+			"text": "[[M7.05 - Testing - Writing Testable Code (Intro to TDD)|Writing Testable Code (Intro to TDD)]]",
 			"x": 2775,
 			"y": 340,
 			"width": 400,
@@ -713,7 +713,7 @@
 		{
 			"id": "m7c5",
 			"type": "text",
-			"text": "[[M7 - Testing - Module Project (Testing the Bookshelf)|Module Project (Testing the Bookshelf)]]",
+			"text": "[[M7.06 - Testing - Module Project (Testing the Bookshelf)|Module Project (Testing the Bookshelf)]]",
 			"x": 2775,
 			"y": 410,
 			"width": 400,
@@ -733,7 +733,7 @@
 		{
 			"id": "m8c0",
 			"type": "text",
-			"text": "[[M8 - Databases - Relational Concepts|Relational Concepts]]",
+			"text": "[[M8.01 - Databases - Relational Concepts|Relational Concepts]]",
 			"x": 3235,
 			"y": 60,
 			"width": 400,
@@ -743,7 +743,7 @@
 		{
 			"id": "m8c1",
 			"type": "text",
-			"text": "[[M8 - Databases - SQL CRUD and Queries|SQL CRUD and Queries]]",
+			"text": "[[M8.02 - Databases - SQL CRUD and Queries|SQL CRUD and Queries]]",
 			"x": 3235,
 			"y": 130,
 			"width": 400,
@@ -753,7 +753,7 @@
 		{
 			"id": "m8c2",
 			"type": "text",
-			"text": "[[M8 - Databases - Joins and Aggregation|Joins and Aggregation]]",
+			"text": "[[M8.03 - Databases - Joins and Aggregation|Joins and Aggregation]]",
 			"x": 3235,
 			"y": 200,
 			"width": 400,
@@ -763,7 +763,7 @@
 		{
 			"id": "m8c3",
 			"type": "text",
-			"text": "[[M8 - Databases - Transactions and Indexes|Transactions and Indexes]]",
+			"text": "[[M8.04 - Databases - Transactions and Indexes|Transactions and Indexes]]",
 			"x": 3235,
 			"y": 270,
 			"width": 400,
@@ -773,7 +773,7 @@
 		{
 			"id": "m8c4",
 			"type": "text",
-			"text": "[[M8 - Databases - Connecting from Java (JDBC)|Connecting from Java (JDBC)]]",
+			"text": "[[M8.05 - Databases - Connecting from Java (JDBC)|Connecting from Java (JDBC)]]",
 			"x": 3235,
 			"y": 340,
 			"width": 400,
@@ -783,7 +783,7 @@
 		{
 			"id": "m8c5",
 			"type": "text",
-			"text": "[[M8 - Databases - ORM Intro (JPA and Hibernate)|ORM Intro (JPA and Hibernate)]]",
+			"text": "[[M8.06 - Databases - ORM Intro (JPA and Hibernate)|ORM Intro (JPA and Hibernate)]]",
 			"x": 3235,
 			"y": 410,
 			"width": 400,
@@ -793,7 +793,7 @@
 		{
 			"id": "m8c6",
 			"type": "text",
-			"text": "[[M8 - Databases - Schema Basics and Migrations (Flyway)|Schema Basics and Migrations (Flyway)]]",
+			"text": "[[M8.07 - Databases - Schema Basics and Migrations (Flyway)|Schema Basics and Migrations (Flyway)]]",
 			"x": 3235,
 			"y": 480,
 			"width": 400,
@@ -803,7 +803,7 @@
 		{
 			"id": "m8c7",
 			"type": "text",
-			"text": "[[M8 - Databases - Module Project (Bookshelf on PostgreSQL)|Module Project (Bookshelf on PostgreSQL)]]",
+			"text": "[[M8.08 - Databases - Module Project (Bookshelf on PostgreSQL)|Module Project (Bookshelf on PostgreSQL)]]",
 			"x": 3235,
 			"y": 550,
 			"width": 400,
@@ -823,7 +823,7 @@
 		{
 			"id": "m9c0",
 			"type": "text",
-			"text": "[[M9 - Spring - HTTP and REST Fundamentals|HTTP and REST Fundamentals]]",
+			"text": "[[M9.01 - Spring - HTTP and REST Fundamentals|HTTP and REST Fundamentals]]",
 			"x": 3695,
 			"y": 60,
 			"width": 400,
@@ -833,7 +833,7 @@
 		{
 			"id": "m9c1",
 			"type": "text",
-			"text": "[[M9 - Spring - Spring Boot Intro and Project Setup|Spring Boot Intro and Project Setup]]",
+			"text": "[[M9.02 - Spring - Spring Boot Intro and Project Setup|Spring Boot Intro and Project Setup]]",
 			"x": 3695,
 			"y": 130,
 			"width": 400,
@@ -843,7 +843,7 @@
 		{
 			"id": "m9c2",
 			"type": "text",
-			"text": "[[M9 - Spring - Controllers and REST Endpoints|Controllers and REST Endpoints]]",
+			"text": "[[M9.03 - Spring - Controllers and REST Endpoints|Controllers and REST Endpoints]]",
 			"x": 3695,
 			"y": 200,
 			"width": 400,
@@ -853,7 +853,7 @@
 		{
 			"id": "m9c3",
 			"type": "text",
-			"text": "[[M9 - Spring - Services and Dependency Injection|Services and Dependency Injection]]",
+			"text": "[[M9.04 - Spring - Services and Dependency Injection|Services and Dependency Injection]]",
 			"x": 3695,
 			"y": 270,
 			"width": 400,
@@ -863,7 +863,7 @@
 		{
 			"id": "m9c4",
 			"type": "text",
-			"text": "[[M9 - Spring - Spring Data JPA and Repositories|Spring Data JPA and Repositories]]",
+			"text": "[[M9.05 - Spring - Spring Data JPA and Repositories|Spring Data JPA and Repositories]]",
 			"x": 3695,
 			"y": 340,
 			"width": 400,
@@ -873,7 +873,7 @@
 		{
 			"id": "m9c5",
 			"type": "text",
-			"text": "[[M9 - Spring - Validation and Error Handling|Validation and Error Handling]]",
+			"text": "[[M9.06 - Spring - Validation and Error Handling|Validation and Error Handling]]",
 			"x": 3695,
 			"y": 410,
 			"width": 400,
@@ -883,7 +883,7 @@
 		{
 			"id": "m9c6",
 			"type": "text",
-			"text": "[[M9 - Spring - Configuration and Profiles|Configuration and Profiles]]",
+			"text": "[[M9.07 - Spring - Configuration and Profiles|Configuration and Profiles]]",
 			"x": 3695,
 			"y": 480,
 			"width": 400,
@@ -893,7 +893,7 @@
 		{
 			"id": "m9c7",
 			"type": "text",
-			"text": "[[M9 - Spring - Calling Other APIs with RestClient|Calling Other APIs with RestClient]]",
+			"text": "[[M9.08 - Spring - Calling Other APIs with RestClient|Calling Other APIs with RestClient]]",
 			"x": 3695,
 			"y": 550,
 			"width": 400,
@@ -903,7 +903,7 @@
 		{
 			"id": "m9c8",
 			"type": "text",
-			"text": "[[M9 - Spring - API Docs and Monitoring (OpenAPI and Actuator)|API Docs and Monitoring (OpenAPI and Actuator)]]",
+			"text": "[[M9.09 - Spring - API Docs and Monitoring (OpenAPI and Actuator)|API Docs and Monitoring (OpenAPI and Actuator)]]",
 			"x": 3695,
 			"y": 620,
 			"width": 400,
@@ -913,7 +913,7 @@
 		{
 			"id": "m9c9",
 			"type": "text",
-			"text": "[[M9 - Spring - Securing the API with Spring Security|Securing the API with Spring Security]]",
+			"text": "[[M9.10 - Spring - Securing the API with Spring Security|Securing the API with Spring Security]]",
 			"x": 3695,
 			"y": 690,
 			"width": 400,
@@ -933,7 +933,7 @@
 		{
 			"id": "m10c0",
 			"type": "text",
-			"text": "[[M10 - Project - Designing a Small CRUD App|Designing a Small CRUD App]]",
+			"text": "[[M10.01 - Project - Designing a Small CRUD App|Designing a Small CRUD App]]",
 			"x": 4155,
 			"y": 60,
 			"width": 400,
@@ -943,7 +943,7 @@
 		{
 			"id": "m10c1",
 			"type": "text",
-			"text": "[[M10 - Project - Building the REST API End-to-End|Building the REST API End-to-End]]",
+			"text": "[[M10.02 - Project - Building the REST API End-to-End|Building the REST API End-to-End]]",
 			"x": 4155,
 			"y": 130,
 			"width": 400,
@@ -953,7 +953,7 @@
 		{
 			"id": "m10c2",
 			"type": "text",
-			"text": "[[M10 - Project - Persisting with a Real Database|Persisting with a Real Database]]",
+			"text": "[[M10.03 - Project - Persisting with a Real Database|Persisting with a Real Database]]",
 			"x": 4155,
 			"y": 200,
 			"width": 400,
@@ -963,7 +963,7 @@
 		{
 			"id": "m10c3",
 			"type": "text",
-			"text": "[[M10 - Project - Testing the Application|Testing the Application]]",
+			"text": "[[M10.04 - Project - Testing the Application|Testing the Application]]",
 			"x": 4155,
 			"y": 270,
 			"width": 400,
@@ -973,7 +973,7 @@
 		{
 			"id": "m10c4",
 			"type": "text",
-			"text": "[[M10 - Project - Good Habits (Logging, Config, README)|Good Habits (Logging, Config, README)]]",
+			"text": "[[M10.05 - Project - Good Habits (Logging, Config, README)|Good Habits (Logging, Config, README)]]",
 			"x": 4155,
 			"y": 340,
 			"width": 400,
@@ -983,7 +983,7 @@
 		{
 			"id": "m10c5",
 			"type": "text",
-			"text": "[[M10 - Project - Packaging and Running (Jar and Container Image)|Packaging and Running (Jar and Container Image)]]",
+			"text": "[[M10.06 - Project - Packaging and Running (Jar and Container Image)|Packaging and Running (Jar and Container Image)]]",
 			"x": 4155,
 			"y": 410,
 			"width": 400,
@@ -1003,7 +1003,7 @@
 		{
 			"id": "m11c0",
 			"type": "text",
-			"text": "[[M11 - Career - Building Your Portfolio and GitHub Profile|Building Your Portfolio and GitHub Profile]]",
+			"text": "[[M11.01 - Career - Building Your Portfolio and GitHub Profile|Building Your Portfolio and GitHub Profile]]",
 			"x": 4615,
 			"y": 60,
 			"width": 400,
@@ -1013,7 +1013,7 @@
 		{
 			"id": "m11c1",
 			"type": "text",
-			"text": "[[M11 - Career - Writing a Developer CV|Writing a Developer CV]]",
+			"text": "[[M11.02 - Career - Writing a Developer CV|Writing a Developer CV]]",
 			"x": 4615,
 			"y": 130,
 			"width": 400,
@@ -1023,7 +1023,7 @@
 		{
 			"id": "m11c2",
 			"type": "text",
-			"text": "[[M11 - Career - Preparing for Technical Interviews|Preparing for Technical Interviews]]",
+			"text": "[[M11.03 - Career - Preparing for Technical Interviews|Preparing for Technical Interviews]]",
 			"x": 4615,
 			"y": 200,
 			"width": 400,
@@ -1033,7 +1033,7 @@
 		{
 			"id": "m11c3",
 			"type": "text",
-			"text": "[[M11 - Career - Coding Interview Practice (Algorithms Basics)|Coding Interview Practice (Algorithms Basics)]]",
+			"text": "[[M11.04 - Career - Coding Interview Practice (Algorithms Basics)|Coding Interview Practice (Algorithms Basics)]]",
 			"x": 4615,
 			"y": 270,
 			"width": 400,
@@ -1043,7 +1043,7 @@
 		{
 			"id": "m11c4",
 			"type": "text",
-			"text": "[[M11 - Career - The Job Search|The Job Search]]",
+			"text": "[[M11.05 - Career - The Job Search|The Job Search]]",
 			"x": 4615,
 			"y": 340,
 			"width": 400,
@@ -1053,7 +1053,7 @@
 		{
 			"id": "m11c5",
 			"type": "text",
-			"text": "[[M11 - Career - What's Next After the Roadmap|What's Next After the Roadmap]]",
+			"text": "[[M11.06 - Career - What's Next After the Roadmap|What's Next After the Roadmap]]",
 			"x": 4615,
 			"y": 410,
 			"width": 400,

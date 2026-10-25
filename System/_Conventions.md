@@ -36,6 +36,7 @@ That's it. Progress shows up automatically in the Dashboard.
 
 The roadmap is split into **11 modules** (M1–M11), each a stage on the way from zero to a
 job-ready junior Java developer. Work them roughly in order — later modules build on earlier ones.
+Inside a module, topics are numbered in the order to study them: the path starts at **M1.01**.
 
 | Module | Area | Focus |
 | ------ | ---- | ----- |
@@ -100,13 +101,14 @@ Each topic note has the same shape so studying is frictionless:
 ## Learning with AI
 
 Use AI assistants as a tutor — to explain, hint, quiz, and review code *you* wrote — not to solve
-the Practice tasks for you. The rules are in [[M1 - Foundations - Getting Unstuck and Learning with AI]];
-using AI on the job is covered in [[M6 - Tooling - AI Coding Assistants in Your Workflow]].
+the Practice tasks for you. The rules are in [[M1.07 - Foundations - Getting Unstuck and Learning with AI]];
+using AI on the job is covered in [[M6.07 - Tooling - AI Coding Assistants in Your Workflow]].
 
 ## File naming
 
-`M{module} - {Area} - {Topic}.md`, e.g. `M3 - OOP - Inheritance.md`. All topic notes live in
-`Topics/`.
+`M{module}.{position} - {Area} - {Topic}.md`, e.g. `M3.05 - OOP - Inheritance.md`, the 5th topic of
+Module 3. The position is the topic's place in the **Module Index** in [[Home]], so Obsidian's file
+list shows the topics in study order. All topic notes live in `Topics/`.
 
 ## Stack assumptions
 
@@ -123,14 +125,18 @@ using AI on the job is covered in [[M6 - Tooling - AI Coding Assistants in Your 
 
 Version-sensitive items are flagged inline, e.g. *(Java 25+)* or *(Spring Boot 4)*. When reading
 older tutorials, expect differences — the main ones are listed in
-[[M9 - Spring - Spring Boot Intro and Project Setup]].
+[[M9.02 - Spring - Spring Boot Intro and Project Setup]].
 
 ## Adding or changing a topic
 
-1. Copy **[[_Template - Topic]]** into `Topics/` and fill in the frontmatter and every section.
+1. Copy **[[_Template - Topic]]** into `Topics/` as `M{module} - {Area} - {Topic}.md` (no position
+   yet) and fill in the frontmatter and every section.
 2. Add it to the **Module Index** in [[Home]] at the right position — that list defines the order.
-3. Update the **Next** link of the previous topic (and point the new one to the following topic).
-4. Run `python3 .github/scripts/vault.py build` to regenerate the visual map, the canvas, and the
-   README index, then `python3 .github/scripts/vault.py check` — CI runs the same check on every PR.
+   To reorder topics, move their lines there.
+3. Run `python3 .github/scripts/vault.py build`. It numbers the topics by their place in the index
+   (the topics after a new one in the same module shift by one, other modules stay as they are),
+   updates every link to a renamed note, sets the **Next** links, and regenerates the visual map, the
+   canvas, and the README index.
+4. Run `python3 .github/scripts/vault.py check` — CI runs the same check on every PR.
 
 It appears in the Dashboard automatically.

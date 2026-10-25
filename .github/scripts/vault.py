@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Check the vault and regenerate its derived files.
 
-The Module Index in Home.md is the single source of truth for the order of topics.
+The Module Index in Home.md is the single source of truth for the order of topics. Topic files are
+numbered by their place in it: `M3.05 - OOP - Inheritance.md` is the 5th topic of Module 3.
 
     python3 .github/scripts/vault.py check   # validate notes, links and generated files
-    python3 .github/scripts/vault.py build   # regenerate roadmap.svg, Roadmap.canvas, README index
+    python3 .github/scripts/vault.py build   # number the topics, regenerate roadmap.svg, Roadmap.canvas, README index
 
 `build` rewrites:
+  - Topics/*.md              file names renumbered to match the Module Index (links to them updated
+                             everywhere), and each topic's Next link pointed at the following topic
   - assets/roadmap.svg       the visual map shown in the README
   - Roadmap.canvas           the clickable Obsidian canvas
   - README.md                the topic list between the topic-index markers
@@ -31,6 +34,10 @@ STATUSES = {"todo", "doing", "done"}
 PRIORITIES = {"must", "good", "optional"}
 SECTIONS = ["Learning Objectives", "Learn", "Concepts", "Practice", "Self-check", "Definition of Done", "Next"]
 INDEX_START, INDEX_END = "<!-- topic-index:start -->", "<!-- topic-index:end -->"
+# A topic file name: M{module}.{position} - {Area} - {title}. The position may be missing in a new note.
+NAME = re.compile(r"^M(\d+)(?:\.\d+)? - (.+?) - (.+)$")
+LINK = re.compile(r"\[\[([^\]|#\n]+)")
+LAST_NEXT = "- [[Home]] — you've reached the end of the roadmap. Back to the map."
 
 # Shown in the two boxes at the bottom of the SVG.
 TOOLS = ["JDK 25 LTS (Temurin)", "IntelliJ IDEA", "Git, GitHub & GitHub Actions", "Maven · Gradle",
@@ -84,6 +91,79 @@ def load_topics():
     return topics
 
 
+def notes():
+    """Every Markdown note in the vault (not .git or .github)."""
+    return [p for p in ROOT.rglob("*.md") if ".git" not in p.parts and ".github" not in p.parts]
+
+
+def topic_name(module, position, title):
+    return f"M{module}.{position:02d} - {AREAS[module]} - {title}"
+
+
+def next_line(order, i):
+    return f"- Next: [[{order[i + 1]}]]" if i + 1 < len(order) else LAST_NEXT
+
+
+def set_next(text, line):
+    """Put `line` in place of the first link line of the Next section (or add it there)."""
+    head, sep, tail = text.partition("\n## Next\n")
+    if not sep:
+        return text
+    lines = tail.split("\n")
+    for k, current in enumerate(lines):
+        if current.startswith("- ") and "[[" in current:
+            lines[k] = line
+            break
+    else:
+        lines.insert(1 if lines and not lines[0].strip() else 0, line)
+    return head + sep + "\n".join(lines)
+
+
+def sync_topics(modules):
+    """Number the topic files by their place in the Module Index and point each Next link at the
+    following topic. A topic is found by the title part of its name, so a new note can be listed in the
+    index under any number (or none) and gets the right one; the topics after it shift by one."""
+    by_title = {}
+    for name in load_topics():
+        m = NAME.match(name)
+        if m:
+            by_title.setdefault(m.group(3), []).append(name)
+    renames, order = {}, []
+    for module, _, entries in modules:
+        for position, entry in enumerate(entries, 1):
+            m = NAME.match(entry)
+            found = by_title.get(m.group(3), []) if m else []
+            if len(found) != 1 or module not in AREAS:
+                order.append(entry)  # left for check() to report
+                continue
+            new = topic_name(module, position, m.group(3))
+            for old in {entry, found[0]} - {new}:
+                renames[old] = new
+            order.append(new)
+
+    relink = lambda text: LINK.sub(lambda m: "[[" + renames.get(m.group(1), m.group(1)), text)
+    files, removed = {}, []
+    for path in notes():
+        text = relink(path.read_text(encoding="utf-8"))
+        if path.parent == TOPICS and path.stem in renames:
+            removed.append(path)
+            print(f"renamed {path.stem} → {renames[path.stem]}")
+            path = TOPICS / f"{renames[path.stem]}.md"
+        files[path] = text
+    for i, name in enumerate(order):
+        path = TOPICS / f"{name}.md"
+        if path in files:
+            files[path] = set_next(files[path], next_line(order, i))
+
+    for path in removed:
+        path.unlink()
+    for path, text in files.items():
+        if not path.exists() or path.read_text(encoding="utf-8") != text:
+            path.write_text(text, encoding="utf-8")
+            if path.parent != TOPICS or path.stem not in renames.values():
+                print("updated", path.relative_to(ROOT))
+
+
 def check():
     errors = []
     modules = read_index()
@@ -98,12 +178,16 @@ def check():
     for name in topics:
         if order.count(name) != 1:
             errors.append(f"{name}: must appear exactly once in the Home.md Module Index (found {order.count(name)})")
+    titles = [m.group(3) for m in map(NAME.match, topics) if m]
+    for title in sorted({t for t in titles if titles.count(t) > 1}):
+        errors.append(f"Topics: more than one note is named '... - {title}' — topic names must be unique")
+    positions = {name: (m, p) for m, _, names in modules for p, name in enumerate(names, 1)}
 
     for i, name in enumerate(order):
         if name not in topics:
             continue
         t, fm = topics[name]["text"], topics[name]["fm"]
-        module = next(m for m, _, names in modules if name in names)
+        module, position = positions[name]
         where = f"Topics/{name}.md"
         try:
             fm_module, effort = int(fm.get("module", "")), int(fm.get("effort", ""))
@@ -114,8 +198,10 @@ def check():
         area = AREAS.get(module)
         if fm.get("area") != area:
             errors.append(f"{where}: area must be '{area}' for module {module}")
-        if not name.startswith(f"M{module} - {area} - "):
-            errors.append(f"{where}: file name must start with 'M{module} - {area} - '")
+        prefix = f"M{module}.{position:02d} - {area} - "
+        if not name.startswith(prefix):
+            errors.append(f"{where}: file name must start with '{prefix}' (its place in the Module Index) — "
+                          "run: python3 .github/scripts/vault.py build")
         if fm.get("status") not in STATUSES:
             errors.append(f"{where}: status must be one of {sorted(STATUSES)}")
         if fm.get("priority") not in PRIORITIES:
@@ -133,13 +219,13 @@ def check():
             errors.append(f"{where}: sections must be {SECTIONS}, found {headings}")
         expected = f"[[{order[i + 1]}]]" if i + 1 < len(order) else "[[Home]]"
         if expected not in t.split("## Next", 1)[-1]:
-            errors.append(f"{where}: the Next link must point to {expected}")
+            errors.append(f"{where}: the Next link must point to {expected} — run: python3 .github/scripts/vault.py build")
 
-    notes = {p.stem for p in ROOT.rglob("*.md") if ".git" not in p.parts} | {"Roadmap.canvas"}
-    for path in [p for p in ROOT.rglob("*.md") if ".git" not in p.parts and ".github" not in p.parts] + [CANVAS]:
+    names = {p.stem for p in ROOT.rglob("*.md") if ".git" not in p.parts} | {"Roadmap.canvas"}
+    for path in notes() + [CANVAS]:
         prose = re.sub(r"```.*?```|`[^`\n]*`", "", path.read_text(encoding="utf-8"), flags=re.S)
         for target in re.findall(r"\[\[([^\]|#]*)", prose):
-            if target.strip() and target.strip() not in notes:
+            if target.strip() and target.strip() not in names:
                 errors.append(f"{path.relative_to(ROOT)}: unresolved link [[{target}]]")
 
     for path, content in generated(modules, topics).items():
@@ -153,6 +239,7 @@ def check():
 
 
 def build():
+    sync_topics(read_index())
     modules, topics = read_index(), load_topics()
     for path, content in generated(modules, topics).items():
         path.write_text(content, encoding="utf-8")
